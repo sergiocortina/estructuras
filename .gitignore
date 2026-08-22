@@ -1,11 +1,3 @@
-# OS
-.DS_Store
-Thumbs.db
-
-# Editor
-*.swp
-*.swo
-*~
-
-# Permitir PDFs de Material Alumnos
-!Material Alumnos/**/*.pdf
+# Ignorar archivos que no van en GitHub Pages
+*.pdf
+Unidades/

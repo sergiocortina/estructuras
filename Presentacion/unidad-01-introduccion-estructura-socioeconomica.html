@@ -28,6 +28,8 @@
             --accent-green: #10b981;
             --accent-orange: #f59e0b;
             --accent-red: #ef4444;
+            --accent-teal: #14b8a6;
+            --accent-cyan: #06b6d4;
             --glass: rgba(255,255,255,0.06);
             --glass-border: rgba(255,255,255,0.1);
         }
@@ -54,7 +56,6 @@
             padding-right: 0;
         }
         
-        /* ====== TITLE SLIDE ====== */
         .reveal .slides section.title-slide {
             text-align: center;
             background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #2d1b69 100%);
@@ -92,7 +93,6 @@
             margin-top: 30px;
         }
         
-        /* ====== SECTION HEADERS ====== */
         .reveal .slides section.section-header {
             text-align: center;
             background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #2d1b69 100%);
@@ -115,7 +115,6 @@
             display: block;
         }
         
-        /* ====== CONTENT CARDS ====== */
         .card {
             background: var(--glass);
             border: 1px solid var(--glass-border);
@@ -140,36 +139,32 @@
         .card-accent-green { border-left: 4px solid var(--accent-green); }
         .card-accent-orange { border-left: 4px solid var(--accent-orange); }
         .card-accent-red { border-left: 4px solid var(--accent-red); }
+        .card-accent-teal { border-left: 4px solid var(--accent-teal); }
+        .card-accent-cyan { border-left: 4px solid var(--accent-cyan); }
         
-        /* ====== GRIDS ====== */
         .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
         .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 14px; }
         .grid-2 > .card, .grid-3 > .card { margin: 0; min-width: 0; }
         
-        /* ====== HEADINGS ====== */
         .reveal h1, .reveal h2, .reveal h3, .reveal h4 { color: white; font-weight: 700; }
         .reveal h2 { font-size: 1.4em; margin-bottom: 14px; }
         .reveal h3 { font-size: 1.05em; color: var(--accent-blue); margin-bottom: 8px; }
         .reveal h4 { font-size: 0.9em; color: var(--accent-purple); }
         
-        /* ====== TEXT ====== */
         .reveal p, .reveal li { color: rgba(255,255,255,0.85); line-height: 1.6; }
         .reveal ul { list-style: none; padding-left: 0; }
         .reveal ul li { padding: 3px 0; padding-left: 24px; position: relative; }
         .reveal ul li::before { content: '▸'; position: absolute; left: 0; color: var(--accent-blue); font-weight: 700; }
         
-        /* ====== HIGHLIGHTS ====== */
         .highlight { color: var(--accent-blue); font-weight: 600; }
         .highlight-purple { color: var(--accent-purple); font-weight: 600; }
         .highlight-pink { color: var(--accent-pink); font-weight: 600; }
         .highlight-green { color: var(--accent-green); font-weight: 600; }
         .highlight-orange { color: var(--accent-orange); font-weight: 600; }
         
-        /* ====== EMOJI ICONS ====== */
         .icon-lg { font-size: 1.6em; display: inline-block; margin-right: 6px; vertical-align: middle; }
         .icon-xl { font-size: 3em; display: block; text-align: center; margin-bottom: 16px; }
         
-        /* ====== TIMELINE ====== */
         .timeline { position: relative; padding-left: 30px; margin: 20px 0; }
         .timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, var(--accent-blue), var(--accent-purple), var(--accent-pink)); border-radius: 2px; }
         .timeline-item { position: relative; margin-bottom: 10px; padding: 8px 14px; background: var(--glass); border-radius: 8px; border: 1px solid var(--glass-border); }
@@ -177,24 +172,20 @@
         .timeline-item .year { font-size: 0.75em; color: var(--accent-blue); font-weight: 700; letter-spacing: 1px; }
         .timeline-item .event { font-size: 0.85em; color: rgba(255,255,255,0.8); margin-top: 4px; }
         
-        /* ====== DEFINITION ====== */
         .definition-box { background: linear-gradient(135deg, rgba(79,140,255,0.15), rgba(168,85,247,0.15)); border: 1px solid rgba(79,140,255,0.3); border-radius: 14px; padding: 16px 20px; margin: 14px 0; position: relative; }
         .definition-box::before { content: '📖'; font-size: 1.5em; position: absolute; top: -12px; left: 20px; }
         .definition-box .def-title { font-size: 0.65em; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-blue); font-weight: 700; margin-bottom: 6px; }
         .definition-box .def-text { font-size: 0.85em; color: rgba(255,255,255,0.9); line-height: 1.5; }
         
-        /* ====== COMPARISON TABLE ====== */
-        .comparison-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 10px; overflow: hidden; font-size: 0.65em; margin-top: 12px; }
+        .comparison-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 10px; overflow: hidden; font-size: 0.62em; margin-top: 12px; }
         .comparison-table th { background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple)); color: white; padding: 8px 12px; text-align: left; font-weight: 600; }
         .comparison-table td { padding: 7px 12px; border-bottom: 1px solid var(--glass-border); color: rgba(255,255,255,0.85); }
         .comparison-table tr:nth-child(even) td { background: var(--glass); }
         .comparison-table tr:last-child td { border-bottom: none; }
         
-        /* ====== FUN FACT ====== */
         .fun-fact { background: linear-gradient(135deg, rgba(245,158,11,0.15), rgba(239,68,68,0.1)); border: 1px solid rgba(245,158,11,0.3); border-radius: 10px; padding: 12px 16px; margin: 10px 0; font-size: 0.85em; }
         .fun-fact .ff-label { color: var(--accent-orange); font-weight: 700; font-size: 0.7em; text-transform: uppercase; letter-spacing: 1px; }
         
-        /* ====== QUIZ CARD ====== */
         .quiz-card { background: linear-gradient(135deg, rgba(16,185,129,0.15), rgba(79,140,255,0.15)); border: 1px solid rgba(16,185,129,0.3); border-radius: 14px; padding: 16px 20px; margin: 10px 0; }
         .quiz-card .quiz-q { color: var(--accent-green); font-weight: 700; font-size: 0.95em; margin-bottom: 8px; }
         .quiz-option { background: var(--glass); border: 1px solid var(--glass-border); border-radius: 8px; padding: 7px 14px; margin: 4px 0; color: rgba(255,255,255,0.8); font-size: 0.8em; cursor: pointer; transition: all 0.3s ease; }
@@ -202,29 +193,24 @@
         .quiz-option.correct { border-color: var(--accent-green); background: rgba(16,185,129,0.2); color: var(--accent-green); }
         .quiz-option.wrong { border-color: var(--accent-red); background: rgba(239,68,68,0.1); opacity: 0.6; }
         
-        /* ====== PRINCIPLE CARDS ====== */
         .principle-card { background: var(--glass); border: 1px solid var(--glass-border); border-radius: 12px; padding: 14px; text-align: center; transition: transform 0.3s ease, border-color 0.3s ease; }
         .principle-card:hover { transform: translateY(-4px); border-color: var(--accent-blue); }
         .principle-card .p-icon { font-size: 1.6em; margin-bottom: 6px; }
         .principle-card .p-name { font-weight: 700; font-size: 0.8em; color: white; margin-bottom: 4px; }
         .principle-card .p-desc { font-size: 0.65em; color: rgba(255,255,255,0.6); line-height: 1.3; }
         
-        /* ====== REAL LIFE ====== */
         .real-life { background: linear-gradient(135deg, rgba(236,72,153,0.15), rgba(168,85,247,0.15)); border: 1px solid rgba(236,72,153,0.3); border-radius: 12px; padding: 14px 18px; margin: 10px 0; }
         .real-life .rl-label { color: var(--accent-pink); font-weight: 700; font-size: 0.65em; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
         
-        /* ====== SCROLL ====== */
         .reveal .slides section { overflow-y: auto; max-height: 100%; padding-bottom: 40px; }
         .reveal .slides section::-webkit-scrollbar { width: 6px; }
         .reveal .slides section::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 3px; }
         .reveal .slides section::-webkit-scrollbar-thumb { background: rgba(79,140,255,0.4); border-radius: 3px; }
         .reveal .slides section::-webkit-scrollbar-thumb:hover { background: rgba(79,140,255,0.6); }
         
-        /* ====== REVEAL OVERRIDES ====== */
         .reveal .slides section .fragment.visible { opacity: 1; }
         .reveal .slide-number { display: none !important; }
         
-        /* ====== NAV ====== */
         .slide-nav { position: fixed; bottom: 16px; left: 16px; z-index: 9999; height: 38px; padding: 0 16px; display: flex; align-items: center; justify-content: center; border-radius: 20px; border: 1px solid var(--glass-border); background: rgba(10,10,26,0.7); backdrop-filter: blur(10px); color: rgba(255,255,255,0.7); font-family: 'Consolas', monospace; font-size: 0.9em; font-weight: 600; letter-spacing: 1px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 16px rgba(0,0,0,0.3); user-select: none; -webkit-user-select: none; }
         .slide-nav:hover { border-color: var(--accent-blue); color: white; }
         .slide-nav .slide-nav-display { display: flex; align-items: center; gap: 4px; }
@@ -235,18 +221,15 @@
         .slide-nav.editing .slide-nav-display { display: none; }
         .slide-nav.editing .slide-nav-input { display: inline-block; }
         
-        /* ====== TOP BUTTONS ====== */
         .fullscreen-btn, .index-btn { position: fixed; top: 16px; z-index: 9999; width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--glass-border); background: rgba(10,10,26,0.65); backdrop-filter: blur(10px); color: rgba(255,255,255,0.85); font-size: 1.1em; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; -webkit-tap-highlight-color: transparent; box-shadow: 0 4px 16px rgba(0,0,0,0.3); }
         .fullscreen-btn { right: 16px; }
         .index-btn { right: 76px; }
         .fullscreen-btn:hover, .fullscreen-btn:active, .index-btn:hover, .index-btn:active { border-color: var(--accent-blue); background: rgba(79,140,255,0.25); color: white; transform: scale(1.05); }
         
-        /* ====== FRAGMENT COUNTER ====== */
         .fragment-counter { position: fixed; top: 22px; right: 142px; z-index: 9999; height: 38px; padding: 0 14px; display: none; align-items: center; justify-content: center; border-radius: 20px; border: 1px solid var(--glass-border); background: rgba(10,10,26,0.65); backdrop-filter: blur(10px); color: rgba(255,255,255,0.9); font-family: 'Consolas', monospace; font-size: 0.85em; font-weight: 700; letter-spacing: 1px; box-shadow: 0 4px 16px rgba(0,0,0,0.3); white-space: nowrap; }
         .fragment-counter.has-fragments { display: flex; }
         .fragment-counter .fc-current { color: var(--accent-blue); }
         
-        /* ====== RESPONSIVE ====== */
         @media (max-width: 768px) {
             .grid-2, .grid-3 { grid-template-columns: 1fr; }
             .reveal .slides section { padding: 20px 30px; }
@@ -255,6 +238,19 @@
         .glow-text { text-shadow: 0 0 20px rgba(79,140,255,0.5), 0 0 40px rgba(168,85,247,0.3); }
         .fade-in { animation: fadeIn 0.8s ease-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .checklist { list-style: none; padding-left: 0; }
+        .checklist li { padding: 4px 0 4px 28px; position: relative; font-size: 0.85em; }
+        .checklist li::before { content: '✓'; position: absolute; left: 0; color: var(--accent-green); font-weight: 700; font-size: 1.1em; }
+        
+        .quote-box { background: var(--glass); border-left: 4px solid var(--accent-purple); border-radius: 0 10px 10px 0; padding: 14px 18px; margin: 12px 0; font-style: italic; }
+        .quote-box .quote-author { font-style: normal; font-size: 0.75em; color: var(--accent-purple); font-weight: 600; margin-top: 6px; }
+        
+        .step-card { display: flex; align-items: flex-start; gap: 12px; background: var(--glass); border: 1px solid var(--glass-border); border-radius: 10px; padding: 12px 14px; margin: 6px 0; }
+        .step-num { flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple)); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85em; color: white; }
+        .step-content { flex: 1; }
+        .step-content h4 { font-size: 0.85em; margin-bottom: 3px; }
+        .step-content p { font-size: 0.78em; color: rgba(255,255,255,0.7); }
     </style>
 </head>
 <body>
@@ -296,10 +292,10 @@
             <!-- ========== MAPA DEL CURSO ========== -->
             <section data-background-color="#0a0a1a">
                 <h2><span class="icon-lg">🗺️</span> Mapa del Curso</h2>
-                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em; margin-bottom: 16px;">Estructura Socioeconómica de México — 5to Semestre</p>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em; margin-bottom: 16px;">Estructura Socioeconómica de México — 5to Semestre — 13 horas totales</p>
                 
                 <div style="font-family: 'Consolas', monospace; font-size: 0.62em; line-height: 1.5; color: rgba(255,255,255,0.85); background: var(--glass); border-radius: 12px; padding: 16px 20px; border: 1px solid var(--glass-border);">
-                    <div style="text-align: center; font-weight: 700; font-size: 1.15em; margin-bottom: 14px; color: var(--accent-blue);">📊 ESTRUCTURA SOCIOECONÓMICA — 13 horas</div>
+                    <div style="text-align: center; font-weight: 700; font-size: 1.15em; margin-bottom: 14px; color: var(--accent-blue);">📊 ESTRUCTURA SOCIOECONÓMICA — 10 unidades</div>
                     
                     <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px;">
                         <div>
@@ -408,6 +404,31 @@
                 </div>
             </section>
             
+            <!-- ========== HABILIDADES Y ACTITUDES ========== -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧩</span> Habilidades y actitudes</h2>
+                
+                <div class="grid-2">
+                    <div>
+                        <h3 style="color: var(--accent-green);">Habilidades</h3>
+                        <ul class="checklist">
+                            <li class="fragment">Reconoce las similitudes y diferencias entre crecimiento, desarrollo y subdesarrollo económico</li>
+                            <li class="fragment">Diferencia los conceptos básicos y las categorías de análisis de la estructura socioeconómica</li>
+                            <li class="fragment">Describe las principales teorías del crecimiento económico</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--accent-purple);">Actitudes</h3>
+                        <ul class="checklist">
+                            <li class="fragment">Demuestra conciencia social reconociendo la diversidad en su entorno</li>
+                            <li class="fragment">Externa un pensamiento crítico y reflexivo</li>
+                            <li class="fragment">Expresa de manera crítica sus ideas y muestra respeto por las demás opiniones</li>
+                            <li class="fragment">Toma decisiones de manera consciente e informada, asumiendo las consecuencias</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
             <!-- ========== ÍNDICE ========== -->
             <section data-background-color="#0a0a1a" id="indice">
                 <h2><span class="icon-lg">📑</span> Índice de la Unidad 1</h2>
@@ -416,27 +437,35 @@
                 <div class="grid-2" style="margin-top: 10px;">
                     <a class="card card-accent-blue" href="#/sec-economia" style="display: block; text-decoration: none;">
                         <h4 style="color: var(--accent-blue); margin: 0;">1. Economía</h4>
-                        <p style="font-size: 0.75em; margin: 4px 0 0;">Definición, micro y macroeconomía</p>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Definición, micro y macroeconomía, historia</p>
                     </a>
                     <a class="card card-accent-purple" href="#/sec-modelo" style="display: block; text-decoration: none;">
                         <h4 style="color: var(--accent-purple); margin: 0;">2. Modelo capitalista</h4>
-                        <p style="font-size: 0.75em; margin: 4px 0 0;">Origen y evolución del capitalismo</p>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Origen, evolución y formación de excedentes</p>
                     </a>
                     <a class="card card-accent-green" href="#/sec-indicadores" style="display: block; text-decoration: none;">
                         <h4 style="color: var(--accent-green); margin: 0;">3. Indicadores macroeconómicos</h4>
-                        <p style="font-size: 0.75em; margin: 4px 0 0;">PIB, inflación, desempleo, tipo de cambio</p>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">PIB, inflación, desempleo, tipo de cambio, deuda</p>
                     </a>
-                    <a class="card card-accent-orange" href="#/sec-estructura" style="display: block; text-decoration: none;">
-                        <h4 style="color: var(--accent-orange); margin: 0;">4. Categorías de análisis</h4>
+                    <a class="card card-accent-orange" href="#/sec-sectores" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-orange); margin: 0;">4. Sectores productivos</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Primario, secundario, terciario</p>
+                    </a>
+                    <a class="card card-accent-teal" href="#/sec-estructura" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-teal); margin: 0;">5. Categorías de análisis</h4>
                         <p style="font-size: 0.75em; margin: 4px 0 0;">Estructura económica, superestructura, infraestructura</p>
                     </a>
                     <a class="card card-accent-pink" href="#/sec-teorias" style="display: block; text-decoration: none;">
-                        <h4 style="color: var(--accent-pink); margin: 0;">5. Teorías del crecimiento</h4>
+                        <h4 style="color: var(--accent-pink); margin: 0;">6. Teorías del crecimiento</h4>
                         <p style="font-size: 0.75em; margin: 4px 0 0;">Clásica, neoclásica, keynesiana, neoliberal, periférica</p>
                     </a>
                     <a class="card card-accent-red" href="#/sec-desarrollo" style="display: block; text-decoration: none;">
-                        <h4 style="color: var(--accent-red); margin: 0;">6. Crecimiento y desarrollo</h4>
-                        <p style="font-size: 0.75em; margin: 4px 0 0;">Diferencias, ciclos económicos, desigualdad</p>
+                        <h4 style="color: var(--accent-red); margin: 0;">7. Crecimiento y desarrollo</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Ciclos económicos, desigualdad, Malthus</p>
+                    </a>
+                    <a class="card card-accent-cyan" href="#/sec-recursos" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-cyan); margin: 0;">8. Recursos y calentamiento</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Profecías fallidas, medio ambiente</p>
                     </a>
                     <a class="card card-accent-green" href="#/quiz" style="display: block; text-decoration: none;">
                         <h4 style="color: var(--accent-green); margin: 0;">🧠 Autoevaluación</h4>
@@ -446,6 +475,14 @@
                         <h4 style="color: var(--accent-blue); margin: 0;">📋 Casos prácticos</h4>
                         <p style="font-size: 0.75em; margin: 4px 0 0;">Aplica lo aprendido</p>
                     </a>
+                    <a class="card card-accent-purple" href="#/actividades" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-purple); margin: 0;">🛠️ Actividades y talleres</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Actividades en clase y talleres prácticos</p>
+                    </a>
+                    <a class="card card-accent-orange" href="#/autoevaluacion" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-orange); margin: 0;">📊 Autoevaluación final</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Tablas de autoevaluación</p>
+                    </a>
                 </div>
             </section>
             
@@ -453,7 +490,7 @@
             <section class="section-header" id="sec-economia" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
                 <span class="section-icon">💰</span>
                 <h2>Economía</h2>
-                <p style="color: rgba(255,255,255,0.5);">¿Qué es la economía y por qué nos importa?</p>
+                <p style="color: rgba(255,255,255,0.5);">Conceptos básicos para el estudio socioeconómico</p>
             </section>
             
             <section data-background-color="#0a0a1a">
@@ -466,19 +503,30 @@
                     </div>
                 </div>
                 
+                <div class="card card-accent-blue fragment" style="margin-top: 12px;">
+                    <h4 style="color: var(--accent-blue);">🔑 Concepto clave: escasez</h4>
+                    <p style="font-size: 0.85em;">Todo es escaso: nunca hay suficiente de nada. Los aspectos que permiten conocer las condiciones de vida de una sociedad determinan la <strong>calidad de vida</strong> de sus integrantes.</p>
+                </div>
+                
                 <div class="fun-fact fragment">
                     <div class="ff-label">💡 Reflexión</div>
                     <p style="font-size: 0.85em;">¿Es posible que las condiciones materiales de un país mejoren, pero las de grandes sectores de la población no? <strong>Sí, y es justamente lo que ocurre en México.</strong></p>
                 </div>
+            </section>
+            
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔬</span> Microeconomía vs. Macroeconomía</h2>
                 
-                <div class="grid-2 fragment">
-                    <div class="card card-accent-blue">
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
                         <h4 style="color: var(--accent-blue);">🔬 Microeconomía</h4>
-                        <p style="font-size: 0.8em;">Analiza la mejor orientación para una unidad productiva específica: ¿sembrar, criar ganado, construir una fábrica?</p>
+                        <p style="font-size: 0.85em;">Analiza la mejor orientación para una <strong>unidad productiva específica</strong>: tierra, ganado, industria, servicios.</p>
+                        <p style="font-size: 0.78em; margin-top: 8px; color: var(--accent-blue);">→ ¿Sembrar, criar ganado, construir una fábrica?</p>
                     </div>
-                    <div class="card card-accent-purple">
+                    <div class="card card-accent-purple fragment">
                         <h4 style="color: var(--accent-purple);">🌍 Macroeconomía</h4>
-                        <p style="font-size: 0.8em;">Analiza cuál es la mejor manera de utilizar los recursos escasos a nivel nacional, internacional o regional.</p>
+                        <p style="font-size: 0.85em;">Analiza cuál es la mejor manera de utilizar los recursos escasos a nivel <strong>agregado</strong>: nacional, internacional o regional.</p>
+                        <p style="font-size: 0.78em; margin-top: 8px; color: var(--accent-purple);">→ ¿Cómo funciona la economía de todo un país?</p>
                     </div>
                 </div>
             </section>
@@ -489,19 +537,27 @@
                 <div class="timeline">
                     <div class="timeline-item fragment">
                         <div class="year">Siglo XVIII</div>
-                        <div class="event"><strong>Primeros estudios:</strong> Se desarrollan las leyes de la oferta y la demanda.</div>
+                        <div class="event"><strong>Primeros estudios:</strong> Se desarrollan las leyes de la oferta y la demanda. Nacimiento de la economía como ciencia.</div>
                     </div>
                     <div class="timeline-item fragment">
                         <div class="year">Hasta mediados del siglo XIX</div>
-                        <div class="event"><strong>Teoría del valor-trabajo:</strong> Los bienes adquieren valor por el trabajo que se aplica en su fabricación.</div>
+                        <div class="event"><strong>Teoría del valor-trabajo:</strong> Los bienes adquieren valor por el trabajo que se aplica en su fabricación. Adam Smith, David Ricardo y Karl Marx.</div>
                     </div>
                     <div class="timeline-item fragment">
                         <div class="year">Segunda mitad del siglo XIX</div>
-                        <div class="event"><strong>Revolución marginalista:</strong> El precio depende de cuánto lo quieren los compradores, no del trabajo invertido.</div>
+                        <div class="event"><strong>Revolución marginalista:</strong> El precio depende de cuánto lo quieren los compradores, no del trabajo invertido. Menger, Jevons, Walras.</div>
                     </div>
                     <div class="timeline-item fragment">
-                        <div class="year">Siglo XX - actualidad</div>
-                        <div class="event"><strong>Economía moderna:</strong> Precios determinados por oferta y demanda en mercados.</div>
+                        <div class="year">Siglo XX — Primera mitad</div>
+                        <div class="event"><strong>Keynesianismo:</strong> El gobierno debe intervenir para estabilizar la economía mediante el gasto público.</div>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <div class="year">Década de 1970-80</div>
+                        <div class="event"><strong>Neoliberalismo:</strong> Apertura comercial, reducción del Estado, liberalización del mercado. Thatcher y Reagan.</div>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <div class="year">Siglo XXI — actualidad</div>
+                        <div class="event"><strong>Economía globalizada:</strong> Precios determinados por oferta y demanda en mercados interconectados a nivel mundial.</div>
                     </div>
                 </div>
             </section>
@@ -514,21 +570,37 @@
             </section>
             
             <section data-background-color="#0a0a1a">
-                <h2><span class="icon-lg">🏭</span> Origen del capitalismo</h2>
+                <h2><span class="icon-lg">🌱</span> Origen: Primeros excedentes</h2>
                 
                 <div class="card card-accent-blue fragment">
-                    <h4 style="color: var(--accent-blue);">🌱 Primeros excedentes</h4>
-                    <p style="font-size: 0.85em;">El ser humano desarrolló medios para garantizar su sustento e introdujo mejoras que permitieron generar excedentes y, en consecuencia, riquezas que dieron lugar al crecimiento material y económico.</p>
+                    <h4 style="color: var(--accent-blue);">Desarrollo humano primitivo</h4>
+                    <p style="font-size: 0.85em;">Desde tiempos inmemoriales, el ser humano desarrolló medios para garantizar su sustento e introdujo mejoras que permitieron generar <strong>excedentes</strong> y, en consecuencia, riquezas que dieron lugar al <strong>crecimiento material y económico</strong>.</p>
                 </div>
                 
-                <div class="card card-accent-purple fragment">
-                    <h4 style="color: var(--accent-purple);">🇳🇱 Países Bajos (siglo XVI)</h4>
-                    <p style="font-size: 0.85em;">Los primeros en prestar atención a estos elementos fueron los habitantes de los Países Bajos, impulsando la formación de pequeñas unidades productivas familiares coordinadas por el hogar. Mediante este sistema lograron hacer más eficiente la elaboración de prendas y exportar textiles a toda Europa.</p>
+                <div class="card card-accent-purple fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-purple);">Reto ancestral</h4>
+                    <p style="font-size: 0.85em;">La <strong>producción y distribución</strong> de los bienes esenciales para el consumo humano fue uno de los primeros retos económicos que enfrentaron las sociedades desde tiempos ancestrales.</p>
+                </div>
+            </section>
+            
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🇳🇱</span> Países Bajos: Cuna del capitalismo</h2>
+                
+                <div class="definition-box fragment">
+                    <div class="def-title">Siglo XVI — Holanda y Bélgica</div>
+                    <div class="def-text">
+                        Los primeros en prestar atención a estos elementos fueron los habitantes de los <strong>Países Bajos</strong>, hacia mediados del siglo XVI, impulsando la formación de <strong>pequeñas unidades productivas familiares</strong> coordinadas por el hogar.
+                    </div>
+                </div>
+                
+                <div class="card card-accent-green fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-green);">🧵 El sistema textil</h4>
+                    <p style="font-size: 0.85em;">Mediante este sistema lograron hacer más eficiente la elaboración de prendas y <strong>exportar textiles a toda Europa</strong>. Fue el primer modelo exitoso de producción capitalista.</p>
                 </div>
                 
                 <div class="fun-fact fragment">
                     <div class="ff-label">💡 Dato histórico</div>
-                    <p style="font-size: 0.85em;">La producción y distribución de los bienes esenciales para el consumo humano fue uno de los primeros retos económicos que enfrentaron las sociedades desde tiempos ancestrales.</p>
+                    <p style="font-size: 0.85em;">La producción y distribución de bienes esenciales fue uno de los primeros retos económicos que enfrentaron las sociedades desde tiempos ancestrales. Los Países Bajos sentaron las bases del comercio internacional moderno.</p>
                 </div>
             </section>
             
@@ -546,64 +618,116 @@
                     <div class="principle-card fragment">
                         <div class="p-icon">💰</div>
                         <div class="p-name">PIB</div>
-                        <div class="p-desc">Producto Interno Bruto: valor total de bienes y servicios producidos en un país.</div>
+                        <div class="p-desc">Producto Interno Bruto: valor total de bienes y servicios producidos en un país en un periodo determinado.</div>
                     </div>
                     <div class="principle-card fragment">
                         <div class="p-icon">📈</div>
                         <div class="p-name">Inflación</div>
-                        <div class="p-desc">Aumento generalizado de precios en un periodo determinado.</div>
+                        <div class="p-desc">Aumento generalizado de precios en un periodo determinado. Reduce el poder adquisitivo.</div>
                     </div>
                     <div class="principle-card fragment">
                         <div class="p-icon">💱</div>
                         <div class="p-name">Tipo de cambio</div>
-                        <div class="p-desc">Relación de valor entre las monedas de diferentes países.</div>
+                        <div class="p-desc">Relación de valor entre las monedas de diferentes países. Afecta importaciones y exportaciones.</div>
                     </div>
                     <div class="principle-card fragment">
                         <div class="p-icon">👷</div>
                         <div class="p-name">Desempleo</div>
-                        <div class="p-desc">Porcentaje de la población activa que no tiene empleo.</div>
+                        <div class="p-desc">Porcentaje de la población activa que no tiene empleo. Indicador de salud económica.</div>
                     </div>
                     <div class="principle-card fragment">
                         <div class="p-icon">👤</div>
                         <div class="p-name">Ingreso per cápita</div>
-                        <div class="p-desc">Ingreso promedio por habitante de un país.</div>
+                        <div class="p-desc">Ingreso promedio por habitante de un país. Mide el nivel de vida medio.</div>
                     </div>
                     <div class="principle-card fragment">
                         <div class="p-icon">🏦</div>
                         <div class="p-name">Deuda pública</div>
-                        <div class="p-desc">Total de obligaciones financieras del gobierno.</div>
+                        <div class="p-desc">Total de obligaciones financieras del gobierno. Puede limitar el gasto futuro.</div>
                     </div>
                 </div>
             </section>
             
             <section data-background-color="#0a0a1a">
-                <h2><span class="icon-lg">🏗️</span> Sectores productivos</h2>
+                <h2><span class="icon-lg">💡</span> ¿Para qué sirven los indicadores?</h2>
+                
+                <div class="card card-accent-blue fragment">
+                    <h4 style="color: var(--accent-blue);">📏 Permiten medir y comparar</h4>
+                    <p style="font-size: 0.85em;">Los indicadores macroeconómicos permiten <strong>medir y comparar</strong> el desempeño económico de distintas regiones o países. Son como las "signos vitales" de una economía.</p>
+                </div>
+                
+                <div class="grid-2 fragment" style="margin-top: 10px;">
+                    <div class="card card-accent-green">
+                        <h4 style="color: var(--accent-green);">✅ Uso correcto</h4>
+                        <ul style="font-size: 0.78em;">
+                            <li>Comparar países en el mismo periodo</li>
+                            <li>Evaluar tendencias a largo plazo</li>
+                            <li>Diseñar políticas públicas</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-red">
+                        <h4 style="color: var(--accent-red);">⚠️ Limitaciones</h4>
+                        <ul style="font-size: 0.78em;">
+                            <li>No miden la distribución del ingreso</li>
+                            <li>No capturan bienestar subjetivo</li>
+                            <li>El PIB puede crecer sin que mejore la vida de la gente</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ========== SECCIÓN 4: SECTORES PRODUCTIVOS ========== -->
+            <section class="section-header" id="sec-sectores" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🏗️</span>
+                <h2>Sectores Productivos</h2>
+                <p style="color: rgba(255,255,255,0.5);">¿Cómo se divide la economía?</p>
+            </section>
+            
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏗️</span> Los tres sectores económicos</h2>
                 
                 <div class="grid-3">
                     <div class="card card-accent-green fragment" style="text-align: center;">
                         <span style="font-size: 2.5em;">🌾</span>
                         <h3 style="color: var(--accent-green); margin-top: 12px;">Primario</h3>
                         <p style="font-size: 0.8em;"><strong>Extracción</strong> de materias primas: agricultura, ganadería, pesca, minería.</p>
+                        <p style="font-size: 0.72em; color: var(--accent-green); margin-top: 6px;">Base de toda economía</p>
                     </div>
                     <div class="card card-accent-orange fragment" style="text-align: center;">
                         <span style="font-size: 2.5em;">🏭</span>
                         <h3 style="color: var(--accent-orange); margin-top: 12px;">Secundario</h3>
                         <p style="font-size: 0.8em;"><strong>Transformación</strong> de materias primas: industria manufacturera, construcción.</p>
+                        <p style="font-size: 0.72em; color: var(--accent-orange); margin-top: 6px;">Genera valor agregado</p>
                     </div>
                     <div class="card card-accent-purple fragment" style="text-align: center;">
                         <span style="font-size: 2.5em;">🛒</span>
                         <h3 style="color: var(--accent-purple); margin-top: 12px;">Terciario</h3>
                         <p style="font-size: 0.8em;"><strong>Servicios:</strong> comercio, transporte, educación, salud, finanzas.</p>
+                        <p style="font-size: 0.72em; color: var(--accent-purple); margin-top: 6px;">Mayor empleo en México</p>
                     </div>
                 </div>
                 
                 <div class="fun-fact fragment" style="margin-top: 16px;">
                     <div class="ff-label">🇲🇽 México</div>
-                    <p style="font-size: 0.85em;">En México, el sector terciario representa aproximadamente el <strong>60% del PIB</strong>, seguido por el secundario (~30%) y el primario (~10%).</p>
+                    <p style="font-size: 0.85em;">En México, el sector terciario representa aproximadamente el <strong>60% del PIB</strong>, seguido por el secundario (~30%) y el primario (~10%). La mayor parte de la PEA trabaja en servicios.</p>
                 </div>
             </section>
             
-            <!-- ========== SECCIÓN 4: CATEGORÍAS ========== -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔄</span> Relación entre sectores</h2>
+                
+                <div class="card card-accent-blue fragment">
+                    <h4 style="color: var(--accent-blue);">🔗 Interdependencia</h4>
+                    <p style="font-size: 0.85em;">Los sectores no funcionan de forma aislada. El sector primario provee materias primas al secundario, que produce bienes que el terciario distribuye y vende.</p>
+                </div>
+                
+                <div class="card card-accent-orange fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-orange);">⚠️ El reto de México</h4>
+                    <p style="font-size: 0.85em;">A pesar de tener un sector terciario grande, gran parte de la economía informal no genera valor agregado significativo. La transformación industrial sigue siendo un reto pendiente.</p>
+                </div>
+            </section>
+            
+            <!-- ========== SECCIÓN 5: CATEGORÍAS ========== -->
             <section class="section-header" id="sec-estructura" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
                 <span class="section-icon">🔍</span>
                 <h2>Categorías del Análisis Socioeconómico</h2>
@@ -611,23 +735,21 @@
             </section>
             
             <section data-background-color="#0a0a1a">
-                <h2><span class="icon-lg">🏗️</span> Estructura económica (Marx)</h2>
+                <h2><span class="icon-lg">🏗️</span> Estructura económica (Karl Marx)</h2>
                 
-                <div class="definition-box fragment">
-                    <div class="def-title">Estructura económica</div>
-                    <div class="def-text">
-                        La producción de satisfactores (bienes y servicios) era el <strong>eje de la sociedad</strong>. Para transformar la naturaleza se requiere trabajo y medios de producción (herramientas, fábricas, industria). Quien posee estos medios determina las relaciones sociales entre los individuos.
-                    </div>
+                <div class="quote-box fragment">
+                    <p>"La producción de satisfactores era el eje de la sociedad. Para transformar la naturaleza se requiere trabajo y medios de producción."</p>
+                    <div class="quote-author">— Karl Marx (1818-1883)</div>
+                </div>
+                
+                <div class="card card-accent-blue fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-blue);">🔑 Concepto clave</h4>
+                    <p style="font-size: 0.85em;">La estructura consiste en la combinación de las <strong>fuerzas productivas</strong> (relaciones sociales de producción) con los <strong>medios productivos</strong>. Esa estructura sostiene una superestructura de reglas político-jurídicas e ideológicas.</p>
                 </div>
                 
                 <div class="real-life fragment">
-                    <div class="rl-label">📖 Karl Marx (1818-1883)</div>
-                    <p style="font-size: 0.85em;">Vivió en Inglaterra en la etapa de mayor auge de la Revolución Industrial. Sus preocupaciones teóricas reflejaron esa realidad histórica: la producción era el eje de la sociedad.</p>
-                </div>
-                
-                <div class="card card-accent-blue fragment">
-                    <h4 style="color: var(--accent-blue);">🔑 Concepto clave</h4>
-                    <p style="font-size: 0.85em;">La estructura consiste en la combinación de las <strong>fuerzas productivas</strong> (relaciones sociales de producción) con los <strong>medios productivos</strong>. Esa estructura sostiene una superestructura de reglas político-jurídicas e ideológicas.</p>
+                    <div class="rl-label">📖 Contexto histórico</div>
+                    <p style="font-size: 0.85em;">Karl Marx vivió en Inglaterra en la etapa de mayor auge de la <strong>Revolución Industrial</strong>. Sus preocupaciones teóricas reflejaron esa realidad histórica: la producción era el eje de la sociedad. Quien posee los medios de producción determina las relaciones sociales entre los individuos.</p>
                 </div>
             </section>
             
@@ -638,24 +760,43 @@
                     <div class="card card-accent-green fragment">
                         <h4 style="color: var(--accent-green);">🏗️ Infraestructura</h4>
                         <p style="font-size: 0.85em;"><strong>Base económica:</strong> Conjunto de recursos y bienes técnicos, instalaciones y servicios necesarios para la realización de actividades económicas.</p>
-                        <p style="font-size: 0.8em; margin-top: 8px; color: var(--accent-green);">→ Determina la estructura social</p>
+                        <p style="font-size: 0.78em; margin-top: 8px; color: var(--accent-green);">→ Determina la estructura social</p>
+                        <ul style="font-size: 0.75em; margin-top: 6px;">
+                            <li>Carreteras, puentes, puertos</li>
+                            <li>Fábricas, maquinaria</li>
+                            <li>Servicios básicos (agua, luz, internet)</li>
+                        </ul>
                     </div>
                     <div class="card card-accent-purple fragment">
                         <h4 style="color: var(--accent-purple);">🏛️ Superestructura</h4>
                         <p style="font-size: 0.85em;"><strong>Conjunto de instituciones:</strong> Factores jurídicos, políticos e ideológicos de la sociedad, asentados sobre la estructura económica.</p>
-                        <p style="font-size: 0.8em; margin-top: 8px; color: var(--accent-purple);">→ Apoya la preservación de la estructura</p>
+                        <p style="font-size: 0.78em; margin-top: 8px; color: var(--accent-purple);">→ Apoya la preservación de la estructura</p>
+                        <ul style="font-size: 0.75em; margin-top: 6px;">
+                            <li>Leyes, constitución</li>
+                            <li>Gobierno, partidos políticos</li>
+                            <li>Religión, educación, cultura</li>
+                        </ul>
                     </div>
                 </div>
+            </section>
+            
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> Visión marxista de la sociedad</h2>
                 
-                <div class="definition-box fragment" style="margin-top: 16px;">
+                <div class="definition-box fragment">
                     <div class="def-title">Según el marxismo</div>
                     <div class="def-text">
                         Los fenómenos sociales están determinados por las <strong>necesidades materiales</strong> y las <strong>relaciones de producción</strong> que se establecen para satisfacerlas. Las relaciones económicas determinan las relaciones sociales y la estructura social está supeditada a la estructura económica.
                     </div>
                 </div>
+                
+                <div class="card card-accent-orange fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-orange);">📝 En resumen</h4>
+                    <p style="font-size: 0.85em;">Para Marx, la economía determina la política, la cultura, la religión y todas las formas de organización social. La <strong>infraestructura</strong> (base económica) condiciona la <strong>superestructura</strong> (instituciones, ideas, leyes).</p>
+                </div>
             </section>
             
-            <!-- ========== SECCIÓN 5: TEORÍAS ========== -->
+            <!-- ========== SECCIÓN 6: TEORÍAS ========== -->
             <section class="section-header" id="sec-teorias" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
                 <span class="section-icon">📚</span>
                 <h2>Principales Teorías del Crecimiento Económico</h2>
@@ -666,31 +807,64 @@
             <section data-background-color="#0a0a1a">
                 <h2><span class="icon-lg">📜</span> Modelo clásico (valor-trabajo)</h2>
                 
-                <div class="grid-2">
-                    <div>
-                        <div class="card card-accent-blue fragment">
-                            <h4 style="color: var(--accent-blue);">👤 Adam Smith (1723-1790)</h4>
-                            <p style="font-size: 0.8em;">Fundador de la teoría del valor-trabajo. El valor provenía del trabajo aplicado en la fabricación.</p>
-                        </div>
-                        <div class="card card-accent-purple fragment">
-                            <h4 style="color: var(--accent-purple);">👤 David Ricardo (1772-1823)</h4>
-                            <p style="font-size: 0.8em;"><strong>Ventaja comparativa:</strong> Un país debe concentrarse en producir lo que hace mejor e intercambiar con otros.</p>
-                        </div>
-                        <div class="card card-accent-pink fragment">
-                            <h4 style="color: var(--accent-pink);">👤 Karl Marx (1818-1883)</h4>
-                            <p style="font-size: 0.8em;"><strong>Dialéctica:</strong> Tesis → antítesis → síntesis. Identificó modos de producción: esclavista, feudalismo, capitalismo, socialismo.</p>
-                        </div>
+                <div class="definition-box fragment">
+                    <div class="def-title">Idea central</div>
+                    <div class="def-text">
+                        El valor de los bienes provenía del <strong>trabajo aplicado en la fabricación</strong>. Quien más trabajaba, más valor creaba. Esta teoría dominó desde el siglo XVIII hasta la segunda mitad del siglo XIX.
                     </div>
-                    <div>
-                        <div class="card card-accent-orange fragment">
-                            <h4 style="color: var(--accent-orange);">⚠️ Limitación</h4>
-                            <p style="font-size: 0.8em;">Sus propuestas teóricas han sido cuestionadas por el fracaso de los sistemas comunistas y socialistas en todo el mundo.</p>
-                        </div>
-                        <div class="fun-fact fragment">
-                            <div class="ff-label">💡 Dato</div>
-                            <p style="font-size: 0.8em;">Para 2018, sólo cinco países decían ser comunistas: China, Cuba, Vietnam, Laos y Corea del Norte. Los últimos cuatro son países muy pobres.</p>
-                        </div>
+                </div>
+                
+                <div class="grid-3 fragment" style="margin-top: 10px;">
+                    <div class="card card-accent-blue">
+                        <h4 style="color: var(--accent-blue);">👤 Adam Smith</h4>
+                        <p style="font-size: 0.75em; color: var(--accent-blue);">(1723-1790)</p>
+                        <p style="font-size: 0.78em; margin-top: 6px;">Fundador de la teoría del valor-trabajo. "La riqueza de las naciones".</p>
                     </div>
+                    <div class="card card-accent-purple">
+                        <h4 style="color: var(--accent-purple);">👤 David Ricardo</h4>
+                        <p style="font-size: 0.75em; color: var(--accent-purple);">(1772-1823)</p>
+                        <p style="font-size: 0.78em; margin-top: 6px;"><strong>Ventaja comparativa:</strong> Un país debe concentrarse en lo que hace mejor.</p>
+                    </div>
+                    <div class="card card-accent-pink">
+                        <h4 style="color: var(--accent-pink);">👤 Karl Marx</h4>
+                        <p style="font-size: 0.75em; color: var(--accent-pink);">(1818-1883)</p>
+                        <p style="font-size: 0.78em; margin-top: 6px;"><strong>Dialéctica:</strong> Tesis → antítesis → síntesis. Modos de producción.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📜</span> Marx: Modos de producción</h2>
+                
+                <div class="card card-accent-pink fragment">
+                    <h4 style="color: var(--accent-pink);">🔄 Dialéctica histórica</h4>
+                    <p style="font-size: 0.85em;">Marx identificó los siguientes modos de producción que se han sucedido en la historia:</p>
+                </div>
+                
+                <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px;">
+                    <div class="card card-accent-blue fragment" style="flex: 1; min-width: 120px; text-align: center;">
+                        <p style="font-size: 0.8em; font-weight: 700;">🐾 Comunismo primitivo</p>
+                    </div>
+                    <div class="card card-accent-purple fragment" style="flex: 1; min-width: 120px; text-align: center;">
+                        <p style="font-size: 0.8em; font-weight: 700;">⛓️ Esclavismo</p>
+                    </div>
+                    <div class="card card-accent-green fragment" style="flex: 1; min-width: 120px; text-align: center;">
+                        <p style="font-size: 0.8em; font-weight: 700;">🌾 Feudalismo</p>
+                    </div>
+                    <div class="card card-accent-orange fragment" style="flex: 1; min-width: 120px; text-align: center;">
+                        <p style="font-size: 0.8em; font-weight: 700;">💰 Mercantilismo</p>
+                    </div>
+                    <div class="card card-accent-red fragment" style="flex: 1; min-width: 120px; text-align: center;">
+                        <p style="font-size: 0.8em; font-weight: 700;">🏭 Capitalismo</p>
+                    </div>
+                    <div class="card card-accent-teal fragment" style="flex: 1; min-width: 120px; text-align: center;">
+                        <p style="font-size: 0.8em; font-weight: 700;">⚒️ Socialismo</p>
+                    </div>
+                </div>
+                
+                <div class="card card-accent-orange fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-orange);">⚠️ Limitación del modelo clásico</h4>
+                    <p style="font-size: 0.85em;">Sus propuestas teóricas han sido cuestionadas por el fracaso de los sistemas comunistas y socialistas en todo el mundo. Para 2018, sólo cinco países decían ser comunistas: China, Cuba, Vietnam, Laos y Corea del Norte. Los últimos cuatro son países muy pobres.</p>
                 </div>
             </section>
             
@@ -705,29 +879,46 @@
                     </div>
                 </div>
                 
-                <div class="grid-3 fragment">
+                <div class="grid-3 fragment" style="margin-top: 10px;">
                     <div class="card card-accent-blue" style="text-align: center;">
                         <h4 style="color: var(--accent-blue);">Carl Menger</h4>
                         <p style="font-size: 0.75em;">(1840-1921)</p>
+                        <p style="font-size: 0.72em; color: rgba(255,255,255,0.6);">Fundador de la escuela austríaca</p>
                     </div>
                     <div class="card card-accent-purple" style="text-align: center;">
                         <h4 style="color: var(--accent-purple);">Stanley Jevons</h4>
                         <p style="font-size: 0.75em;">(1835-1882)</p>
+                        <p style="font-size: 0.72em; color: rgba(255,255,255,0.6);">Utilidad marginal en Inglaterra</p>
                     </div>
                     <div class="card card-accent-green" style="text-align: center;">
                         <h4 style="color: var(--accent-green);">Léon Walras</h4>
                         <p style="font-size: 0.75em;">(1834-1910)</p>
+                        <p style="font-size: 0.72em; color: rgba(255,255,255,0.6);">Equilibrio general en Suiza</p>
                     </div>
                 </div>
                 
                 <div class="real-life fragment" style="margin-top: 14px;">
-                    <div class="rl-label">🥕 Ejemplo: jitomates</div>
+                    <div class="rl-label">🥕 Ejemplo práctico: jitomates</div>
                     <p style="font-size: 0.85em;">Si vendes jitomates a $20/kg y nadie los compra porque el de junto los ofrece a $15, tendrás que bajar el precio. Si vendes muy rápido porque el de junto los ofrece a $25, puedes subir un poco. <strong>El valor agregado se genera en el intercambio.</strong></p>
+                </div>
+            </section>
+            
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💎</span> Valor agregado y poder de mercado</h2>
+                
+                <div class="card card-accent-green fragment">
+                    <h4 style="color: var(--accent-green);">💰 Valor agregado</h4>
+                    <p style="font-size: 0.85em;">El valor de un bien es <strong>cero</strong> hasta que alguien está dispuesto a comprarlo. En el mercado libre, ganan tanto compradores como vendedores. La diferencia entre el precio de venta y el costo de producción es el valor agregado.</p>
                 </div>
                 
                 <div class="card card-accent-red fragment" style="margin-top: 10px;">
                     <h4 style="color: var(--accent-red);">⚠️ Poder de mercado</h4>
-                    <p style="font-size: 0.8em;">Cuando alguien tiene poder suficiente para poner reglas que le beneficien y dañen a sus competidores. Es la causa de que América Latina no salga del ingreso medio: <strong>"capitalismo de compadrazgo"</strong>.</p>
+                    <p style="font-size: 0.85em;">Cuando alguien tiene poder suficiente para poner reglas que le beneficien y dañen a sus competidores. Es la causa de que América Latina no salga del ingreso medio: <strong>"capitalismo de compadrazgo"</strong>.</p>
+                </div>
+                
+                <div class="fun-fact fragment">
+                    <div class="ff-label">💡 Dato importante</div>
+                    <p style="font-size: 0.85em;">¿Cuál es la diferencia entre el precio al que se venden las cosas y el costo de los recursos que se utilizaron en su producción? <strong>El valor agregado.</strong></p>
                 </div>
             </section>
             
@@ -736,29 +927,38 @@
                 <h2><span class="icon-lg">🏛️</span> Modelo keynesiano</h2>
                 
                 <div class="definition-box fragment">
-                    <div class="def-title">Propuesta de Keynes</div>
+                    <div class="def-title">Propuesta de John Maynard Keynes</div>
                     <div class="def-text">
                         Los mercados pueden entrar en una etapa de <strong>desequilibrio que no se resuelve sola</strong>. Para evitarlo, el gobierno debe intervenir mediante la <strong>expansión del gasto público</strong> destinado a la generación masiva de fuentes de empleo.
                     </div>
                 </div>
                 
+                <div class="card card-accent-blue fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-blue);">🌍 Contexto histórico</h4>
+                    <p style="font-size: 0.85em;">Después de la Primera Guerra Mundial, los mercados en Europa se hundieron por falta de demanda. Las fábricas estaban paradas, el desempleo era altísimo y la gente no tenía dinero para comprar.</p>
+                </div>
+            </section>
+            
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📈</span> Evolución del keynesianismo</h2>
+                
                 <div class="timeline">
                     <div class="timeline-item fragment">
-                        <div class="year">Post-guerra</div>
-                        <div class="event"><strong>Éxito:</strong> Europa creció a ritmos cercanos al 5% anual con el Plan Marshall y creación del FMI y Banco Mundial.</div>
+                        <div class="year" style="color: var(--accent-green);">Post-guerra: Éxito</div>
+                        <div class="event">Europa creció a ritmos cercanos al <strong>5% anual</strong> con el Plan Marshall y creación del FMI y Banco Mundial.</div>
                     </div>
                     <div class="timeline-item fragment">
-                        <div class="year">Década de 1960</div>
-                        <div class="event"><strong>Complicaciones:</strong> Cuando Europa recuperó sus niveles pre-guerra, la economía perdió dinamismo.</div>
+                        <div class="year" style="color: var(--accent-orange);">Década de 1960</div>
+                        <div class="event"><strong>Complicaciones:</strong> Cuando Europa recuperó sus niveles pre-guerra, la economía perdió dinamismo. El crecimiento se desaceleró.</div>
                     </div>
                     <div class="timeline-item fragment">
-                        <div class="year">Década de 1970</div>
+                        <div class="year" style="color: var(--accent-red);">Década de 1970</div>
                         <div class="event"><strong>Derrumbe:</strong> Estanflación (inflación + estancamiento). Las políticas keynesianas solo empeoraron las cosas.</div>
                     </div>
                 </div>
                 
                 <div class="fun-fact fragment">
-                    <div class="ff-label">💡 Lección</div>
+                    <div class="ff-label">💡 Lección importante</div>
                     <p style="font-size: 0.85em;">El exceso en la aplicación de las ideas de Keynes provocó la tragedia. <strong>Como suele ocurrir, el exceso de una idea buena la convierte en mala.</strong></p>
                 </div>
             </section>
@@ -770,16 +970,16 @@
                 <div class="grid-2">
                     <div class="card card-accent-blue fragment">
                         <h4 style="color: var(--accent-blue);">🇬🇧 Margaret Thatcher (1979)</h4>
-                        <p style="font-size: 0.8em;">Apertura comercial, limitación del poder sindical, finanzas públicas sanas.</p>
+                        <p style="font-size: 0.8em;">Apertura comercial, limitación del poder sindical, finanzas públicas sanas, privatizaciones masivas.</p>
                     </div>
                     <div class="card card-accent-purple fragment">
                         <h4 style="color: var(--accent-purple);">🇺🇸 Ronald Reagan (1980)</h4>
-                        <p style="font-size: 0.8em;">Políticas similares a las de Thatcher en Gran Bretaña.</p>
+                        <p style="font-size: 0.8em;">Políticas similares: reducción de impuestos, desregulación, libre mercado.</p>
                     </div>
                 </div>
                 
                 <div class="card card-accent-green fragment" style="margin-top: 14px;">
-                    <h4 style="color: var(--accent-green);">🔑 Propuesta</h4>
+                    <h4 style="color: var(--accent-green);">🔑 Propuesta central</h4>
                     <p style="font-size: 0.85em;">Liberalización de las fuerzas del mercado y apertura económica, con una participación del Estado limitada a un papel regulador pero impulsor del desarrollo económico.</p>
                 </div>
                 
@@ -790,7 +990,7 @@
                 
                 <div class="fun-fact fragment">
                     <div class="ff-label">💡 Dato histórico</div>
-                    <p style="font-size: 0.85em;">En octubre de 1989 se derrumbó el Muro de Berlín, construido en 1961 para separar la ciudad en capitalista (occidental) y comunista (oriental).</p>
+                    <p style="font-size: 0.85em;">En octubre de 1989 se derrumbó el <strong>Muro de Berlín</strong>, construido en 1961 para separar la ciudad en capitalista (occidental) y comunista (oriental).</p>
                 </div>
             </section>
             
@@ -799,30 +999,79 @@
                 <h2><span class="icon-lg">🌎</span> Capitalismo periférico</h2>
                 
                 <div class="definition-box fragment">
-                    <div class="def-title">Raúl Prebisch (CEPAL)</div>
+                    <div class="def-title">Raúl Prebisch — CEPAL</div>
                     <div class="def-text">
                         Mientras algunos países producen <strong>bienes industrializados</strong> (centro), otros producen sólo <strong>bienes primarios</strong> (periferia). Los bienes industrializados son cada vez mejores por el avance tecnológico, mientras que los bienes primarios siempre son iguales.
                     </div>
                 </div>
                 
-                <div class="grid-2 fragment">
+                <div class="grid-2 fragment" style="margin-top: 10px;">
                     <div class="card card-accent-blue">
                         <h4 style="color: var(--accent-blue);">🏛️ Países del centro</h4>
-                        <p style="font-size: 0.8em;">Producen bienes industrializados con ventaja tecnológica.</p>
+                        <p style="font-size: 0.8em;">Producen bienes industrializados con ventaja tecnológica. Ej: EE.UU., Alemania, Japón.</p>
+                        <p style="font-size: 0.72em; color: var(--accent-blue); margin-top: 4px;">→ Obtienen mejores precios</p>
                     </div>
                     <div class="card card-accent-orange">
                         <h4 style="color: var(--accent-orange);">🌍 Países de la periferia</h4>
-                        <p style="font-size: 0.8em;">Producen bienes primarios sin valor agregado tecnológico.</p>
+                        <p style="font-size: 0.8em;">Producen bienes primarios sin valor agregado tecnológico. Ej: México, Brasil, Argentina.</p>
+                        <p style="font-size: 0.72em; color: var(--accent-orange); margin-top: 4px;">→ Obtienen peores precios</p>
                     </div>
                 </div>
                 
-                <div class="card card-accent-pink fragment" style="margin-top: 14px;">
-                    <h4 style="color: var(--accent-pink);">📈 Evolución</h4>
+                <div class="card card-accent-pink fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-pink);">📈 Evolución teórica</h4>
                     <p style="font-size: 0.85em;">En la década de 1960 dio lugar a la <strong>teoría de la dependencia</strong>, y en la de 1980 a la <strong>teoría de la economía-mundo</strong> (Emmanuel Wallerstein).</p>
                 </div>
             </section>
             
-            <!-- ========== SECCIÓN 6: DESARROLLO ========== -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📊</span> Comparación de teorías económicas</h2>
+                
+                <table class="comparison-table fragment">
+                    <thead>
+                        <tr>
+                            <th>Teoría</th>
+                            <th>Fundador</th>
+                            <th>Idea central</th>
+                            <th>Época</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Clásica</strong></td>
+                            <td>Smith, Ricardo, Marx</td>
+                            <td>Valor = trabajo invertido</td>
+                            <td>S. XVIII-XIX</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Neoclásica</strong></td>
+                            <td>Menger, Jevons, Walras</td>
+                            <td>Precio = oferta y demanda</td>
+                            <td>S. XIX-XX</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Keynesiana</strong></td>
+                            <td>Keynes</td>
+                            <td>Gasto público para estabilizar</td>
+                            <td>1930-1970</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Neoliberal</strong></td>
+                            <td>Thatcher, Reagan</td>
+                            <td>Libre mercado, reducir Estado</td>
+                            <td>1980-presente</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Periférica</strong></td>
+                            <td>Prebisch (CEPAL)</td>
+                            <td>Condiciones desiguales centro-periferia</td>
+                            <td>1950-presente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <!-- ========== SECCIÓN 7: DESARROLLO ========== -->
             <section class="section-header" id="sec-desarrollo" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
                 <span class="section-icon">📈</span>
                 <h2>Crecimiento, Desarrollo y Ciclos Económicos</h2>
@@ -830,35 +1079,76 @@
             </section>
             
             <section data-background-color="#0a0a1a">
-                <h2><span class="icon-lg">📈</span> Crecimiento vs. Desarrollo</h2>
+                <h2><span class="icon-lg">📈</span> Crecimiento económico</h2>
                 
-                <div class="grid-2">
-                    <div class="card card-accent-blue fragment">
-                        <h4 style="color: var(--accent-blue);">📊 Crecimiento económico</h4>
-                        <p style="font-size: 0.85em;">Aumento sostenido de la producción de bienes y servicios, medido por el PIB. <strong>Solo mide cantidad.</strong></p>
-                    </div>
-                    <div class="card card-accent-green fragment">
-                        <h4 style="color: var(--accent-green);">🌱 Desarrollo económico</h4>
-                        <p style="font-size: 0.85em;">Implica mejoras en la calidad de vida, distribución del ingreso, acceso a servicios y bienestar generalizado. <strong>Mide calidad.</strong></p>
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        Aumento sostenido de la producción de bienes y servicios en un país, medido generalmente por el <strong>PIB</strong>. Algunos economistas consideran que el crecimiento no puede sostenerse de manera permanente porque la disponibilidad de recursos tampoco se sostiene.
                     </div>
                 </div>
                 
-                <div class="card card-accent-red fragment" style="margin-top: 14px;">
-                    <h4 style="color: var(--accent-red);">⚠️ Subdesarrollo económico</h4>
-                    <p style="font-size: 0.85em;">Bajos niveles de ingreso per cápita, alta dependencia tecnológica, limitado acceso a servicios y alta desigualdad social. <strong>México es un país de ingreso medio.</strong></p>
-                </div>
-                
-                <div class="fun-fact fragment">
-                    <div class="ff-label">📊 Dato impactante</div>
-                    <p style="font-size: 0.85em;">En 1820 había mil millones de personas y el <strong>95% vivía en pobreza extrema</strong>. Actualmente hay 7,400 millones y solo el <strong>11%</strong> vive en pobreza extrema.</p>
+                <div class="card card-accent-blue fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-blue);">🔑 Elementos del crecimiento</h4>
+                    <p style="font-size: 0.85em;">Entre los principales elementos que determinan el crecimiento económico destacan: <strong>trabajo, tierra y capital</strong>. También la tecnología, los recursos naturales y los indicadores de crecimiento social.</p>
                 </div>
             </section>
             
-            <!-- Ciclos económicos -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">👤</span> Thomas Malthus: Profecía fallida</h2>
+                
+                <div class="card card-accent-orange fragment">
+                    <h4 style="color: var(--accent-orange);">⚠️ La predicción malthusiana (siglo XVIII)</h4>
+                    <p style="font-size: 0.85em;">La capacidad productiva del campo crecía <strong>aritméticamente</strong> (1, 2, 3, 4...) y la población <strong>geométricamente</strong> (2, 4, 8, 16...), lo que llevaría a hambruna inevitable.</p>
+                </div>
+                
+                <div class="card card-accent-green fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-green);">✅ La realidad superó la predicción</h4>
+                    <p style="font-size: 0.85em;">Las innovaciones tecnológicas han permitido incrementar <strong>exponencialmente</strong> la producción agrícola e industrial. La tecnología siempre superó las predicciones catastrofistas.</p>
+                </div>
+                
+                <div class="fun-fact fragment">
+                    <div class="ff-label">📊 Datos históricos</div>
+                    <p style="font-size: 0.85em;">En 1820 había <strong>mil millones</strong> de personas y el <strong>95%</strong> vivía en pobreza extrema. Actualmente hay <strong>7,400 millones</strong> y solo el <strong>11%</strong> vive en pobreza extrema.</p>
+                </div>
+            </section>
+            
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌱</span> Crecimiento vs. Desarrollo vs. Subdesarrollo</h2>
+                
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">📊 Crecimiento económico</h4>
+                        <p style="font-size: 0.85em;">Aumento sostenido de la producción. <strong>Solo mide cantidad.</strong></p>
+                        <p style="font-size: 0.72em; color: var(--accent-blue); margin-top: 4px;">→ Se mide por el PIB</p>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color: var(--accent-green);">🌱 Desarrollo económico</h4>
+                        <p style="font-size: 0.85em;">Mejoras en calidad de vida, distribución del ingreso, acceso a servicios. <strong>Mide calidad.</strong></p>
+                        <p style="font-size: 0.72em; color: var(--accent-green); margin-top: 4px;">→ Incluye bienestar</p>
+                    </div>
+                    <div class="card card-accent-red fragment">
+                        <h4 style="color: var(--accent-red);">⚠️ Subdesarrollo</h4>
+                        <p style="font-size: 0.85em;">Bajos niveles de ingreso, alta dependencia tecnológica, desigualdad. <strong>México es ingreso medio.</strong></p>
+                        <p style="font-size: 0.72em; color: var(--accent-red); margin-top: 4px;">→ No ha podido entrar al grupo de países ricos</p>
+                    </div>
+                </div>
+                
+                <div class="definition-box fragment" style="margin-top: 12px;">
+                    <div class="def-title">Pregunta clave</div>
+                    <div class="def-text" style="font-size: 0.85em;">¿Pueden existir circunstancias en las que el crecimiento económico no genere beneficios para la sociedad? <strong>Sí. México es el ejemplo perfecto.</strong> Es la 15ª economía del mundo, pero la mitad de su población vive en pobreza.</div>
+                </div>
+            </section>
+            
             <section data-background-color="#0a0a1a">
                 <h2><span class="icon-lg">🔄</span> Ciclos económicos</h2>
                 
-                <div class="timeline">
+                <div class="card card-accent-blue fragment">
+                    <h4 style="color: var(--accent-blue);">📈 Definición</h4>
+                    <p style="font-size: 0.85em;">Los ciclos económicos son secuencias de fases que se suceden en el mismo orden. La política económica intenta reducir la distancia entre el punto alto (expansión) y el punto bajo (depresión).</p>
+                </div>
+                
+                <div class="timeline" style="margin-top: 12px;">
                     <div class="timeline-item fragment">
                         <div class="year" style="color: var(--accent-green);">1. Expansión</div>
                         <div class="event">Mayor crecimiento, curva ascendente. La economía está en su punto más alto.</div>
@@ -880,14 +1170,22 @@
                         <div class="event">La economía comienza a salir de la depresión a ritmo lento.</div>
                     </div>
                 </div>
+            </section>
+            
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚠️</span> El dilema político de los ciclos</h2>
                 
-                <div class="card card-accent-orange fragment" style="margin-top: 14px;">
-                    <h4 style="color: var(--accent-orange);">⚠️ El dilema político</h4>
+                <div class="card card-accent-orange fragment">
+                    <h4 style="color: var(--accent-orange);">🗳️ El problema electoral</h4>
                     <p style="font-size: 0.85em;">Los gobiernos suelen ser reacios a subir impuestos o bajar el gasto porque eso genera descontento en los votantes. <strong>Es más fácil subir el gasto que bajarlo.</strong></p>
+                </div>
+                
+                <div class="card card-accent-red fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-red);">📉 Consecuencia</h4>
+                    <p style="font-size: 0.85em;">Esto puede generar deuda pública excesiva, inflación y crisis económicas. El corto plazo electoral a menudo contradice la estabilidad económica a largo plazo.</p>
                 </div>
             </section>
             
-            <!-- Desigualdad en México -->
             <section data-background-color="#0a0a1a">
                 <h2><span class="icon-lg">🇲🇽</span> Desigualdad en México</h2>
                 
@@ -896,58 +1194,83 @@
                     <p style="font-size: 0.85em;">México es la <strong>décimo quinta economía del mundo</strong> y tiene al hombre más rico de América Latina, pero <strong>la mitad de la población vive en pobreza por ingresos</strong>.</p>
                 </div>
                 
-                <div class="grid-2 fragment">
+                <div class="grid-2 fragment" style="margin-top: 10px;">
                     <div class="card card-accent-red">
                         <h4 style="color: var(--accent-red);">😢 Entidades de bajos ingresos</h4>
-                        <p style="font-size: 0.8em;">Chiapas, Guerrero, Estado de México, Nayarit, Oaxaca, Sinaloa, Tabasco, Tlaxcala y Veracruz.</p>
+                        <p style="font-size: 0.78em;">Chiapas, Guerrero, Estado de México, Nayarit, Oaxaca, Sinaloa, Tabasco, Tlaxcala y Veracruz.</p>
                     </div>
                     <div class="card card-accent-green">
                         <h4 style="color: var(--accent-green);">😊 Entidades de altos ingresos</h4>
-                        <p style="font-size: 0.8em;">Aguascalientes, Campeche, Coahuila, Chihuahua, Ciudad de México, Nuevo León, Querétaro y Quintana Roo.</p>
+                        <p style="font-size: 0.78em;">Aguascalientes, Campeche, Coahuila, Chihuahua, Ciudad de México, Nuevo León, Querétaro y Quintana Roo.</p>
                     </div>
                 </div>
                 
-                <div class="card card-accent-blue fragment" style="margin-top: 14px;">
+                <div class="card card-accent-blue fragment" style="margin-top: 10px;">
                     <h4 style="color: var(--accent-blue);">📈 Datos de desigualdad</h4>
                     <ul>
-                        <li style="font-size: 0.8em;">El 5% más pobre mexicano es el <strong>200 más pobre a nivel mundial</strong></li>
-                        <li style="font-size: 0.8em;">Los más ricos del país llegan al <strong>percentil 96</strong> a nivel mundial</li>
-                        <li style="font-size: 0.8em;">En los últimos 70 años <strong>no ha habido convergencia</strong> entre entidades</li>
+                        <li style="font-size: 0.78em;">El 5% más pobre mexicano es el <strong>200 más pobre a nivel mundial</strong></li>
+                        <li style="font-size: 0.78em;">Los más ricos del país llegan al <strong>percentil 96</strong> a nivel mundial</li>
+                        <li style="font-size: 0.78em;">En los últimos 70 años <strong>no ha habido convergencia</strong> entre entidades</li>
                     </ul>
                 </div>
             </section>
             
-            <!-- Calentamiento global -->
+            <!-- ========== SECCIÓN 8: RECURSOS ========== -->
+            <section class="section-header" id="sec-recursos" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🌡️</span>
+                <h2>Recursos Naturales y Medio Ambiente</h2>
+                <p style="color: rgba(255,255,255,0.5);">Profecías fallidas y calentamiento global</p>
+            </section>
+            
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📉</span> Profecías de escasez fallidas</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item fragment">
+                        <div class="year">Siglo XVIII</div>
+                        <div class="event"><strong>Thomas Malthus:</strong> Predijo hambruna porque la población crecía más rápido que la producción de alimentos.</div>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <div class="year">Década de 1960</div>
+                        <div class="event"><strong>Paul Ehrlich:</strong> Predijo el fin del mundo por sobrepoblación y escasez de recursos.</div>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <div class="year">Década de 1970</div>
+                        <div class="event"><strong>Club de Roma:</strong> Predijo el agotamiento de los recursos naturales para finales del siglo XX.</div>
+                    </div>
+                </div>
+                
+                <div class="card card-accent-green fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-green);">✅ La lección</h4>
+                    <p style="font-size: 0.85em;">Un recurso es abundante o escaso dependiendo de la <strong>tecnología disponible</strong> y los deseos de los compradores. La tecnología siempre superó las predicciones catastrofistas.</p>
+                </div>
+            </section>
+            
             <section data-background-color="#0a0a1a">
                 <h2><span class="icon-lg">🌡️</span> Calentamiento global y recursos</h2>
                 
                 <div class="card card-accent-red fragment">
-                    <h4 style="color: var(--accent-red);">⚠️ El reto ambiental</h4>
-                    <p style="font-size: 0.85em;">El uso excesivo de combustibles fósiles ha producido gases de invernadero que elevan la temperatura del planeta. El que mayor efecto tiene es el metano, pero el que más dura es el bióxido de carbono.</p>
+                    <h4 style="color: var(--accent-red);">⚠️ El reto ambiental real</h4>
+                    <p style="font-size: 0.85em;">El uso excesivo de combustibles fósiles ha producido <strong>gases de invernadero</strong> que elevan la temperatura del planeta. El que mayor efecto tiene es el metano, pero el que más dura es el bióxido de carbono.</p>
                 </div>
                 
-                <div class="grid-2 fragment">
+                <div class="grid-2 fragment" style="margin-top: 10px;">
                     <div class="card card-accent-green">
                         <h4 style="color: var(--accent-green);">✅ Logros</h4>
-                        <ul>
-                            <li style="font-size: 0.8em;">Recuperación de bosques en Europa y países anglosajones</li>
-                            <li style="font-size: 0.8em;">Reducción de intensidad energética</li>
-                            <li style="font-size: 0.8em;">Crecimiento de fuentes limpias: nuclear, eólica, solar</li>
+                        <ul style="font-size: 0.78em;">
+                            <li>Recuperación de bosques en Europa y países anglosajones</li>
+                            <li>Reducción de intensidad energética</li>
+                            <li>Crecimiento de fuentes limpias: nuclear, eólica, solar</li>
                         </ul>
                     </div>
                     <div class="card card-accent-red">
                         <h4 style="color: var(--accent-red);">❌ Pendientes</h4>
-                        <ul>
-                            <li style="font-size: 0.8em;">En México seguimos destruyendo zonas selváticas</li>
-                            <li style="font-size: 0.8em;">Contaminación de cuerpos de agua</li>
-                            <li style="font-size: 0.8em;">Daño indirecto por destrucción de hábitat</li>
+                        <ul style="font-size: 0.78em;">
+                            <li>En México seguimos destruyendo zonas selváticas</li>
+                            <li>Contaminación de cuerpos de agua</li>
+                            <li>Daño indirecto por destrucción de hábitat</li>
                         </ul>
                     </div>
-                </div>
-                
-                <div class="fun-fact fragment">
-                    <div class="ff-label">💡 Profecías fallidas</div>
-                    <p style="font-size: 0.85em;">Thomas Malthus (siglo XVIII), Paul Ehrlich (años 60) y el Club de Roma predijeron el fin del mundo por escasez. <strong>La tecnología siempre superó las predicciones.</strong></p>
                 </div>
             </section>
             
@@ -994,6 +1317,46 @@
                     <div class="quiz-option" onclick="this.classList.add('correct')">b) Expansión, cúspide, recesión, depresión, recuperación ✅</div>
                     <div class="quiz-option" onclick="this.classList.add('wrong')">c) Crecimiento, estancamiento, crisis</div>
                     <div class="quiz-option" onclick="this.classList.add('wrong')">d) Oferta, demanda, equilibrio</div>
+                </div>
+                
+                <div class="quiz-card fragment">
+                    <div class="quiz-q">❓ 6. ¿Los conceptos crecimiento y desarrollo son equivalentes?</div>
+                    <div class="quiz-option" onclick="this.classList.add('wrong')">a) Sí, significan lo mismo</div>
+                    <div class="quiz-option" onclick="this.classList.add('correct')">b) No, el crecimiento mide cantidad y el desarrollo calidad ✅</div>
+                    <div class="quiz-option" onclick="this.classList.add('wrong')">c) Solo crecimiento existe</div>
+                    <div class="quiz-option" onclick="this.classList.add('wrong')">d) Solo desarrollo existe</div>
+                </div>
+                
+                <div class="quiz-card fragment">
+                    <div class="quiz-q">❓ 7. ¿México es un país central o periférico?</div>
+                    <div class="quiz-option" onclick="this.classList.add('wrong')">a) Central</div>
+                    <div class="quiz-option" onclick="this.classList.add('correct')">b) Periférico (producción de bienes primarios) ✅</div>
+                    <div class="quiz-option" onclick="this.classList.add('wrong')">c) Es ambos al mismo tiempo</div>
+                    <div class="quiz-option" onclick="this.classList.add('wrong')">d) No aplica</div>
+                </div>
+                
+                <div class="quiz-card fragment">
+                    <div class="quiz-q">❓ 8. ¿Qué teoría plantea que el gobierno debe intervenir para estabilizar la economía?</div>
+                    <div class="quiz-option" onclick="this.classList.add('wrong')">a) Modelo clásico</div>
+                    <div class="quiz-option" onclick="this.classList.add('wrong')">b) Modelo neoliberal</div>
+                    <div class="quiz-option" onclick="this.classList.add('correct')">c) Modelo keynesiano ✅</div>
+                    <div class="quiz-option" onclick="this.classList.add('wrong')">d) Capitalismo periférico</div>
+                </div>
+                
+                <div class="quiz-card fragment">
+                    <div class="quiz-q">❓ 9. ¿Quiénes fueron los primeros en desarrollar el modelo capitalista?</div>
+                    <div class="quiz-option" onclick="this.classList.add('wrong')">a) Los ingleses</div>
+                    <div class="quiz-option" onclick="this.classList.add('correct')">b) Los habitantes de los Países Bajos ✅</div>
+                    <div class="quiz-option" onclick="this.classList.add('wrong')">c) Los americanos</div>
+                    <div class="quiz-option" onclick="this.classList.add('wrong')">d) Los franceses</div>
+                </div>
+                
+                <div class="quiz-card fragment">
+                    <div class="quiz-q">❓ 10. Entre los elementos que integran la superestructura se encuentra:</div>
+                    <div class="quiz-option" onclick="this.classList.add('correct')">a) La religión ✅</div>
+                    <div class="quiz-option" onclick="this.classList.add('wrong')">b) La tecnología</div>
+                    <div class="quiz-option" onclick="this.classList.add('wrong')">c) El capital</div>
+                    <div class="quiz-option" onclick="this.classList.add('wrong')">d) El ser humano</div>
                 </div>
             </section>
             
@@ -1064,6 +1427,131 @@
                 </div>
             </section>
             
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📋</span> Caso 3: Cómo influye la tecnología</h2>
+                
+                <div class="real-life fragment">
+                    <div class="rl-label">📝 Pregunta</div>
+                    <p style="font-size: 0.85em;">¿Qué efectos producen los avances tecnológicos sobre el desarrollo de una comunidad? Plantea un ejemplo.</p>
+                </div>
+                
+                <div class="grid-2 fragment">
+                    <div class="card card-accent-green">
+                        <h4 style="color: var(--accent-green);">✅ Efectos positivos</h4>
+                        <ul style="font-size: 0.75em;">
+                            <li>Mayor productividad agrícola</li>
+                            <li>Acceso a información y educación</li>
+                            <li>Conectividad con mercados globales</li>
+                            <li>Creación de nuevos empleos</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-red">
+                        <h4 style="color: var(--accent-red);">⚠️ Efectos negativos</h4>
+                        <ul style="font-size: 0.75em;">
+                            <li>Desplazamiento de trabajadores</li>
+                            <li>Dependencia tecnológica</li>
+                            <li>Exclusión de comunidades sin acceso</li>
+                            <li>Impacto ambiental</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ========== ACTIVIDADES Y TALLERES ========== -->
+            <section class="section-header" id="actividades" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🛠️</span>
+                <h2>Actividades y Talleres</h2>
+                <p style="color: rgba(255,255,255,0.5);">Actividades en clase y talleres prácticos</p>
+            </section>
+            
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📝</span> Actividades en clase</h2>
+                
+                <div class="step-card fragment">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h4 style="color: var(--accent-blue);">Investigación histórica</h4>
+                        <p>Identificar y describir los aspectos que sustentaron el crecimiento económico de México en alguna etapa de su historia. Elaborar una presentación electrónica y participar en una dinámica de discusión grupal.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card fragment">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h4 style="color: var(--accent-purple);">Infografía comunitaria</h4>
+                        <p>Reconocer, explicar y relacionar los elementos y factores que determinan el desarrollo económico de su comunidad. Elaborar una infografía ilustrada.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card fragment">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h4 style="color: var(--accent-pink);">Podcast comunitario</h4>
+                        <p>Investigar acerca de los factores y elementos de desarrollo en una comunidad indígena. Elaborar un podcast o video de 3 minutos contrastando las condiciones con su propia comunidad.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔧</span> Talleres prácticos</h2>
+                
+                <div class="card card-accent-blue fragment">
+                    <h4 style="color: var(--accent-blue);">Taller 1: Análisis de teorías económicas</h4>
+                    <p style="font-size: 0.85em;">Elaborar un cuadro sinóptico en el que se sinteticen y relacionen los elementos característicos de cada una de las teorías del crecimiento económico estudiadas. Complementar con un breve texto argumentativo describiendo los aspectos más positivos y negativos de cada teoría.</p>
+                </div>
+                
+                <div class="card card-accent-purple fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-purple);">Taller 2: Indicadores macroeconómicos</h4>
+                    <p style="font-size: 0.85em;">Investigar los principales indicadores de crecimiento económico de un país comunista durante la segunda mitad del siglo XX (1945-1985). Elaborar un texto argumentativo integrando cuadros estadísticos o gráficas.</p>
+                </div>
+            </section>
+            
+            <!-- ========== AUTOEVALUACIÓN FINAL ========== -->
+            <section data-background-color="#0a0a1a" id="autoevaluacion">
+                <h2><span class="icon-lg">📊</span> Autoevaluación final</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Evalúa tu nivel de dominio para cada aprendizaje esperado</p>
+                
+                <div class="card card-accent-blue fragment" style="margin-top: 12px;">
+                    <h4 style="color: var(--accent-blue);">📋 Aprendizaje 1</h4>
+                    <p style="font-size: 0.85em;">Examino reflexivamente el impacto de los fenómenos económicos</p>
+                    <div class="grid-3" style="margin-top: 8px;">
+                        <p style="font-size: 0.75em; text-align: center; color: var(--accent-green);">✅ Lo puedo enseñar a otros</p>
+                        <p style="font-size: 0.75em; text-align: center; color: var(--accent-orange);">🔧 Lo puedo hacer solo</p>
+                        <p style="font-size: 0.75em; text-align: center; color: var(--accent-red);">🆘 Necesito ayuda</p>
+                    </div>
+                </div>
+                
+                <div class="card card-accent-purple fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-purple);">📋 Aprendizaje 2</h4>
+                    <p style="font-size: 0.85em;">Contrasto críticamente las categorías de análisis socioeconómico</p>
+                    <div class="grid-3" style="margin-top: 8px;">
+                        <p style="font-size: 0.75em; text-align: center; color: var(--accent-green);">✅ Lo puedo enseñar a otros</p>
+                        <p style="font-size: 0.75em; text-align: center; color: var(--accent-orange);">🔧 Lo puedo hacer solo</p>
+                        <p style="font-size: 0.75em; text-align: center; color: var(--accent-red);">🆘 Necesito ayuda</p>
+                    </div>
+                </div>
+                
+                <div class="card card-accent-green fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-green);">📋 Aprendizaje 3</h4>
+                    <p style="font-size: 0.85em;">Infiero los elementos y factores que influyen en el desarrollo económico</p>
+                    <div class="grid-3" style="margin-top: 8px;">
+                        <p style="font-size: 0.75em; text-align: center; color: var(--accent-green);">✅ Lo puedo enseñar a otros</p>
+                        <p style="font-size: 0.75em; text-align: center; color: var(--accent-orange);">🔧 Lo puedo hacer solo</p>
+                        <p style="font-size: 0.75em; text-align: center; color: var(--accent-red);">🆘 Necesito ayuda</p>
+                    </div>
+                </div>
+                
+                <div class="card card-accent-orange fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-orange);">📋 Aprendizaje 4</h4>
+                    <p style="font-size: 0.85em;">Explico el perfil socioeconómico de mi comunidad</p>
+                    <div class="grid-3" style="margin-top: 8px;">
+                        <p style="font-size: 0.75em; text-align: center; color: var(--accent-green);">✅ Lo puedo enseñar a otros</p>
+                        <p style="font-size: 0.75em; text-align: center; color: var(--accent-orange);">🔧 Lo puedo hacer solo</p>
+                        <p style="font-size: 0.75em; text-align: center; color: var(--accent-red);">🆘 Necesito ayuda</p>
+                    </div>
+                </div>
+            </section>
+            
             <!-- ========== RESUMEN ========== -->
             <section data-background-color="#0a0a1a" id="resumen">
                 <h2><span class="icon-lg">📋</span> Resumen de la Unidad</h2>
@@ -1072,36 +1560,73 @@
                     <div>
                         <div class="card card-accent-blue fragment">
                             <h4 style="color: var(--accent-blue);">💰 Economía</h4>
-                            <p style="font-size: 0.8em;">Estudia el uso eficiente de recursos escasos. Microeconomía y macroeconomía.</p>
+                            <p style="font-size: 0.78em;">Estudia el uso eficiente de recursos escasos. Microeconomía (unidades) y macroeconomía (nacional).</p>
                         </div>
                         <div class="card card-accent-purple fragment">
                             <h4 style="color: var(--accent-purple);">🏭 Modelo capitalista</h4>
-                            <p style="font-size: 0.8em;">Origen en Países Bajos (s. XVI). Excedentes → riqueza → crecimiento.</p>
+                            <p style="font-size: 0.78em;">Origen en Países Bajos (s. XVI). Excedentes → riqueza → crecimiento económico.</p>
                         </div>
                         <div class="card card-accent-green fragment">
                             <h4 style="color: var(--accent-green);">📊 Indicadores</h4>
-                            <p style="font-size: 0.8em;">PIB, inflación, tipo de cambio, desempleo, ingreso per cápita.</p>
+                            <p style="font-size: 0.78em;">PIB, inflación, tipo de cambio, desempleo, ingreso per cápita, deuda pública.</p>
+                        </div>
+                        <div class="card card-accent-orange fragment">
+                            <h4 style="color: var(--accent-orange);">🏗️ Sectores</h4>
+                            <p style="font-size: 0.78em;">Primario (extracción), secundario (transformación), terciario (servicios).</p>
                         </div>
                     </div>
                     <div>
-                        <div class="card card-accent-orange fragment">
-                            <h4 style="color: var(--accent-orange);">🔍 Categorías</h4>
-                            <p style="font-size: 0.8em;">Estructura económica, superestructura e infraestructura (Marx).</p>
+                        <div class="card card-accent-teal fragment">
+                            <h4 style="color: var(--accent-teal);">🔍 Categorías</h4>
+                            <p style="font-size: 0.78em;">Estructura económica, superestructura e infraestructura (Marx).</p>
                         </div>
                         <div class="card card-accent-pink fragment">
                             <h4 style="color: var(--accent-pink);">📚 Teorías</h4>
-                            <p style="font-size: 0.8em;">Clásica, neoclásica, keynesiana, neoliberal, capitalismo periférico.</p>
+                            <p style="font-size: 0.78em;">Clásica, neoclásica, keynesiana, neoliberal, capitalismo periférico.</p>
                         </div>
                         <div class="card card-accent-red fragment">
                             <h4 style="color: var(--accent-red);">📈 Ciclos</h4>
-                            <p style="font-size: 0.8em;">Expansión → cúspide → recesión → depresión → recuperación.</p>
+                            <p style="font-size: 0.78em;">Expansión → cúspide → recesión → depresión → recuperación.</p>
+                        </div>
+                        <div class="card card-accent-cyan fragment">
+                            <h4 style="color: var(--accent-cyan);">🌡️ Medio ambiente</h4>
+                            <p style="font-size: 0.78em;">Profecías fallidas, calentamiento global, recursos naturales.</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="definition-box fragment" style="margin-top: 12px;">
-                    <div class="def-title">Idea central</div>
+                    <div class="def-title">Idea central de la unidad</div>
                     <div class="def-text" style="font-size: 0.85em;">La estructura socioeconómica de México se estudia mediante <strong>conceptos, categorías y teorías</strong> que permiten comprender las diferencias y desigualdades del entorno. El crecimiento económico no garantiza desarrollo si no hay distribución equitativa de la riqueza.</div>
+                </div>
+            </section>
+            
+            <!-- ========== LECTURAS COMPLEMENTARIAS ========== -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📚</span> Lecturas complementarias</h2>
+                
+                <div class="card card-accent-blue fragment">
+                    <h4 style="color: var(--accent-blue);">📄 Documento</h4>
+                    <p style="font-size: 0.85em;">"Crecimiento, desarrollo y subdesarrollo" — <a href="https://bit.ly/2nNhbr6" style="color: var(--accent-blue);">https://bit.ly/2nNhbr6</a></p>
+                </div>
+                
+                <div class="card card-accent-purple fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-purple);">📖 Libros de referencia</h4>
+                    <ul style="font-size: 0.8em;">
+                        <li>Fernández Ruiz — Cap. I, III, VIII</li>
+                        <li>Roldán Xopa — Cap. 1, 2</li>
+                        <li>Hamdan Amad — Tema I</li>
+                    </ul>
+                </div>
+                
+                <div class="card card-accent-green fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-green);">📚 Referencias bibliográficas</h4>
+                    <ul style="font-size: 0.72em;">
+                        <li>Economía / Modelos económicos / Crecimiento económico / Desarrollo económico — 322 E877 2010</li>
+                        <li>Estructura socioeconómica de México / Bloque 1 — 330.972 E877 2010</li>
+                        <li>Competencias genéricas y atributos / Bloque 1 — 370.11 C727 2011</li>
+                        <li>Modelos de desarrollo y globalización económica / Bloque 1 — 338.9 C727 2010</li>
+                    </ul>
                 </div>
             </section>
             
@@ -1152,14 +1677,12 @@
             plugins: [RevealNotes, RevealMarkdown, RevealHighlight]
         });
 
-        // Click avanza diapositiva
         document.addEventListener('click', function(e) {
             if (e.target.closest('a, button, .quiz-option, [onclick], input, select, textarea')) return;
             var slide = Reveal.getCurrentSlide();
             if (e.target === slide || slide.contains(e.target)) Reveal.navigateNext();
         });
 
-        // Teclas de volumen para scroll
         document.addEventListener('keydown', function(e) {
             if (e.keyCode === 174 || e.keyCode === 175) {
                 e.preventDefault();
@@ -1170,7 +1693,6 @@
             }
         });
 
-        // Pantalla completa
         var fullscreenBtn = document.getElementById('fullscreen-btn');
         var fullscreenIcon = fullscreenBtn.querySelector('i');
 
@@ -1204,7 +1726,6 @@
         document.addEventListener('fullscreenchange', updateFullscreenIcon);
         document.addEventListener('webkitfullscreenchange', updateFullscreenIcon);
 
-        // Botón índice
         document.getElementById('index-btn').addEventListener('click', function(e) {
             e.stopPropagation();
             var slideIndice = document.getElementById('indice');
@@ -1214,7 +1735,6 @@
             }
         });
 
-        // Contador de fragmentos
         var fragmentCounter = document.getElementById('fragment-counter');
         var fcCurrent = fragmentCounter.querySelector('.fc-current');
         var fcTotal = fragmentCounter.querySelector('.fc-total');
@@ -1238,7 +1758,6 @@
         Reveal.on('fragmentshown', updateFragmentCounter);
         Reveal.on('fragmenthidden', updateFragmentCounter);
 
-        // Navegador de diapositivas
         var slideNav = document.getElementById('slide-nav');
         var slideNavCurrent = document.getElementById('slide-nav-current');
         var slideNavTotal = document.getElementById('slide-nav-total');

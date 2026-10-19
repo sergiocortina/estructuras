@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=5.0, user-scalable=yes">
+    <title>Unidad 2 — Modelos Económicos en México (1940-1982)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root{--r-background-color:#0a0a1a;--r-main-font:'Inter',sans-serif;--r-heading-font:'Playfair Display',serif;--r-main-font-size:24px;--accent-blue:#4f8cff;--accent-purple:#a855f7;--accent-pink:#ec4899;--accent-green:#10b981;--accent-orange:#f59e0b;--accent-red:#ef4444;--accent-teal:#14b8a6;--accent-cyan:#06b6d4;--glass:rgba(255,255,255,0.06);--glass-border:rgba(255,255,255,0.1)}
+        .reveal{font-family:var(--r-main-font)}.reveal .slides{text-align:left}
+        .reveal .slides section{padding:20px 40px;overflow:hidden;box-sizing:border-box}
+        .reveal .slides section *{max-width:100%;box-sizing:border-box}
+        .reveal .slides p,.reveal .slides li,.reveal .slides h1,.reveal .slides h2,.reveal .slides h3,.reveal .slides h4{overflow-wrap:break-word;word-wrap:break-word;hyphens:auto;margin-right:0;padding-right:0}
+        .reveal .slides section.title-slide{text-align:center;background:linear-gradient(135deg,#0a0a1a 0%,#1a1a3e 50%,#2d1b69 100%)}
+        .reveal .slides section.title-slide h1{font-family:'Playfair Display',serif;font-size:2.4em;font-weight:900;background:linear-gradient(135deg,#f59e0b,#ef4444,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.2;margin-bottom:16px}
+        .reveal .slides section.title-slide .subtitle{font-size:1em;color:rgba(255,255,255,0.6);font-weight:300;letter-spacing:2px}
+        .reveal .slides section.title-slide .unit-badge{display:inline-block;background:linear-gradient(135deg,var(--accent-orange),var(--accent-red));color:white;padding:8px 24px;border-radius:30px;font-size:0.7em;font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-top:30px}
+        .reveal .slides section.section-header{text-align:center;background:linear-gradient(135deg,#0a0a1a 0%,#1a1a3e 50%,#2d1b69 100%)}
+        .reveal .slides section.section-header h2{font-family:'Playfair Display',serif;font-size:2em;font-weight:800;background:linear-gradient(135deg,var(--accent-orange),var(--accent-red));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px}
+        .reveal .slides section.section-header .section-icon{font-size:2.5em;margin-bottom:14px;display:block}
+        .card{background:var(--glass);border:1px solid var(--glass-border);border-radius:14px;padding:14px 16px;margin:8px 0;backdrop-filter:blur(10px);overflow:hidden;box-sizing:border-box}
+        .card p,.card li,.card h4{overflow-wrap:break-word;word-wrap:break-word;hyphens:auto;font-size:0.85em}
+        .card-accent-blue{border-left:4px solid var(--accent-blue)}.card-accent-purple{border-left:4px solid var(--accent-purple)}.card-accent-pink{border-left:4px solid var(--accent-pink)}.card-accent-green{border-left:4px solid var(--accent-green)}.card-accent-orange{border-left:4px solid var(--accent-orange)}.card-accent-red{border-left:4px solid var(--accent-red)}.card-accent-teal{border-left:4px solid var(--accent-teal)}.card-accent-cyan{border-left:4px solid var(--accent-cyan)}
+        .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:14px}.grid-2>.card,.grid-3>.card{margin:0;min-width:0}
+        .reveal h1,.reveal h2,.reveal h3,.reveal h4{color:white;font-weight:700}.reveal h2{font-size:1.4em;margin-bottom:14px}.reveal h3{font-size:1.05em;color:var(--accent-orange);margin-bottom:8px}.reveal h4{font-size:0.9em;color:var(--accent-purple)}
+        .reveal p,.reveal li{color:rgba(255,255,255,0.85);line-height:1.6}.reveal ul{list-style:none;padding-left:0}.reveal ul li{padding:3px 0;padding-left:24px;position:relative}.reveal ul li::before{content:'▸';position:absolute;left:0;color:var(--accent-orange);font-weight:700}
+        .highlight{color:var(--accent-orange);font-weight:600}.highlight-purple{color:var(--accent-purple);font-weight:600}.highlight-green{color:var(--accent-green);font-weight:600}
+        .icon-lg{font-size:1.6em;display:inline-block;margin-right:6px;vertical-align:middle}
+        .timeline{position:relative;padding-left:30px;margin:20px 0}.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,var(--accent-orange),var(--accent-red),var(--accent-pink));border-radius:2px}.timeline-item{position:relative;margin-bottom:10px;padding:8px 14px;background:var(--glass);border-radius:8px;border:1px solid var(--glass-border)}.timeline-item::before{content:'';position:absolute;left:-26px;top:18px;width:12px;height:12px;border-radius:50%;background:var(--accent-orange);border:2px solid #0a0a1a}.timeline-item .year{font-size:0.75em;color:var(--accent-orange);font-weight:700;letter-spacing:1px}.timeline-item .event{font-size:0.85em;color:rgba(255,255,255,0.8);margin-top:4px}
+        .definition-box{background:linear-gradient(135deg,rgba(245,158,11,0.15),rgba(239,68,68,0.15));border:1px solid rgba(245,158,11,0.3);border-radius:14px;padding:16px 20px;margin:14px 0;position:relative}.definition-box::before{content:'📖';font-size:1.5em;position:absolute;top:-12px;left:20px}.definition-box .def-title{font-size:0.65em;text-transform:uppercase;letter-spacing:2px;color:var(--accent-orange);font-weight:700;margin-bottom:6px}.definition-box .def-text{font-size:0.85em;color:rgba(255,255,255,0.9);line-height:1.5}
+        .fun-fact{background:linear-gradient(135deg,rgba(245,158,11,0.15),rgba(239,68,68,0.1));border:1px solid rgba(245,158,11,0.3);border-radius:10px;padding:12px 16px;margin:10px 0;font-size:0.85em}.fun-fact .ff-label{color:var(--accent-orange);font-weight:700;font-size:0.7em;text-transform:uppercase;letter-spacing:1px}
+        .real-life{background:linear-gradient(135deg,rgba(236,72,153,0.15),rgba(168,85,247,0.15));border:1px solid rgba(236,72,153,0.3);border-radius:12px;padding:14px 18px;margin:10px 0}.real-life .rl-label{color:var(--accent-pink);font-weight:700;font-size:0.65em;text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}
+        .quote-box{background:var(--glass);border-left:4px solid var(--accent-purple);border-radius:0 10px 10px 0;padding:14px 18px;margin:12px 0;font-style:italic}
+        .step-card{display:flex;align-items:flex-start;gap:12px;background:var(--glass);border:1px solid var(--glass-border);border-radius:10px;padding:12px 14px;margin:6px 0}.step-num{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--accent-orange),var(--accent-red));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85em;color:white}.step-content{flex:1}.step-content h4{font-size:0.85em;margin-bottom:3px}.step-content p{font-size:0.78em;color:rgba(255,255,255,0.7)}
+        .bar-chart{display:flex;flex-direction:column;gap:8px;margin:12px 0}.bar-row{display:flex;align-items:center;gap:10px}.bar-label{width:80px;text-align:right;font-size:0.75em;color:rgba(255,255,255,0.6);flex-shrink:0}.bar-track{flex:1;height:24px;background:rgba(255,255,255,0.05);border-radius:12px;overflow:hidden}.bar-fill{height:100%;border-radius:12px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-size:0.7em;font-weight:700;color:white}
+        .reveal .slides section{overflow-y:auto;max-height:100%;padding-bottom:40px}.reveal .slides section::-webkit-scrollbar{width:6px}.reveal .slides section::-webkit-scrollbar-track{background:rgba(255,255,255,0.05);border-radius:3px}.reveal .slides section::-webkit-scrollbar-thumb{background:rgba(245,158,11,0.4);border-radius:3px}
+        .reveal .slides section .fragment.visible{opacity:1}.reveal .slide-number{display:none!important}.reveal .controls{display:block!important;opacity:1!important}
+        .slide-nav{position:fixed;bottom:16px;left:16px;z-index:9999;height:38px;padding:0 16px;display:flex;align-items:center;justify-content:center;border-radius:20px;border:1px solid var(--glass-border);background:rgba(10,10,26,0.7);backdrop-filter:blur(10px);color:rgba(255,255,255,0.7);font-family:'Consolas',monospace;font-size:0.9em;font-weight:600;letter-spacing:1px;cursor:pointer;transition:all 0.3s ease;box-shadow:0 4px 16px rgba(0,0,0,0.3);user-select:none;-webkit-user-select:none}.slide-nav:hover{border-color:var(--accent-orange);color:white}.slide-nav .slide-nav-display{display:flex;align-items:center;gap:4px}.slide-nav .slide-nav-current{color:var(--accent-orange)}.slide-nav .slide-nav-sep{color:rgba(255,255,255,0.3);margin:0 2px}.slide-nav .slide-nav-input{display:none;width:50px;background:transparent;border:none;border-bottom:2px solid var(--accent-orange);color:var(--accent-orange);font-family:'Consolas',monospace;font-size:1em;font-weight:700;text-align:center;outline:none;padding:2px 0;-moz-appearance:textfield}.slide-nav .slide-nav-input::-webkit-outer-spin-button,.slide-nav .slide-nav-input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}.slide-nav.editing .slide-nav-display{display:none}.slide-nav.editing .slide-nav-input{display:inline-block}
+        .fullscreen-btn,.index-btn{position:fixed;top:16px;z-index:9999;width:48px;height:48px;border-radius:50%;border:1px solid var(--glass-border);background:rgba(10,10,26,0.65);backdrop-filter:blur(10px);color:rgba(255,255,255,0.85);font-size:1.1em;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;-webkit-tap-highlight-color:transparent;box-shadow:0 4px 16px rgba(0,0,0,0.3)}.fullscreen-btn{right:16px}.index-btn{right:76px}.fullscreen-btn:hover,.fullscreen-btn:active,.index-btn:hover,.index-btn:active{border-color:var(--accent-orange);background:rgba(245,158,11,0.25);color:white;transform:scale(1.05)}
+        .fragment-counter{position:fixed;top:22px;right:142px;z-index:9999;height:38px;padding:0 14px;display:none;align-items:center;justify-content:center;border-radius:20px;border:1px solid var(--glass-border);background:rgba(10,10,26,0.65);backdrop-filter:blur(10px);color:rgba(255,255,255,0.9);font-family:'Consolas',monospace;font-size:0.85em;font-weight:700;letter-spacing:1px;box-shadow:0 4px 16px rgba(0,0,0,0.3);white-space:nowrap}.fragment-counter.has-fragments{display:flex}.fragment-counter .fc-current{color:var(--accent-orange)}
+        @media(max-width:768px){.grid-2,.grid-3{grid-template-columns:1fr}.reveal .slides section{padding:20px 30px}}
+        .checklist{list-style:none;padding-left:0}.checklist li{padding:4px 0 4px 28px;position:relative;font-size:0.85em}.checklist li::before{content:'✓';position:absolute;left:0;color:var(--accent-green);font-weight:700;font-size:1.1em}
+        .comparison-table{width:100%;border-collapse:separate;border-spacing:0;border-radius:10px;overflow:hidden;font-size:0.62em;margin-top:12px}.comparison-table th{background:linear-gradient(135deg,var(--accent-orange),var(--accent-red));color:white;padding:8px 12px;text-align:left;font-weight:600}.comparison-table td{padding:7px 12px;border-bottom:1px solid var(--glass-border);color:rgba(255,255,255,0.85)}.comparison-table tr:nth-child(even) td{background:var(--glass)}.comparison-table tr:last-child td{border-bottom:none}
+    </style>
+</head>
+<body>
+    <div class="fragment-counter" id="fragment-counter"><span class="fc-current">0</span>/<span class="fc-total">0</span></div>
+    <button class="index-btn" id="index-btn" title="Índice"><i class="fa-solid fa-list-ul"></i></button>
+    <button class="fullscreen-btn" id="fullscreen-btn" title="Pantalla completa"><i class="fa-solid fa-expand"></i></button>
+    <div class="slide-nav" id="slide-nav" title="Ir a diapositiva">
+        <div class="slide-nav-display"><span class="slide-nav-current" id="slide-nav-current">1</span><span class="slide-nav-sep">/</span><span id="slide-nav-total">1</span></div>
+        <input type="number" class="slide-nav-input" id="slide-nav-input" min="1">
+    </div>
+
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- ===== PORTADA ===== -->
+            <section class="title-slide">
+                <span class="unit-badge">Unidad 2</span>
+                <h1 style="margin-top:30px;">Modelos Económicos<br>en México (1940-1982)</h1>
+                <p class="subtitle">Del Porfiriato a la peor crisis de la historia</p>
+                <p style="color:rgba(255,255,255,0.4);font-size:0.7em;margin-top:40px;"><i class="fa-solid fa-graduation-cap"></i> Lic. Rosalba Sosa Guízar<br><i class="fa-solid fa-building-columns"></i> Instituto Leonardo Bravo</p>
+            </section>
+
+            <!-- ===== MAPA CONCEPTUAL ===== -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗺️</span> Mapa conceptual</h2>
+                <div class="definition-box">
+                    <div class="def-text" style="font-size:0.82em;">México transitó por múltiples modelos económicos entre 1940 y 1982: <strong>sustitución de importaciones (ISI)</strong>, <strong>desarrollo estabilizador</strong> (1958-1970), <strong>desarrollo compartido</strong> de Echeverría (1970-1976), <strong>Alianza para la Producción</strong> de López Portillo (1977-1982), y la <strong>crisis de 1982</strong>. Cada modelo respondió a contextos internacionales específicos y tuvo consecuencias profundas en la estructura socioeconómica.</div>
+                </div>
+            </section>
+
+            <!-- ===== ÍNDICE ===== -->
+            <section data-background-color="#0a0a1a" id="indice">
+                <h2><span class="icon-lg">📑</span> Índice</h2>
+                <div class="grid-2" style="margin-top:10px;">
+                    <a class="card card-accent-orange" href="#/sec-revolucion" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-orange);margin:0;">1. De la Revolución a la estabilización</h4><p style="font-size:0.75em;margin:4px 0 0;">1910-1935</p></a>
+                    <a class="card card-accent-red" href="#/sec-bienestar" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-red);margin:0;">2. Estado de bienestar</h4><p style="font-size:0.75em;margin:4px 0 0;">Origen y antecedentes</p></a>
+                    <a class="card card-accent-purple" href="#/sec-avila" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-purple);margin:0;">3. Ávila Camacho e IMSS</h4><p style="font-size:0.75em;margin:4px 0 0;">1940-1946</p></a>
+                    <a class="card card-accent-green" href="#/sec-bretton" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-green);margin:0;">4. Acuerdo de Bretton Woods</h4><p style="font-size:0.75em;margin:4px 0 0;">1946-1971</p></a>
+                    <a class="card card-accent-pink" href="#/sec-isi" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-pink);margin:0;">5. Sustitución de importaciones</h4><p style="font-size:0.75em;margin:4px 0 0;">ISI 1946-1958</p></a>
+                    <a class="card card-accent-teal" href="#/sec-estabilizador" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-teal);margin:0;">6. Desarrollo estabilizador</h4><p style="font-size:0.75em;margin:4px 0 0;">1958-1970</p></a>
+                    <a class="card card-accent-blue" href="#/sec-compartido" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-blue);margin:0;">7. Desarrollo compartido</h4><p style="font-size:0.75em;margin:4px 0 0;">Echeverría 1970-1976</p></a>
+                    <a class="card card-accent-cyan" href="#/sec-acelerado" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-cyan);margin:0;">8. Desarrollo acelerado</h4><p style="font-size:0.75em;margin:4px 0 0;">López Portillo 1976-1982</p></a>
+                    <a class="card card-accent-orange" href="#/sec-crisis" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-orange);margin:0;">9. Crisis de 1982</h4><p style="font-size:0.75em;margin:4px 0 0;">Fin de una época</p></a>
+                    <a class="card card-accent-green" href="#/sec-impacto" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-green);margin:0;">10. Impacto social</h4><p style="font-size:0.75em;margin:4px 0 0;">Urbanización y cambios demográficos</p></a>
+                </div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 1: CONTEXTO HISTÓRICO -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-revolucion">
+                <span class="section-icon">📜</span>
+                <h2>De la Revolución a la Estabilización Política</h2>
+                <p style="color:rgba(255,255,255,0.5);">1910-1935</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📜</span> 1.1 Cronología Revolucionaria</h2>
+                <div class="timeline">
+                    <div class="timeline-item fragment"><div class="year">1910</div><div class="event"><strong>Inicio de la Revolución</strong> contra Porfirio Díaz.</div></div>
+                    <div class="timeline-item fragment"><div class="year">1911</div><div class="event">Díaz <strong>renuncia</strong> a la presidencia (mayo de 1911).</div></div>
+                    <div class="timeline-item fragment"><div class="year">1913</div><div class="event"><strong>Victoriano Huerta</strong> golpe de Estado, asesinato de Madero.</div></div>
+                    <div class="timeline-item fragment"><div class="year">1916</div><div class="event"><strong>Carranza y Obregón</strong> logran la victoria; nueva Constitución en 1917.</div></div>
+                    <div class="timeline-item fragment"><div class="year">1920-1928</div><div class="event">Poder en manos de <strong>generales sonorenses</strong>: Obregón, De la Huerta, Calles.</div></div>
+                    <div class="timeline-item fragment"><div class="year">1934</div><div class="event"><strong>Lázaro Cárdenas</strong> llega al poder, se deshace de Calles y sienta bases del régimen.</div></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔑</span> 1.2 Conclusión clave</h2>
+                <div class="card card-accent-orange fragment"><p style="font-size:0.9em;">Entre 1910 y 1935, el <strong>problema principal</strong> fue la falta de un régimen político y un marco institucional estables. La Constitución de 1917 modificó radicalmente el marco jurídico, pero había que promover nuevas leyes y organismos que garantizaran su cumplimiento.</p></div>
+                <div class="card card-accent-green fragment" style="margin-top:10px;"><p style="font-size:0.9em;">El periodo de predominio del grupo sonorense (1920-1935) se concentró en la <strong>pacificación del país</strong> y la <strong>institucionalización de su vida política</strong>. Posteriormente, Cárdenas fundó la estructura corporativa del Estado.</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 2: ESTADO DE BIENESTAR -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-bienestar">
+                <span class="section-icon">🏗️</span>
+                <h2>Concepción del Estado Benefactor</h2>
+                <p style="color:rgba(255,255,255,0.5);">Estado de bienestar y sus orígenes</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏗️</span> 2.1 ¿Qué es el Estado de bienestar?</h2>
+                <div class="definition-box"><div class="def-title">Estado de bienestar</div><div class="def-text">Orientación de la política económica hacia la creación de una <strong>red de soporte para los trabajadores y la sociedad</strong>. Aunque existen medidas antiguas para reducir pobreza, la formulación de un conjunto de políticas específicas es algo reciente.</div></div>
+                <div class="card card-accent-blue fragment" style="margin-top:12px;"><h4 style="color:var(--accent-blue);">📊 Contexto histórico</h4><p style="font-size:0.85em;">Durante la mayor parte de la historia, la producción se centraba en el sector primario (agricultura, ganadería, minería). La producción de manufacturas era reducida y centrada en ropa, utensilios, armas y bienes de lujo.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏭</span> 2.2 Revolución Industrial</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">⚙️ Cambios tecnológicos</h4><ul style="font-size:0.8em;"><li>Desde finales del siglo XVIII</li><li>1830: Primera locomotora de vapor</li><li>Fábricas empezaron a usar energía de vapor</li><li>Crecimiento acelerado de la producción</li></ul></div>
+                    <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);">👥 Consecuencias sociales</h4><ul style="font-size:0.8em;"><li>Trabajadores abandonaron el campo</li><li>Condiciones deplorables en ciudades</li><li>Charles Dickens reflejó el sufrimiento</li><li>Inspiró a Marx y Engels (1848)</li></ul></div>
+                </div>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">💡 Dato</div><p style="font-size:0.85em;">El Manifiesto del Partido Comunista (1848) fue inspirado por el contexto de explotación, miseria y desigualdad de la Revolución Industrial.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🇩🇪</span> 2.3 Origen en Alemania</h2>
+                <div class="step-card fragment"><div class="step-num">1</div><div class="step-content"><h4 style="color:var(--accent-orange);">1871: Fundación de Alemania</h4><p>Unificación bajo Guillermo I de Prusia y canciller Otto von Bismarck.</p></div></div>
+                <div class="step-card fragment"><div class="step-num">2</div><div class="step-content"><h4 style="color:var(--accent-orange);">1878: Leyes antisocialistas</h4><p>Bismarck promovió leyes contra el socialismo.</p></div></div>
+                <div class="step-card fragment"><div class="step-num">3</div><div class="step-content"><h4 style="color:var(--accent-orange);">1884: Primeras leyes de bienestar</h4><p>Estabilidad del empleo, atención de accidentes/enfermedades, atención en la vejez → <strong>"seguridad social"</strong>.</p></div></div>
+                <div class="card card-accent-blue fragment" style="margin-top:10px;"><h4 style="color:var(--accent-blue);">🇬🇧 Sociedad Fabiana (Reino Unido)</h4><p style="font-size:0.85em;">Grupo de intelectuales: George Bernard Shaw, Sidney y Beatrice Webb. Promovieron la Sociedad Económica Británica y el Partido Laborista.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌍</span> 2.4 Impacto de la Primera Guerra Mundial</h2>
+                <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);">⚔️ 1914-1918</h4><ul style="font-size:0.85em;"><li>Duró 4 años, borró a una generación entera</li><li>Causa: Rivalidad entre potencias europeas</li><li>Gran Bretaña estaba prácticamente en quiebra</li><li>EE.UU. se convirtió en la nueva potencia hegemónica</li></ul></div>
+                <div class="grid-2" style="margin-top:10px;">
+                    <div class="card card-accent-purple fragment"><h4 style="color:var(--accent-purple);">🇷🇺 Rusia</h4><p style="font-size:0.82em;">En 1917, los bolcheviques encabezados por Lenin se hicieron del poder. En 1922 fundaron la Unión Soviética.</p></div>
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">🏛️ Fin de imperios</h4><p style="font-size:0.82em;">Imperio austrohúngaro e Imperio otomano dejaron de existir. Surgieron múltiples naciones.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗳️</span> 2.5 Consecuencias políticas</h2>
+                <div class="card card-accent-green fragment"><p style="font-size:0.9em;">La Primera Guerra Mundial dejó atrás la época de los imperios, la aristocracia y las colonias. El <strong>derrumbe de la aristocracia</strong> implicó que el poder político estuviera al alcance de los trabajadores.</p></div>
+                <div class="card card-accent-blue fragment" style="margin-top:10px;"><h4 style="color:var(--accent-blue);">🏆 Logros sociales</h4><ul style="font-size:0.85em;"><li>La educación se convirtió en un derecho</li><li>Las jornadas laborales se redujeron</li><li>Se establecieron vacaciones</li><li>Se otorgaron empleos para mujeres</li></ul></div>
+                <div class="quote-box fragment" style="margin-top:10px;"><p style="font-size:0.85em;">"Era un mundo totalmente diferente al del siglo XIX."</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌐</span> 2.6 La primera globalización (1870-1914)</h2>
+                <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">🇬🇧 hegemonía británica</h4><p style="font-size:0.85em;">Reino Unido se convirtió en la potencia hegemónica mundial. Controló todos los mares e impuso el <strong>"patrón oro"</strong> (las monedas se intercambiaban con base en el oro).</p></div>
+                <div class="grid-2" style="margin-top:10px;">
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">🌎 América Latina</h4><p style="font-size:0.82em;">Creció muchísimo pero se convirtió en los países más desiguales del mundo. Argentina y Uruguay entraron momentáneamente al grupo de los más ricos.</p></div>
+                    <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);">🇲🇽 México</h4><p style="font-size:0.82em;">Iba tras de Argentina y Uruguay pero no llegó a concretarlo. Después de la Primera Guerra Mundial terminó el sueño de alcanzar el pleno desarrollo económico.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗳️</span> 2.7 Impacto en el derecho al voto</h2>
+                <div class="card card-accent-blue fragment"><p style="font-size:0.9em;">En Gran Bretaña, el <strong>Partido Laborista</strong> se convirtió en el gran competidor de los conservadores y fue ampliando el reconocimiento de los derechos de los trabajadores.</p></div>
+                <div class="card card-accent-green fragment" style="margin-top:10px;"><h4 style="color:var(--accent-green);">🏆 Derechos conquistados</h4><ul style="font-size:0.85em;"><li>La educación se convirtió en un derecho</li><li>Las jornadas laborales se redujeron</li><li>Se establecieron vacaciones</li><li>Se otorgaron cada vez más empleos para mujeres</li></ul></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 3: ÁVILA CAMACHO -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-avila">
+                <span class="section-icon">🏛️</span>
+                <h2>Manuel Ávila Camacho (1940-1946)</h2>
+                <p style="color:rgba(255,255,255,0.5);">Creación del IMSS e inicio de la industrialización</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏛️</span> 3.1 Gobierno de Ávila Camacho</h2>
+                <div class="card card-accent-orange fragment"><p style="font-size:0.9em;">En 1940 llegó a la presidencia Manuel Ávila Camacho. Fueron los años de la <strong>Segunda Guerra Mundial</strong>, en la que México participó de manera marginal, esencialmente en el frente del Pacífico.</p></div>
+                <div class="card card-accent-blue fragment" style="margin-top:10px;"><h4 style="color:var(--accent-blue);">📋 Características</h4><ul style="font-size:0.85em;"><li>Moderó algunas medidas de Cárdenas</li><li>No propuso muchas modificaciones</li><li>La decisión más importante: creación del IMSS</li></ul></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏥</span> 3.2 Creación del IMSS (1943)</h2>
+                <div class="definition-box"><div class="def-title">Instituto Mexicano del Seguro Social</div><div class="def-text">Creado en <strong>1943</strong>, siguiendo las ideas de masificación de la seguridad social en Europa. Formaba parte del concepto de "estado de bienestar".</div></div>
+                <div class="fun-fact fragment" style="margin-top:12px;"><div class="ff-label">📊 Dato clave</div><p style="font-size:0.85em;">Al finalizar el gobierno de Ávila Camacho, México era un país esencialmente <strong>agrícola y rural</strong>, y la cobertura del "estado de bienestar" era <strong>reducida</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📊</span> 3.3 Cobertura de seguridad social</h2>
+                <table class="comparison-table fragment">
+                    <tr><th>Periodo</th><th>Asegurados IMSS</th><th>Derechohabientes</th></tr>
+                    <tr><td>1943</td><td>2% de la población</td><td>—</td></tr>
+                    <tr><td>1955</td><td>4% de trabajadores</td><td>5% de la población</td></tr>
+                    <tr><td>1960</td><td>—</td><td>10% de la población</td></tr>
+                    <tr><td>1965</td><td>20% de trabajadores</td><td>—</td></tr>
+                    <tr><td>1970</td><td>27% (privado + público)</td><td>No llegaba a 20%</td></tr>
+                </table>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">💡 Reflexión</div><p style="font-size:0.85em;">La proporción de trabajadores cubiertos creció a mayor ritmo que la población porque el <strong>tamaño de las familias se reducía</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏛️</span> 3.4 Creación del ISSSTE (1960)</h2>
+                <div class="definition-box"><div class="def-title">ISSSTE</div><div class="def-text">En 1960 se creó el <strong>Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado</strong>, lo cual permitió ampliar la cobertura del "estado de bienestar".</div></div>
+                <div class="card card-accent-red fragment" style="margin-top:12px;"><h4 style="color:var(--accent-red);">⚠️ Sin cobertura total</h4><p style="font-size:0.85em;">Para 1970, el total de trabajadores cubiertos (privado y público) representaba sólo <strong>27% de quienes laboraban en el país</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏭</span> 3.5 Inicio de la industrialización</h2>
+                <div class="card card-accent-orange fragment"><p style="font-size:0.9em;">A partir de 1940 dio inicio el proceso de industrialización del país, con el <strong>modelo de sustitución de importaciones</strong>.</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 4: BRETTON WOODS -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-bretton">
+                <span class="section-icon">🌐</span>
+                <h2>Acuerdo de Bretton Woods</h2>
+                <p style="color:rgba(255,255,255,0.5);">1946-1971: El sistema financiero global</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌐</span> 4.1 El acuerdo</h2>
+                <p style="color:rgba(255,255,255,0.5);font-size:0.85em;">Los países ganadores de la Segunda Guerra Mundial acordaron un nuevo sistema financiero global</p>
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">🏦 FMI</h4><p style="font-size:0.82em;">Evitar crisis de balanza de pagos y reducir riesgo de devaluaciones e inflaciones elevadas.</p></div>
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">🌍 Banco Mundial</h4><p style="font-size:0.82em;">Establecer programas de desarrollo y promover políticas que eviten desempleo elevado.</p></div>
+                </div>
+                <div class="card card-accent-orange fragment" style="margin-top:10px;"><h4 style="color:var(--accent-orange);">💱 Nueva referencia monetaria</h4><p style="font-size:0.85em;">El dólar de EE.UU. tendría relación estable con el oro (32 dólares por onza), y todas las demás monedas usarían al dólar como referencia.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📈</span> 4.2 Crecimiento en Bretton Woods</h2>
+                <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">🌍 Países europeos</h4><p style="font-size:0.85em;">Durante los 25 años del acuerdo, tuvieron las <strong>más altas tasas de crecimiento</strong> registradas en la historia.</p></div>
+                <table class="comparison-table fragment" style="margin-top:10px;">
+                    <tr><th>Periodo</th><th>Crecimiento anual per cápita</th></tr>
+                    <tr><td>1919-1939 (entreguerras)</td><td>2.2%</td></tr>
+                    <tr><td>1946-1971 (Bretton Woods)</td><td><strong>5.4%</strong></td></tr>
+                    <tr><td>1971-2016</td><td>~2.2%</td></tr>
+                </table>
+                <div class="card card-accent-red fragment" style="margin-top:10px;"><h4 style="color:var(--accent-red);">🌎 Países latinoamericanos</h4><p style="font-size:0.85em;">Promedio de crecimiento: <strong>2.7% anual</strong> (la mitad del europeo). Sólo México y Brasil aprovecharon mejor el periodo, con algo más de 4% anual.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💱</span> 4.3 Ventaja de Estados Unidos</h2>
+                <div class="card card-accent-blue fragment"><p style="font-size:0.9em;">Al igual que el patrón oro le había dado gran ventaja a Gran Bretaña durante siglo y medio, el nuevo arreglo le daba una gran ventaja a <strong>Estados Unidos</strong>, la potencia militar y financiera hegemónica.</p></div>
+                <div class="card card-accent-green fragment" style="margin-top:10px;"><h4 style="color:var(--accent-green);">🌐 GATT</h4><p style="font-size:0.85em;">Como la OIC no pudo crearse, EE.UU. promovió el <strong>Acuerdo General de Aranceles y Comercio (GATT)</strong>, al que México ingresó hasta <strong>1986</strong>.</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 5: SUSTITUCIÓN DE IMPORTACIONES -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-isi">
+                <span class="section-icon">🏭</span>
+                <h2>Sustitución de Importaciones</h2>
+                <p style="color:rgba(255,255,255,0.5);">ISI: Industrialización por sustitución de importaciones</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏭</span> 5.1 El concepto</h2>
+                <div class="definition-box"><div class="def-title">Sustitución de importaciones</div><div class="def-text">Política de cerrar las fronteras nacionales a productos hechos en otros países, para permitir que apareciera y creciera una <strong>industria nacional</strong>. Basada en el concepto de "industria infantil": primero había que protegerla como se hace con los niños.</div></div>
+                <div class="card card-accent-blue fragment" style="margin-top:10px;"><h4 style="color:var(--accent-blue);">🔄 Mecanismo</h4><p style="font-size:0.85em;">Para volver poco atractiva la importación, se cobraba un <strong>arancel elevado</strong> o incluso se prohibía su compra. Ejemplo: en lugar de importar automóviles, se producirían en el país.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌎</span> 5.2 Promoción internacional</h2>
+                <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">🌐 CEPAL</h4><p style="font-size:0.85em;">La Comisión Económica para América Latina y el Caribe promovió la sustitución de importaciones. El director <strong>Raúl Prébisch</strong> fue su principal promotor en la década de 1950.</p></div>
+                <div class="card card-accent-red fragment" style="margin-top:10px;"><h4 style="color:var(--accent-red);">⚠️ Resultados negativos</h4><ul style="font-size:0.85em;"><li>Sí se creó industria, pero no fue significativa</li><li>Fue industria dependiente del exterior</li><li>No fue competitiva</li><li>Los intentos de marcas mexicanas fracasaron</li></ul></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💰</span> 5.3 El problema del ahorro</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">🇯🇵 Países exitosos</h4><ul style="font-size:0.8em;"><li><strong>Japón:</strong> Gobierno convenció a todos de vivir en condiciones modestas</li><li><strong>Corea/China:</strong> Dictaduras obligaban a no consumir</li><li>Consumo: 40% del PIB (Japón), menos de 30% (China)</li></ul></div>
+                    <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);">🌎 América Latina</h4><ul style="font-size:0.8em;"><li>Consumo: 60-70% del PIB</li><li>Si no se reduce el consumo → no hay ahorro</li><li>Sin ahorro → no hay inversión</li><li>Sin inversión → no hay industrialización</li></ul></div>
+                </div>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">💡 Dato clave</div><p style="font-size:0.85em;">Para inicios de la década de 1970, los países latinoamericanos tenían las fronteras prácticamente cerradas... <strong>y no se habían industrializado</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📉</span> 5.4 Consecuencias</h2>
+                <div class="card card-accent-red fragment"><p style="font-size:0.9em;">La sustitución de importaciones acabó impidiendo que se desarrollara una industria competitiva, capaz de generar empleos suficientes y bien remunerados, lo cual terminó <strong>empobreciendo a la población</strong> (que además no tenía opciones de compra), <strong>sin industrializar de verdad al país</strong>.</p></div>
+                <div class="real-life fragment" style="margin-top:10px;"><div class="rl-label">🇨🇳 Ejemplo</div><p style="font-size:0.85em;">Japón y Corea desarrollaron sus propias marcas con gran éxito (Toyota, Nissan, Hyundai, Kia). México no logró crear una industria nacional de automóviles.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏭</span> 5.5 Producción de hierro y acero</h2>
+                <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">📊 Participación mundial</h4><p style="font-size:0.85em;">La participación de México en la producción mundial era muy baja. La producción previa a la Revolución tardó para recuperarse.</p></div>
+                <div class="grid-2" style="margin-top:10px;">
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">📈 1946</h4><p style="font-size:0.85em;">La industria empezó a crecer más rápido, pero el ritmo no era suficiente.</p></div>
+                    <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);">📉 1970</h4><p style="font-size:0.85em;">México aportó <strong>0.5%</strong> de hierro y <strong>0.7%</strong> de acero mundial.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🚢</span> 5.6 Comercio exterior</h2>
+                <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">📊 Hasta 1945</h4><p style="font-size:0.85em;">México vivió un <strong>superávit</strong> producto de las exportaciones de granos, ganado, henequén y petróleo.</p></div>
+                <div class="card card-accent-red fragment" style="margin-top:10px;"><h4 style="color:var(--accent-red);">⚠️ A partir de 1946</h4><p style="font-size:0.85em;">Industrialización acelerada: las importaciones siguieron creciendo, pero las exportaciones no. Esto obligó a un <strong>ajuste en el tipo de cambio en 1954</strong>.</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 6: DESARROLLO ESTABILIZADOR -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-estabilizador">
+                <span class="section-icon">⚖️</span>
+                <h2>Desarrollo Estabilizador</h2>
+                <p style="color:rgba(255,255,255,0.5);">1958-1970</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> 6.1 Definición</h2>
+                <div class="definition-box"><div class="def-title">Desarrollo estabilizador</div><div class="def-text">Modelo económico aplicado entre 1958 y 1970. Nombre dado por <strong>Antonio Ortiz Mena</strong>, secretario de Hacienda esos 12 años. Período de crecimiento elevado y sostenido con inflación reducida.</div></div>
+                <div class="grid-3" style="margin-top:12px;">
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">📊 Inflación</h4><p style="font-size:0.85em;"><strong>2.6%</strong> anual (nunca se ha vuelto a ese nivel)</p></div>
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">💱 Tipo de cambio</h4><p style="font-size:0.85em;"><strong>12.50</strong> pesos por dólar (1954-1976)</p></div>
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">📈 Crecimiento</h4><p style="font-size:0.85em;">Elevado y sostenido durante 12 años</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">👥</span> 6.2 Continuidad en la función pública</h2>
+                <table class="comparison-table fragment">
+                    <tr><th>Funcionario</th><th>Cargo</th><th>Duración</th></tr>
+                    <tr><td>Antonio Ortiz Mena</td><td>Sec. de Hacienda</td><td>12 años</td></tr>
+                    <tr><td>Rodrigo Gómez</td><td>Dir. Banco de México</td><td>18 años (1952-1970)</td></tr>
+                    <tr><td>Ernesto Espinoza Porset</td><td>Subdirector Banco</td><td>24 años</td></tr>
+                    <tr><td>José Hernández Delgado</td><td>Dir. Nafinsa</td><td>18 años</td></tr>
+                </table>
+                <div class="card card-accent-red fragment" style="margin-top:10px;"><h4 style="color:var(--accent-red);">⚠️ Comparación</h4><p style="font-size:0.85em;">En los 12 años posteriores (1970-1982) hubo <strong>6 secretarios de Hacienda</strong>, 4 directores del Banco de México y 4 directores de Nafinsa.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚙️</span> 6.3 División del trabajo</h2>
+                <div class="grid-3">
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">💼 Empresarios</h4><p style="font-size:0.82em;">Invertir a cambio de utilidades considerables. Gobierno les daría apoyo y subsidios.</p></div>
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">🏛️ Gobierno</h4><p style="font-size:0.82em;">Aportar reglas claras y capacidad para construir consensos y llegar a acuerdos.</p></div>
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">👷 Obreros y campesinos</h4><p style="font-size:0.82em;">Trabajar y mantener seguridad y paz social a cambio de confianza y garantías.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏦</span> 6.4 Regla monetaria</h2>
+                <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">💱 Fórmula del Banco de México</h4><p style="font-size:0.85em;">Para evitar la inflación, el director decidía cuál era la inflación que quería tener en el año, le sumaba <strong>la mitad del crecimiento económico esperado</strong>, y la cantidad resultante era el monto en el que incrementaba la cantidad de dinero en circulación.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚠️</span> 6.4 Problemas acumulados</h2>
+                <div class="card card-accent-red fragment"><p style="font-size:0.9em;">A finales de la década de 1960, el desarrollo estabilizador fue, en realidad, <strong>desestabilizador</strong>:</p></div>
+                <div class="grid-2" style="margin-top:10px;">
+                    <div class="card card-accent-orange fragment"><ul style="font-size:0.8em;"><li>Creciente concentración de la riqueza</li><li>Rezagos en servicios sociales</li><li>Concentración de medios de producción</li><li>Penetración del capital extranjero</li></ul></div>
+                    <div class="card card-accent-red fragment"><ul style="font-size:0.8em;"><li>Insuficiencia agropecuaria</li><li>Ineficiencia industrial</li><li>Creciente subempleo</li><li>Insuficiente práctica democrática</li></ul></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">✊</span> 6.5 Movimientos sociales (1958-1968)</h2>
+                <div class="timeline">
+                    <div class="timeline-item fragment"><div class="year">1958</div><div class="event"><strong>Ferrocarrileros:</strong> Reprimidos, líderes encarcelados.</div></div>
+                    <div class="timeline-item fragment"><div class="year">1959</div><div class="event"><strong>Maestros:</strong> Líderes asesinados.</div></div>
+                    <div class="timeline-item fragment"><div class="year">1965</div><div class="event"><strong>Médicos:</strong> Primera expresión de rechazo de la clase media.</div></div>
+                    <div class="timeline-item fragment"><div class="year">1965</div><div class="event"><strong>Estudiantes Michoacán:</strong> Respuesta gubernamental más dura.</div></div>
+                    <div class="timeline-item fragment"><div class="year">1968</div><div class="event"><strong>Masacre de Tlatelolco:</strong> 2 de octubre. Fin del desarrollo estabilizador.</div></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💀</span> 6.6 La masacre de Tlatelolco</h2>
+                <div class="card card-accent-red fragment"><p style="font-size:0.9em;">El 2 de octubre de 1968, durante una manifestación pacífica en Tlatelolco, el ejército atacó a los jóvenes, provocando la muerte de <strong>decenas de ellos</strong>.</p></div>
+                <div class="card card-accent-orange fragment" style="margin-top:10px;"><h4 style="color:var(--accent-orange);">📋 Consecuencias</h4><ul style="font-size:0.85em;"><li>Fin del desarrollo estabilizador</li><li>Inicio de creciente inestabilidad política y económica</li><li>Profundas crisis en las décadas posteriores</li></ul></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📖</span> 6.7 Lecturas complementarias</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">🇺🇸 Roger Hansen</h4><ul style="font-size:0.78em;"><li>El crecimiento moderno de México tuvo su origen en la inversión extranjera durante el Porfiriato</li><li>Los beneficios se concentraron en 30% de la sociedad</li><li>La retórica vs metas sociales es difícil de explicar</li></ul></div>
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">🇲🇽 Carlos Tello</h4><ul style="font-size:0.78em;"><li>El desarrollo estabilizador fue, en realidad, desestabilizador</li><li>Concentración de riqueza, rezagos sociales, insuficiente democracia</li></ul></div>
+                </div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 7: DESARROLLO COMPARTIDO -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-compartido">
+                <span class="section-icon">🔄</span>
+                <h2>Desarrollo Compartido</h2>
+                <p style="color:rgba(255,255,255,0.5);">Luis Echeverría (1970-1976)</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔄</span> 7.1 Contexto de llegada</h2>
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">🏛️ Político</h4><p style="font-size:0.82em;">La masacre de Tlatelolco había dañado la legitimidad del gobierno. Cerrazón política y falta de democracia.</p></div>
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">👥 Social</h4><p style="font-size:0.82em;">Millones de personas migraban a las ciudades sin poderse incorporar al sistema productivo.</p></div>
+                    <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);">💰 Económico</h4><p style="font-size:0.82em;">ISI agotada. Exportábamos 3% del PIB, importábamos 6%.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌍</span> 7.2 Contexto internacional</h2>
+                <div class="timeline">
+                    <div class="timeline-item fragment"><div class="year">15 Ago 1971</div><div class="event"><strong>Nixon:</strong> EE.UU. abandona el sistema de Bretton Woods.</div></div>
+                    <div class="timeline-item fragment"><div class="year">6 Oct 1973</div><div class="event"><strong>Guerra de Yom Kippur:</strong> Egipto, Siria y Jordania invaden Israel.</div></div>
+                    <div class="timeline-item fragment"><div class="year">1973</div><div class="event"><strong>Embargo petrolero árabe:</strong> Precio del petróleo de $3 a $12 por barril en 3 meses.</div></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📈</span> 7.3 Medidas económicas</h2>
+                <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">💰 Incremento del gasto</h4><p style="font-size:0.85em;">1972: Incremento del gasto para elevar el crecimiento. 1973: Contención del gasto. A partir de 1974: Crecimiento sostenido sin freno.</p></div>
+                <div class="grid-2" style="margin-top:10px;">
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">📊 Gasto público (% del PIB)</h4><p style="font-size:0.85em;">Pasó de <strong>12% a 18%</strong> entre 1970 y 1976.</p></div>
+                    <div class="card card-accent-purple fragment"><h4 style="color:var(--accent-purple);">👥 Burocracia</h4><p style="font-size:0.85em;">ISSSTE (burócratas): <strong>3.2% a 6.4%</strong> (se duplicó).</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📉</span> 7.4 La crisis de 1976</h2>
+                <div class="card card-accent-red fragment"><p style="font-size:0.95em;">El peso perdió la <strong>mitad de su valor en un solo día</strong>: de 12.50 a 25 pesos por dólar.</p></div>
+                <div class="card card-accent-orange fragment" style="margin-top:10px;"><h4 style="color:var(--accent-orange);">📋 Instituciones creadas</h4><ul style="font-size:0.85em;"><li><strong>Infonavit</strong> (1972): Fondo Nacional de la Vivienda</li><li><strong>Fonacot</strong> (1974): Fondo Nacional para el Consumo</li></ul></div>
+                <div class="real-life fragment" style="margin-top:10px;"><div class="rl-label">🇲🇽 Consecuencia</div><p style="font-size:0.85em;">Entre rumores de golpe de Estado, Echeverría entregó el poder a López Portillo el 1 de diciembre de 1976.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💰</span> 7.5 Gasto social</h2>
+                <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">📊 Aumento del gasto social</h4><p style="font-size:0.85em;">Como proporción del gasto público pasó de <strong>29% a 33%</strong>. Como proporción del PIB, de <strong>4.7% a 7.9%</strong>.</p></div>
+                <div class="card card-accent-red fragment" style="margin-top:10px;"><h4 style="color:var(--accent-red);">⚠️ Sin reforma fiscal</h4><p style="font-size:0.85em;">No fue acompañado por un incremento de impuestos, por lo que la deuda continuó creciendo hasta provocar la crisis de 1976.</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 8: DESARROLLO ACELERADO -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-acelerado">
+                <span class="section-icon">🚀</span>
+                <h2>Desarrollo Acelerado</h2>
+                <p style="color:rgba(255,255,255,0.5);">López Portillo (1976-1982)</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🛢️</span> 8.1 Descubrimiento de Cantarell</h2>
+                <div class="definition-box"><div class="def-title">Manto petrolero Cantarell</div><div class="def-text">El segundo manto petrolero más grande del mundo, descubierto en el golfo de México enfrente de Campeche. Su producción permitía calcular la posibilidad de extraer grandes cantidades de petróleo.</div></div>
+                <div class="card card-accent-green fragment" style="margin-top:12px;"><h4 style="color:var(--accent-green);">🎯 Promesas</h4><p style="font-size:0.85em;">Con base en esa previsión, López Portillo inició un ambicioso programa para desarrollar al país en poco tiempo. Desafortunadamente, su fracaso fue aún más estrepitoso que el de su antecesor.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗳️</span> 8.2 Reforma política de 1977</h2>
+                <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">📋 Medidas</h4><ul style="font-size:0.85em;"><li>Amplió diputados a 400 (200 plurinominales)</li><li>Legalizó al Partido Comunista</li><li>Amnistía para participantes en la guerrilla</li><li>Creó nuevos partidos: PDM y PST</li></ul></div>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">📊 Resultado</div><p style="font-size:0.85em;">En las primeras elecciones con este formato, el PRI obtuvo de los 400 diputados, casi 74%. La situación continuó siendo muy similar.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🤝</span> 8.3 Alianza para la Producción</h2>
+                <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">📋 Cinco ejes</h4><ul style="font-size:0.85em;"><li><strong>1.</strong> Impulso a la industria petrolera</li><li><strong>2.</strong> Reactivación agropecuaria</li><li><strong>3.</strong> Reorientación del gasto público</li><li><strong>4.</strong> Impulso a industria de bienes de consumo básico</li><li><strong>5.</strong> Modernización del aparato gubernamental</li></ul></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔀</span> 8.4 Tres alternativas estratégicas</h2>
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">1️⃣ Conservadora</h4><p style="font-size:0.82em;">Extraer petróleo solo para demanda interna y preservar riquezas para generaciones venideras.</p></div>
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">2️⃣ Exportadora</h4><p style="font-size:0.82em;">Exportar petróleo para financiar crecimiento acelerado. Provocaría "enfermedad holandesa".</p></div>
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">3️⃣ Integral ✓</h4><p style="font-size:0.82em;">El petróleo como pieza clave para superar la crisis e impulsar desarrollo integral. <strong>La elegida.</strong></p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚠️</span> 8.5 Enfermedad holandesa</h2>
+                <div class="definition-box"><div class="def-title">Enfermedad holandesa</div><div class="def-text">Proceso en el que un país se enfoca demasiado en impulsar la producción de algún bien que se exporta, provocando la <strong>reducción de la competitividad del resto de su industria</strong>. Llamada así porque Holanda siguió un proceso similar con la exportación de gas natural.</div></div>
+                <div class="card card-accent-red fragment" style="margin-top:10px;"><h4 style="color:var(--accent-red);">📊 Inversión pública en petróleo</h4><p style="font-size:0.85em;">El sector petrolero llegó a acaparar casi la <strong>mitad de la inversión pública</strong> (46.1% en 1980).</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📊</span> 8.6 Inversión pública por sector</h2>
+                <table class="comparison-table fragment">
+                    <tr><th>Sector</th><th>1977</th><th>1978</th><th>1979</th><th>1980</th></tr>
+                    <tr><td>Agricultura</td><td>1.8%</td><td>1.4%</td><td>2.5%</td><td>2.7%</td></tr>
+                    <tr><td>Minería</td><td>0.7%</td><td>0.8%</td><td>0.9%</td><td>0.9%</td></tr>
+                    <tr><td><strong>Petróleo</strong></td><td><strong>32.0%</strong></td><td><strong>39.2%</strong></td><td><strong>44.5%</strong></td><td><strong>46.1%</strong></td></tr>
+                    <tr><td>Manufacturas</td><td>14.2%</td><td>11.5%</td><td>13.1%</td><td>12.6%</td></tr>
+                    <tr><td>Electricidad</td><td>23.1%</td><td>22.3%</td><td>19.7%</td><td>19.9%</td></tr>
+                    <tr><td>Comercio y servicios</td><td>28.2%</td><td>24.8%</td><td>19.3%</td><td>17.8%</td></tr>
+                </table>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📈</span> 8.7 Gasto público</h2>
+                <div class="bar-chart">
+                    <div class="bar-row fragment"><div class="bar-label">1970</div><div class="bar-track"><div class="bar-fill" style="background:linear-gradient(90deg,#10b981,#059669);width:30%;">12%</div></div></div>
+                    <div class="bar-row fragment"><div class="bar-label">1976</div><div class="bar-track"><div class="bar-fill" style="background:linear-gradient(90deg,#3b82f6,#2563eb);width:45%;">18%</div></div></div>
+                    <div class="bar-row fragment"><div class="bar-label">1977</div><div class="bar-track"><div class="bar-fill" style="background:linear-gradient(90deg,#f59e0b,#d97706);width:70%;">28%</div></div></div>
+                    <div class="bar-row fragment"><div class="bar-label">1982</div><div class="bar-track"><div class="bar-fill" style="background:linear-gradient(90deg,#ef4444,#dc2626);width:98%;">39%</div></div></div>
+                </div>
+                <p class="fragment" style="color:rgba(255,255,255,0.4);font-size:0.7em;margin-top:8px;">Gasto público como % del PIB</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏦</span> 8.8 Reforma fiscal e IVA</h2>
+                <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">💰 Reforma fiscal</h4><p style="font-size:0.85em;">López Portillo hizo una reforma fiscal. A partir de 1980 se implementó el <strong>Impuesto al Valor Agregado (IVA)</strong>, que sustituyó al Impuesto Sobre Ingresos Mercantiles.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💳</span> 8.9 Endeudamiento externo</h2>
+                <div class="card card-accent-red fragment"><p style="font-size:0.9em;">La tasa de interés pasó de <strong>6% a 24% anual</strong>. Ningún país tuvo la capacidad para cubrir el pago de esos intereses.</p></div>
+                <div class="card card-accent-orange fragment" style="margin-top:10px;"><h4 style="color:var(--accent-orange);">🌎 Crisis de deuda</h4><p style="font-size:0.85em;">Ocurrió la famosa <strong>"crisis de deuda externa latinoamericana"</strong>, que comenzó con México pero arrastró a todos muy pronto.</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 9: CRISIS DE 1982 -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-crisis">
+                <span class="section-icon">💥</span>
+                <h2>Crisis de 1982</h2>
+                <p style="color:rgba(255,255,255,0.5);">Fin de una época</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💥</span> 9.1 La debacle económica</h2>
+                <div class="timeline">
+                    <div class="timeline-item fragment"><div class="year">1976</div><div class="event">Peso pierde <strong>mitad de su valor</strong>: de 12.50 a 25 pesos por dólar.</div></div>
+                    <div class="timeline-item fragment"><div class="year">1982</div><div class="event">Devaluación de 25 a <strong>150 pesos</strong> por dólar (pierde +80%).</div></div>
+                    <div class="timeline-item fragment"><div class="year">1982</div><div class="event"><strong>Requisición de cuentas en dólares:</strong> Gobierno pagó a 75 pesos (no a 150).</div></div>
+                    <div class="timeline-item fragment"><div class="year">1 Sep 1982</div><div class="event"><strong>Estatización bancaria:</strong> López Portillo decretó la estatización del sistema bancario.</div></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📜</span> 9.2 Fin de una época</h2>
+                <div class="card card-accent-red fragment"><p style="font-size:0.9em;">López Portillo declaró que él había sido el <strong>último presidente de la Revolución</strong>. Con su gobierno terminó la época en que la Revolución mexicana legitimaba al gobierno.</p></div>
+                <div class="card card-accent-orange fragment" style="margin-top:10px;"><p style="font-size:0.9em;">Las promesas de transformación social, de igualdad, de desarrollo con perspectiva nacionalista habían terminado en un <strong>fracaso estrepitoso</strong>.</p></div>
+                <div class="real-life fragment" style="margin-top:10px;"><div class="rl-label">🇲🇽 Consecuencia</div><p style="font-size:0.85em;">A partir de 1982 empezó una nueva época en México. Los mexicanos habían creído que el país ingresaría al Primer Mundo, cuando en realidad se encontraban hundidos en la peor crisis de su historia.</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 10: IMPACTO SOCIAL -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-impacto">
+                <span class="section-icon">🏘️</span>
+                <h2>Impacto Social</h2>
+                <p style="color:rgba(255,255,255,0.5);">Urbanización y cambios demográficos</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏙️</span> 10.1 Crecimiento urbano</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">📊 1960</h4><ul style="font-size:0.82em;"><li>Por primera vez, población urbana > rural</li><li>Población total: 35 millones</li><li>Ciudad de México: 5 millones</li><li>Guadalajara: 850 mil</li><li>Monterrey: 700 mil</li></ul></div>
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">📊 1980</h4><ul style="font-size:0.82em;"><li>Población: 67 millones (se duplicó)</li><li>Urbana: 66.3% del total</li><li>Ciudad de México: 15 millones</li><li>Guadalajara: 2.2 millones</li><li>Monterrey: casi 2 millones</li></ul></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌾</span> 10.2 El campo mexicano</h2>
+                <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);">📉 Despoblamiento rural</h4><p style="font-size:0.85em;">Personas con trabajo en el sector agropecuario: <strong>57 de cada 100</strong> en 1950 → <strong>26 de cada 100</strong> en 1980.</p></div>
+                <div class="card card-accent-orange fragment" style="margin-top:10px;"><p style="font-size:0.9em;">De ser un campo <strong>generador neto de excedentes</strong> para la exportación, se volvió un campo <strong>deficitario, importador</strong>. A mediados de los años setenta configuró un problema de seguridad nacional: la <strong>dependencia alimentaria</strong>.</p></div>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">💡 Término</div><p style="font-size:0.85em;">Se acuñó la palabra <strong>"descampesinización"</strong> para describir el proceso de contracción y cambio de las comunidades rurales.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📊</span> 10.3 Distribución del ingreso</h2>
+                <table class="comparison-table fragment">
+                    <tr><th>Sector</th><th>1963</th><th>1977</th><th>Cambio</th></tr>
+                    <tr><td>Décima parte más rica</td><td>41.9%</td><td>36.7%</td><td>-5.2%</td></tr>
+                    <tr><td>Quinta parte más pobre</td><td>3.5%</td><td>2.9%</td><td>-0.6%</td></tr>
+                    <tr><td>Clases medias (5 décimas intermedias)</td><td>—</td><td>—</td><td>+0.1% a +1.6%</td></tr>
+                </table>
+                <div class="real-life fragment" style="margin-top:10px;"><div class="rl-label">🏘️ Ciudad Satélite</div><p style="font-size:0.85em;">A principios de los años sesenta se erigió Ciudad Satélite, primer suburbio para clases medias en ascenso. Su éxito impulsó la urbanización suburbana en todo el Valle de México.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📉</span> 10.4 Consecuencias sociales</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);">🏘️ Ciudad Nezahualcóyotl</h4><p style="font-size:0.82em;">Gigantesca villa miseria que alcanzó el millón de habitantes. Hacinamiento, violencia, insalubridad, descomposición familiar.</p></div>
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">📡 Modernización bárbara</h4><p style="font-size:0.82em;">"Acceder al transistor sin haber pasado por el alfabeto." Marginación social con industria de la conciencia.</p></div>
+                </div>
+                <div class="quote-box fragment" style="margin-top:10px;"><p style="font-size:0.85em;">"El México rural fue sistemáticamente desarticulado, al extremo de que una vigorosa discusión académica acuñó la palabra <strong>descampesinización</strong>."</p></div>
+            </section>
+
+            <!-- ===== CIERRE ===== -->
+            <section class="title-slide">
+                <span class="unit-badge">Unidad 2 — Cierre</span>
+                <h1 style="margin-top:30px;">¡Gracias!</h1>
+                <p class="subtitle">Modelos Económicos en México (1940-1982)</p>
+                <p style="color:rgba(255,255,255,0.4);font-size:0.7em;margin-top:40px;"><i class="fa-solid fa-graduation-cap"></i> Lic. Rosalba Sosa Guízar<br><i class="fa-solid fa-building-columns"></i> Instituto Leonardo Bravo</p>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+    <script>
+        Reveal.initialize({hash:true,slideNumber:false,controls:true,controlsLayout:'edges',progress:true,center:false,transition:'slide',transitionSpeed:'default',backgroundTransition:'fade',plugins:[RevealNotes,RevealMarkdown,RevealHighlight]});
+        const slideNav=document.getElementById('slide-nav'),slideNavCurrent=document.getElementById('slide-nav-current'),slideNavTotal=document.getElementById('slide-nav-total'),slideNavInput=document.getElementById('slide-nav-input'),fragmentCounter=document.getElementById('fragment-counter'),fcCurrent=document.querySelector('.fc-current'),fcTotal=document.querySelector('.fc-total');
+        Reveal.on('slidechanged',e=>{slideNavCurrent.textContent=e.indexh+1;updateFragmentCounter()});
+        Reveal.on('fragmentshown',()=>updateFragmentCounter());Reveal.on('fragmenthidden',()=>updateFragmentCounter());
+        function updateFragmentCounter(){const s=Reveal.getCurrentSlide(),f=s.querySelectorAll('.fragment'),v=s.querySelectorAll('.fragment.visible');f.length>0?(fragmentCounter.classList.add('has-fragments'),fcCurrent.textContent=v.length,fcTotal.textContent=f.length):fragmentCounter.classList.remove('has-fragments')}
+        Reveal.on('ready',()=>{slideNavTotal.textContent=Reveal.getTotalSlides();updateFragmentCounter()});
+        slideNav.addEventListener('click',()=>{slideNav.classList.add('editing');slideNavInput.value=slideNavCurrent.textContent;slideNavInput.focus()});
+        slideNavInput.addEventListener('keydown',e=>{if(e.key==='Enter'){const n=parseInt(slideNavInput.value);n>=1&&n<=Reveal.getTotalSlides()&&Reveal.slide(n-1);slideNav.classList.remove('editing')}else e.key==='Escape'&&slideNav.classList.remove('editing')});
+        slideNavInput.addEventListener('blur',()=>slideNav.classList.remove('editing'));
+        document.getElementById('index-btn').addEventListener('click',()=>window.location.hash='#/indice');
+        document.getElementById('fullscreen-btn').addEventListener('click',()=>{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()});
+    </script>
+</body>
+</html>

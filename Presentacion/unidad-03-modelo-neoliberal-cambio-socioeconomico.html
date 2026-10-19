@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=5.0, user-scalable=yes">
+    <title>Unidad 3 — Modelo neoliberal y tendencias del cambio socioeconómico en México</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root{--r-background-color:#0a0a1a;--r-main-font:'Inter',sans-serif;--r-heading-font:'Playfair Display',serif;--r-main-font-size:24px;--accent-blue:#4f8cff;--accent-purple:#a855f7;--accent-pink:#ec4899;--accent-green:#10b981;--accent-orange:#f59e0b;--accent-red:#ef4444;--accent-teal:#14b8a6;--accent-cyan:#06b6d4;--glass:rgba(255,255,255,0.06);--glass-border:rgba(255,255,255,0.1)}
+        .reveal{font-family:var(--r-main-font)}.reveal .slides{text-align:left}
+        .reveal .slides section{padding:20px 40px;overflow:hidden;box-sizing:border-box}
+        .reveal .slides section *{max-width:100%;box-sizing:border-box}
+        .reveal .slides p,.reveal .slides li,.reveal .slides h1,.reveal .slides h2,.reveal .slides h3,.reveal .slides h4{overflow-wrap:break-word;word-wrap:break-word;hyphens:auto;margin-right:0;padding-right:0}
+        .reveal .slides section.title-slide{text-align:center;background:linear-gradient(135deg,#0a0a1a 0%,#1a1a3e 50%,#2d1b69 100%)}
+        .reveal .slides section.title-slide h1{font-family:'Playfair Display',serif;font-size:2.4em;font-weight:900;background:linear-gradient(135deg,#f59e0b,#ef4444,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.2;margin-bottom:16px}
+        .reveal .slides section.title-slide .subtitle{font-size:1em;color:rgba(255,255,255,0.6);font-weight:300;letter-spacing:2px}
+        .reveal .slides section.title-slide .unit-badge{display:inline-block;background:linear-gradient(135deg,var(--accent-orange),var(--accent-red));color:white;padding:8px 24px;border-radius:30px;font-size:0.7em;font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-top:30px}
+        .reveal .slides section.section-header{text-align:center;background:linear-gradient(135deg,#0a0a1a 0%,#1a1a3e 50%,#2d1b69 100%)}
+        .reveal .slides section.section-header h2{font-family:'Playfair Display',serif;font-size:2em;font-weight:800;background:linear-gradient(135deg,var(--accent-orange),var(--accent-red));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px}
+        .reveal .slides section.section-header .section-icon{font-size:2.5em;margin-bottom:14px;display:block}
+        .card{background:var(--glass);border:1px solid var(--glass-border);border-radius:14px;padding:14px 16px;margin:8px 0;backdrop-filter:blur(10px);overflow:hidden;box-sizing:border-box}
+        .card p,.card li,.card h4{overflow-wrap:break-word;word-wrap:break-word;hyphens:auto;font-size:0.85em}
+        .card-accent-blue{border-left:4px solid var(--accent-blue)}.card-accent-purple{border-left:4px solid var(--accent-purple)}.card-accent-pink{border-left:4px solid var(--accent-pink)}.card-accent-green{border-left:4px solid var(--accent-green)}.card-accent-orange{border-left:4px solid var(--accent-orange)}.card-accent-red{border-left:4px solid var(--accent-red)}.card-accent-teal{border-left:4px solid var(--accent-teal)}.card-accent-cyan{border-left:4px solid var(--accent-cyan)}
+        .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:14px}.grid-2>.card,.grid-3>.card{margin:0;min-width:0}
+        .reveal h1,.reveal h2,.reveal h3,.reveal h4{color:white;font-weight:700}.reveal h2{font-size:1.4em;margin-bottom:14px}.reveal h3{font-size:1.05em;color:var(--accent-orange);margin-bottom:8px}.reveal h4{font-size:0.9em;color:var(--accent-purple)}
+        .reveal p,.reveal li{color:rgba(255,255,255,0.85);line-height:1.6}.reveal ul{list-style:none;padding-left:0}.reveal ul li{padding:3px 0;padding-left:24px;position:relative}.reveal ul li::before{content:'▸';position:absolute;left:0;color:var(--accent-orange);font-weight:700}
+        .highlight{color:var(--accent-orange);font-weight:600}.highlight-purple{color:var(--accent-purple);font-weight:600}.highlight-green{color:var(--accent-green);font-weight:600}
+        .icon-lg{font-size:1.6em;display:inline-block;margin-right:6px;vertical-align:middle}
+        .timeline{position:relative;padding-left:30px;margin:20px 0}.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,var(--accent-orange),var(--accent-red),var(--accent-pink));border-radius:2px}.timeline-item{position:relative;margin-bottom:10px;padding:8px 14px;background:var(--glass);border-radius:8px;border:1px solid var(--glass-border)}.timeline-item::before{content:'';position:absolute;left:-26px;top:18px;width:12px;height:12px;border-radius:50%;background:var(--accent-orange);border:2px solid #0a0a1a}.timeline-item .year{font-size:0.75em;color:var(--accent-orange);font-weight:700;letter-spacing:1px}.timeline-item .event{font-size:0.85em;color:rgba(255,255,255,0.8);margin-top:4px}
+        .definition-box{background:linear-gradient(135deg,rgba(245,158,11,0.15),rgba(239,68,68,0.15));border:1px solid rgba(245,158,11,0.3);border-radius:14px;padding:16px 20px;margin:14px 0;position:relative}.definition-box::before{content:'📖';font-size:1.5em;position:absolute;top:-12px;left:20px}.definition-box .def-title{font-size:0.65em;text-transform:uppercase;letter-spacing:2px;color:var(--accent-orange);font-weight:700;margin-bottom:6px}.definition-box .def-text{font-size:0.85em;color:rgba(255,255,255,0.9);line-height:1.5}
+        .fun-fact{background:linear-gradient(135deg,rgba(245,158,11,0.15),rgba(239,68,68,0.1));border:1px solid rgba(245,158,11,0.3);border-radius:10px;padding:12px 16px;margin:10px 0;font-size:0.85em}.fun-fact .ff-label{color:var(--accent-orange);font-weight:700;font-size:0.7em;text-transform:uppercase;letter-spacing:1px}
+        .real-life{background:linear-gradient(135deg,rgba(236,72,153,0.15),rgba(168,85,247,0.15));border:1px solid rgba(236,72,153,0.3);border-radius:12px;padding:14px 18px;margin:10px 0}.real-life .rl-label{color:var(--accent-pink);font-weight:700;font-size:0.65em;text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}
+        .quote-box{background:var(--glass);border-left:4px solid var(--accent-purple);border-radius:0 10px 10px 0;padding:14px 18px;margin:12px 0;font-style:italic}
+        .step-card{display:flex;align-items:flex-start;gap:12px;background:var(--glass);border:1px solid var(--glass-border);border-radius:10px;padding:12px 14px;margin:6px 0}.step-num{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--accent-orange),var(--accent-red));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85em;color:white}.step-content{flex:1}.step-content h4{font-size:0.85em;margin-bottom:3px}.step-content p{font-size:0.78em;color:rgba(255,255,255,0.7)}
+        .bar-chart{display:flex;flex-direction:column;gap:8px;margin:12px 0}.bar-row{display:flex;align-items:center;gap:10px}.bar-label{width:80px;text-align:right;font-size:0.75em;color:rgba(255,255,255,0.6);flex-shrink:0}.bar-track{flex:1;height:24px;background:rgba(255,255,255,0.05);border-radius:12px;overflow:hidden}.bar-fill{height:100%;border-radius:12px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-size:0.7em;font-weight:700;color:white}
+        .reveal .slides section{overflow-y:auto;max-height:100%;padding-bottom:40px}.reveal .slides section::-webkit-scrollbar{width:6px}.reveal .slides section::-webkit-scrollbar-track{background:rgba(255,255,255,0.05);border-radius:3px}.reveal .slides section::-webkit-scrollbar-thumb{background:rgba(245,158,11,0.4);border-radius:3px}
+        .reveal .slides section .fragment.visible{opacity:1}.reveal .slide-number{display:none!important}.reveal .controls{display:block!important;opacity:1!important}
+        .slide-nav{position:fixed;bottom:16px;left:16px;z-index:9999;height:38px;padding:0 16px;display:flex;align-items:center;justify-content:center;border-radius:20px;border:1px solid var(--glass-border);background:rgba(10,10,26,0.7);backdrop-filter:blur(10px);color:rgba(255,255,255,0.7);font-family:'Consolas',monospace;font-size:0.9em;font-weight:600;letter-spacing:1px;cursor:pointer;transition:all 0.3s ease;box-shadow:0 4px 16px rgba(0,0,0,0.3);user-select:none;-webkit-user-select:none}.slide-nav:hover{border-color:var(--accent-orange);color:white}.slide-nav .slide-nav-display{display:flex;align-items:center;gap:4px}.slide-nav .slide-nav-current{color:var(--accent-orange)}.slide-nav .slide-nav-sep{color:rgba(255,255,255,0.3);margin:0 2px}.slide-nav .slide-nav-input{display:none;width:50px;background:transparent;border:none;border-bottom:2px solid var(--accent-orange);color:var(--accent-orange);font-family:'Consolas',monospace;font-size:1em;font-weight:700;text-align:center;outline:none;padding:2px 0;-moz-appearance:textfield}.slide-nav .slide-nav-input::-webkit-outer-spin-button,.slide-nav .slide-nav-input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}.slide-nav.editing .slide-nav-display{display:none}.slide-nav.editing .slide-nav-input{display:inline-block}
+        .fullscreen-btn,.index-btn{position:fixed;top:16px;z-index:9999;width:48px;height:48px;border-radius:50%;border:1px solid var(--glass-border);background:rgba(10,10,26,0.65);backdrop-filter:blur(10px);color:rgba(255,255,255,0.85);font-size:1.1em;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;-webkit-tap-highlight-color:transparent;box-shadow:0 4px 16px rgba(0,0,0,0.3)}.fullscreen-btn{right:16px}.index-btn{right:76px}.fullscreen-btn:hover,.fullscreen-btn:active,.index-btn:hover,.index-btn:active{border-color:var(--accent-orange);background:rgba(245,158,11,0.25);color:white;transform:scale(1.05)}
+        .fragment-counter{position:fixed;top:22px;right:142px;z-index:9999;height:38px;padding:0 14px;display:none;align-items:center;justify-content:center;border-radius:20px;border:1px solid var(--glass-border);background:rgba(10,10,26,0.65);backdrop-filter:blur(10px);color:rgba(255,255,255,0.9);font-family:'Consolas',monospace;font-size:0.85em;font-weight:700;letter-spacing:1px;box-shadow:0 4px 16px rgba(0,0,0,0.3);white-space:nowrap}.fragment-counter.has-fragments{display:flex}.fragment-counter .fc-current{color:var(--accent-orange)}
+        @media(max-width:768px){.grid-2,.grid-3{grid-template-columns:1fr}.reveal .slides section{padding:20px 30px}}
+        .checklist{list-style:none;padding-left:0}.checklist li{padding:4px 0 4px 28px;position:relative;font-size:0.85em}.checklist li::before{content:'✓';position:absolute;left:0;color:var(--accent-green);font-weight:700;font-size:1.1em}
+        .comparison-table{width:100%;border-collapse:separate;border-spacing:0;border-radius:10px;overflow:hidden;font-size:0.62em;margin-top:12px}.comparison-table th{background:linear-gradient(135deg,var(--accent-orange),var(--accent-red));color:white;padding:8px 12px;text-align:left;font-weight:600}.comparison-table td{padding:7px 12px;border-bottom:1px solid var(--glass-border);color:rgba(255,255,255,0.85)}.comparison-table tr:nth-child(even) td{background:var(--glass)}.comparison-table tr:last-child td{border-bottom:none}
+    .reactivo{font-size:0.8em;line-height:1.5}
+        .reactivo ul{margin-top:6px;padding-left:18px}
+        .reactivo li{padding:2px 0}
+        .correct-mark{color:var(--accent-green);font-weight:700}
+        .card-accent-yellow{border-left:4px solid #eab308}
+    </style>
+</head>
+<body>
+    <div class="fragment-counter" id="fragment-counter"><span class="fc-current">0</span>/<span class="fc-total">0</span></div>
+    <button class="index-btn" id="index-btn" title="Índice"><i class="fa-solid fa-list-ul"></i></button>
+    <button class="fullscreen-btn" id="fullscreen-btn" title="Pantalla completa"><i class="fa-solid fa-expand"></i></button>
+    <div class="slide-nav" id="slide-nav" title="Ir a diapositiva">
+        <div class="slide-nav-display"><span class="slide-nav-current" id="slide-nav-current">1</span><span class="slide-nav-sep">/</span><span id="slide-nav-total">1</span></div>
+        <input type="number" class="slide-nav-input" id="slide-nav-input" min="1">
+    </div>
+
+    <div class="reveal">
+        <div class="slides">
+            <!-- ===== PORTADA ===== -->
+            <section class="title-slide">
+                <span class="unit-badge">Unidad 3</span>
+                <h1 style="margin-top:30px;">Modelo neoliberal y tendencias<br>del cambio socioeconómico</h1>
+                <p class="subtitle">Del orden de posguerra a la economía mexicana de hoy</p>
+                <p style="color:rgba(255,255,255,0.4);font-size:0.7em;margin-top:40px;"><i class="fa-solid fa-graduation-cap"></i> Lic. Rosalba Sosa Guízar<br><i class="fa-solid fa-building-columns"></i> Instituto Leonardo Bravo</p>
+            </section>
+
+            <!-- ===== MAPA CONCEPTUAL ===== -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗺️</span> Mapa conceptual</h2>
+                <div class="definition-box">
+                    <div class="def-text" style="font-size:0.8em;">La unidad explica cómo pasamos del <strong>Estado benefactor</strong> al <strong>modelo neoliberal</strong>: el fin de Bretton Woods (1946-1971), la crisis de la deuda de 1982 y la "década perdida"; el <strong>Consenso de Washington</strong> (Williamson, 1989) con sus tres pilares —apertura comercial, privatización y desregulación—; el proyecto neoliberal en México (GATT 1986, TLCAN 1994, crisis de 1995) y las <strong>tres olas de reformas estructurales</strong>. Después analiza sus efectos sociales: consumo, poder adquisitivo, informalidad, pobreza, desigualdad, movimientos sociales y el <strong>mercado de trabajo del futuro</strong>.</div>
+                </div>
+            </section>
+
+            <!-- ===== ÍNDICE ===== -->
+            <section data-background-color="#0a0a1a" id="indice">
+                <h2><span class="icon-lg">📑</span> Índice</h2>
+                <div class="grid-3" style="margin-top:10px;">
+                    <a class="card card-accent-orange" href="#/sec-crisis" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-orange);margin:0;">1. Crisis de la deuda</h4><p style="font-size:0.72em;margin:4px 0 0;">1970-1982</p></a>
+                    <a class="card card-accent-blue" href="#/sec-orden" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-blue);margin:0;">2. Orden económico internacional</h4><p style="font-size:0.72em;margin:4px 0 0;">Bretton Woods y globalización</p></a>
+                    <a class="card card-accent-red" href="#/sec-neoliberal" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-red);margin:0;">3. Modelo neoliberal</h4><p style="font-size:0.72em;margin:4px 0 0;">Características y manifestaciones</p></a>
+                    <a class="card card-accent-purple" href="#/sec-consenso" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-purple);margin:0;">4. Consenso de Washington</h4><p style="font-size:0.72em;margin:4px 0 0;">Los 10 puntos de Williamson</p></a>
+                    <a class="card card-accent-teal" href="#/sec-privat" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-teal);margin:0;">5. Privatización</h4><p style="font-size:0.72em;margin:4px 0 0;">Thatcher, Chile y México</p></a>
+                    <a class="card card-accent-orange" href="#/sec-proyecto" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-orange);margin:0;">6. Proyecto neoliberal en México</h4><p style="font-size:0.72em;margin:4px 0 0;">1982-1995</p></a>
+                    <a class="card card-accent-green" href="#/sec-reformas" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-green);margin:0;">7. Reformas estructurales</h4><p style="font-size:0.72em;margin:4px 0 0;">Tres olas de reformas</p></a>
+                    <a class="card card-accent-pink" href="#/sec-consumo" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-pink);margin:0;">8. Nuevas formas de consumo</h4><p style="font-size:0.72em;margin:4px 0 0;">Fayuca, digital y orgánico</p></a>
+                    <a class="card card-accent-red" href="#/sec-social" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-red);margin:0;">9. Pobreza y desigualdad</h4><p style="font-size:0.72em;margin:4px 0 0;">Poder adquisitivo, Coneval, Gini</p></a>
+                    <a class="card card-accent-cyan" href="#/sec-movimientos" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-cyan);margin:0;">10. Movimientos sociales</h4><p style="font-size:0.72em;margin:4px 0 0;">Descontento y populismo</p></a>
+                    <a class="card card-accent-blue" href="#/sec-trabajo" style="display:block;text-decoration:none;"><h4 style="color:var(--accent-blue);margin:0;">11. Mercado de trabajo</h4><p style="font-size:0.72em;margin:4px 0 0;">Empleo del futuro y Afores</p></a>
+                </div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 1: CRISIS DE LA DEUDA -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-crisis">
+                <span class="section-icon">📉</span>
+                <h2>Crisis de la deuda y fin de una época</h2>
+                <p style="color:rgba(255,255,255,0.5);">Las décadas de 1970 y 1982</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🛢️</span> El petróleo y los petrodólares</h2>
+                <div class="card card-accent-orange fragment"><p style="font-size:0.85em;">En la <strong>década de 1970</strong> los precios internacionales del petróleo se elevaron de manera sostenida, provocando grandes <strong>desequilibrios financieros en el mundo</strong>.</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-red"><h4 style="color:var(--accent-red);">Efecto doble</h4><p style="font-size:0.78em;">En los países <strong>consumidores</strong> de petróleo la inflación empezó a crecer; en los países <strong>árabes</strong>, "llovía dinero".</p></div>
+                    <div class="card card-accent-blue"><h4 style="color:var(--accent-blue);">A quién prestar</h4><p style="font-size:0.78em;">Los bancos de los países industrializados necesitaban a quién prestarle → gran época de créditos a gobiernos de países en vías de desarrollo.</p></div>
+                </div>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">💡 Quién más pidió crédito</div><p style="font-size:0.85em;"><strong>Latinoamérica</strong> fue la que más contrajo: le urgía dinero, la sustitución de importaciones no funcionaba bien y la población crecía muy rápido; las grandes ciudades se poblaban de migrantes campesinos sin empleo. Endeudamiento muy grande y acelerado de <strong>México, Brasil y Argentina</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📊</span> 1979: la Revolución iraní</h2>
+                <div class="card card-accent-red fragment"><p style="font-size:0.85em;">El precio del petróleo volvió a aumentar de manera importante, <strong>superando los 40 dólares por barril</strong>.</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-green"><h4 style="color:var(--accent-green);">Lado positivo</h4><p style="font-size:0.78em;">Más dinero de países árabes que podría llegar a América Latina en forma de <strong>deuda</strong>.</p></div>
+                    <div class="card card-accent-red"><h4 style="color:var(--accent-red);">Lado negativo</h4><p style="font-size:0.78em;">La <strong>inflación</strong> en los países europeos y en Estados Unidos crecía todavía más.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💸</span> ¿Qué es la inflación?</h2>
+                <div class="definition-box"><div class="def-title">Inflación</div><div class="def-text">Subida de precios de forma general, pero <strong>a diferente velocidad</strong>. Provoca dos problemas: (1) las personas ya no saben bien cuánto cuestan las cosas, así que sus decisiones <strong>no son muy buenas</strong>; (2) el precio que sube más lento es el <strong>salario</strong>, por lo que la inflación provoca el <strong>empobrecimiento de la población</strong>.</div></div>
+                <div class="card card-accent-blue fragment" style="margin-top:12px;"><p style="font-size:0.83em;">Por ello los gobiernos intentan que la inflación no suba: el instrumento más importante es la <span class="highlight">tasa de interés</span>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏦</span> La tasa de interés, precio del dinero</h2>
+                <div class="card card-accent-blue fragment"><p style="font-size:0.84em;">Si ese precio <strong>sube</strong>, las personas no van a querer tener dinero en efectivo, sino <strong>ahorrado</strong> (para recibir el interés). Al ahorrar, <strong>dejan de comprar</strong>, la economía se estanca y la inflación se reduce. Es una medida muy dura, pero efectiva.</p></div>
+                <div class="card card-accent-red fragment" style="margin-top:10px;"><h4 style="color:var(--accent-red);">📉 1979: niveles nunca vistos</h4><p style="font-size:0.82em;">La <strong>Reserva Federal de Estados Unidos</strong> (banco central) elevó las tasas de forma espectacular: prácticamente llegó a <strong>20% anual</strong>, cifra inmensa para un país desarrollado. La inflación se redujo, pero <strong>todos los que debían dinero tuvieron problemas</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💥</span> Septiembre de 1982</h2>
+                <div class="card card-accent-red fragment"><p style="font-size:0.85em;">Los deudores más grandes del mundo eran los países en desarrollo que habían contratado deuda: <strong>México, Brasil y Argentina</strong>. En septiembre de 1982, <strong>México anunció que tenía problemas muy serios para poder pagar</strong>, e inmediatamente lo hicieron los otros países.</p></div>
+                <div class="card card-accent-orange fragment" style="margin-top:10px;"><p style="font-size:0.82em;">Para evitar mayores problemas hubo que firmar acuerdos con el <strong>FMI</strong> y con ello conseguir créditos para <strong>posponer la quiebra</strong>. La crisis de 1982 es <strong>la más seria que ha sufrido México</strong>.</p></div>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">💡 Para que te des una idea</div><p style="font-size:0.88em;">Un dólar costaba <strong>25 pesos a fines de 1981</strong>; a <strong>fines de 1982 costaba 150 pesos</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌎</span> La "década perdida"</h2>
+                <div class="definition-box"><div class="def-title">Década perdida de América Latina (1980)</div><div class="def-text">Las grandes deudas de la década de 1970 sumadas al alza de la tasa de interés. Todos los países latinoamericanos tuvieron que hacer <strong>ajustes muy grandes</strong> para reducir la inflación y pagar al menos una parte de la deuda, y con ello <strong>cambió por completo la orientación económica en el continente</strong>.</div></div>
+                <div class="card card-accent-purple fragment" style="margin-top:12px;"><p style="font-size:0.8em;">No solo Latinoamérica: también los países desarrollados recortaron programas de gobierno. Además de EE.UU., el plan antiinflacionario más importante fue el de <strong>Reino Unido</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> Reagan y Thatcher, figuras polémicas</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);">Ronald Reagan</h4><p style="font-size:0.78em;">Estados Unidos. Plan antiinflacionario y reducción del tamaño del gobierno.</p></div>
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">Margaret Thatcher</h4><p style="font-size:0.78em;">Reino Unido. Recorte de programas, venta de empresas y política más importante de la época.</p></div>
+                </div>
+                <div class="quote-box fragment" style="margin-top:12px;"><p style="font-size:0.82em;">"Quienes perdieron su empleo, o parte de los apoyos que recibían del gobierno, <strong>los odian</strong>. Pero a quienes les empezó a ir bien en esos años, y después, <strong>los adoran</strong>."</p></div>
+                <div class="card card-accent-orange fragment" style="margin-top:10px;"><p style="font-size:0.8em;">El golpe de la inflación provino del petróleo, pero llegó cuando los gobiernos <strong>habían crecido en exceso</strong>. Desde mediados de los años setenta se detuvo el gasto, se redujeron programas y <strong>se vendieron empresas</strong>: empieza la época del modelo neoliberal.</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 2: ORDEN ECONÓMICO INTERNACIONAL -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-orden">
+                <span class="section-icon">🌐</span>
+                <h2>Orden económico internacional vigente</h2>
+                <p style="color:rgba(255,255,255,0.5);">Bretton Woods, FMI, BM y GATT</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌍</span> Un mundo en transformación</h2>
+                <div class="card card-accent-blue fragment"><p style="font-size:0.85em;">El sistema económico mundial ha ido cambiando en el tiempo:</p><ul style="font-size:0.8em;"><li><strong>Primera Guerra Mundial</strong>: terminó con la época de imperios</li><li><strong>Segunda Guerra Mundial</strong>: las colonias que conservaban los países desarrollados se fueron independizando → <strong>el mundo se transformó por completo</strong></li></ul></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏛️</span> El sistema de Bretton Woods (1946-1971)</h2>
+                <div class="card card-accent-orange fragment"><p style="font-size:0.84em;">Tras la Segunda Guerra Mundial se estableció un <strong>sistema financiero internacional</strong> en la reunión de Bretton Woods, vigente desde <strong>1946 hasta 1971</strong>. El dólar mantenía un tipo de cambio <strong>fijo con el oro</strong>, y las demás monedas lo hacían con el dólar.</p></div>
+                <div class="grid-3 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-blue" style="text-align:center;"><div style="font-size:1.3em;">🏦</div><h4 style="color:var(--accent-blue);font-size:0.8em;">FMI</h4><p style="font-size:0.7em;">Evitar crisis de balance de pagos o crisis inflacionarias graves</p></div>
+                    <div class="card card-accent-green" style="text-align:center;"><div style="font-size:1.3em;">🌍</div><h4 style="color:var(--accent-green);font-size:0.8em;">Banco Mundial</h4><p style="font-size:0.7em;">Promover el desarrollo</p></div>
+                    <div class="card card-accent-purple" style="text-align:center;"><div style="font-size:1.3em;">🤝</div><h4 style="color:var(--accent-purple);font-size:0.8em;">GATT</h4><p style="font-size:0.7em;">Libre comercio: EE.UU. favoreció el Acuerdo General de Aranceles y Comercio</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔺</span> El "Trilema de la Economía Internacional"</h2>
+                <div class="definition-box"><div class="def-title">Trilema</div><div class="def-text">Bajo este esquema, el flujo de capital entre países era <strong>muy pequeño</strong>. Si se tienen <strong>tipos de cambio fijos</strong> y los gobiernos quieren tener una <strong>política monetaria</strong>, entonces <strong>no puede haber flujo de capital internacional</strong>. A esta imposibilidad se le conoce como el "Trilema de la Economía Internacional".</div></div>
+                <div class="grid-3 fragment" style="margin-top:14px;">
+                    <div class="card card-accent-blue" style="text-align:center;"><h4 style="font-size:0.78em;">Tipos de cambio fijos</h4></div>
+                    <div class="card card-accent-green" style="text-align:center;"><h4 style="font-size:0.78em;">Política monetaria propia</h4></div>
+                    <div class="card card-accent-red" style="text-align:center;"><h4 style="font-size:0.78em;">Flujo libre de capitales</h4><p style="font-size:0.68em;">No es posible con los otros dos</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💵</span> El "privilegio exorbitante" del dólar</h2>
+                <div class="card card-accent-red fragment"><p style="font-size:0.84em;">Estados Unidos tenía una <strong>ventaja sobre el resto de los países desarrollados</strong>: al tener tipo de cambio fijo con el oro (y las demás monedas con el dólar), tenía el incentivo de <strong>imprimir más dólares de los que podía respaldar con oro</strong>, a costa de los demás países, que no podían ajustar el valor de su moneda.</p></div>
+                <div class="quote-box fragment" style="margin-top:10px;"><p style="font-size:0.82em;">A esto le llamó <strong>Giscard D'Estaing</strong> el <span class="highlight">"privilegio exorbitante"</span> del dólar.</p></div>
+                <div class="card card-accent-orange fragment" style="margin-top:10px;"><p style="font-size:0.8em;">Los estadounidenses afirmaban que no lo hacían. Para financiar el gran programa de desarrollo de la década de 1960 (mejorar la situación del sur de EE.UU.) imprimieron más dólares de los que podían respaldar; además influyeron los gastos de la <strong>guerra en Vietnam</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⏳</span> El fin de Bretton Woods</h2>
+                <div class="timeline">
+                    <div class="timeline-item fragment"><div class="year">1960s</div><div class="event">Los mercados empiezan a darse cuenta de los excesos y apostaron por el <strong>fin del acuerdo de Bretton Woods</strong>.</div></div>
+                    <div class="timeline-item fragment"><div class="year">15 de septiembre de 1971</div><div class="event">Arreglo en el museo <strong>Smithsonian de Washington D.C.</strong> (las negociaciones duraron dos años): <strong>devaluación del dólar</strong> frente al marco alemán, la lira italiana, la libra británica y el yen japonés.</div></div>
+                    <div class="timeline-item fragment"><div class="year">3 semanas después</div><div class="event">Guerra de <strong>Yom Kippur</strong>: embargo petrolero árabe e incremento del precio del petróleo (bloque 2).</div></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌐</span> ¿Qué es la globalización?</h2>
+                <div class="definition-box"><div class="def-title">Globalización</div><div class="def-text">Proceso de <strong>creciente interdependencia económica internacional</strong>, originada por la expansión en el intercambio mundial de bienes, recursos financieros, mano de obra y servicios, así como por la <strong>difusión y homologación tecnológica</strong>.</div></div>
+                <div class="card card-accent-pink fragment" style="margin-top:12px;"><p style="font-size:0.83em;">La expansión de la presencia de las <strong>transnacionales</strong> como parte del proceso de globalización ha cambiado los patrones de consumo de la sociedad.</p></div>
+            </section>
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 3: MODELO NEOLIBERAL -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-neoliberal">
+                <span class="section-icon">⚙️</span>
+                <h2>Modelo neoliberal</h2>
+                <p style="color:rgba(255,255,255,0.5);">Características y manifestaciones</p>
+            </section>
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧊</span> Guerra Fría y estado de bienestar</h2>
+                <div class="card card-accent-blue fragment"><p style="font-size:0.83em;">Después de la Segunda Guerra Mundial, la economía y las finanzas mundiales operaron bajo <strong>tipos de cambio fijos</strong>, sin flujo internacional de capitales, y se promovió la recuperación de <strong>Europa y Japón</strong>.</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-red"><h4 style="color:var(--accent-red);">Bloque socialista</h4><p style="font-size:0.76em;">Unión Soviética y sus aliados</p></div>
+                    <div class="card card-accent-blue"><h4 style="color:var(--accent-blue);">Bloque capitalista</h4><p style="font-size:0.76em;">Estados Unidos y el resto de economías desarrolladas de Occidente</p></div>
+                </div>
+                <div class="card card-accent-green fragment" style="margin-top:10px;"><p style="font-size:0.8em;">En ese entorno, el <strong>estado de bienestar (o benefactor)</strong> se extendió a toda Europa, Japón, Australia y Nueva Zelanda; en América Latina se intentó copiar algunas medidas, de forma más limitada.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🛡️</span> ¿Qué buscaba el estado de bienestar?</h2>
+                <div class="definition-box"><div class="def-title">Estado de bienestar</div><div class="def-text">Dar a cada persona una <strong>red de protección para eliminar la pobreza</strong>: desde educación y salud gratuita hasta <strong>seguro de desempleo y pensión</strong>.</div></div>
+                <div class="card card-accent-pink fragment" style="margin-top:12px;"><p style="font-size:0.84em;">"Sin duda es una propuesta <strong>atractiva</strong>, pues a nadie le gusta que haya personas en condiciones materiales insuficientes. Lo difícil es <strong>financiar esos derechos</strong> para todas las personas."</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧾</span> ¿Por qué se complicó? Los impuestos</h2>
+                <div class="card card-accent-orange fragment"><p style="font-size:0.83em;">Las cosas se empezaron a complicar en la <strong>década de 1970</strong>: el crecimiento de los gobiernos, más el costo de cubrir todos esos derechos, significaba que había que <strong>cobrar más impuestos</strong> a la población.</p></div>
+                <div class="card card-accent-red fragment" style="margin-top:10px;"><p style="font-size:0.83em;">"Sin embargo, <strong>ni siquiera eso alcanzó</strong>, porque ocurrió un fenómeno que nadie previó, al menos en su magnitud:"</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧓</span> Las personas viven más tiempo</h2>
+                <div class="card card-accent-green fragment"><ul style="font-size:0.8em;"><li><strong>Higiene</strong>: realmente importante desde el siglo XIX</li><li><strong>Antibióticos</strong>: descubiertos poco antes de la Segunda Guerra Mundial</li><li><strong>Vacunas</strong>: redujeron mortalidad y morbilidad (enfermedad) infantil</li></ul><p style="font-size:0.8em;margin-top:6px;">Resultado: la población creció en los países en vías de desarrollo y la <strong>esperanza de vida aumentó en todas partes</strong>.</p></div>
+                <div class="card card-accent-red fragment" style="margin-top:10px;"><p style="font-size:0.83em;">En los países desarrollados, la mayor esperanza de vida se convirtió en un <strong>problema financiero</strong>: hay pensión para todos; si viven más, hay que tener más dinero. Pero la población no crece: los trabajadores se mantienen o se reducen, mientras los <strong>pensionados son siempre más</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">↘️</span> El fin del crecimiento del estado benefactor</h2>
+                <div class="card card-accent-red fragment"><p style="font-size:0.84em;">Los impuestos no alcanzaron y los gobiernos se <strong>endeudaron</strong>. Para evitar que las pensiones crecieran más, empezaron a <strong>reducir prestaciones o disminuir su calidad</strong> — algo que comenzó en la <strong>década de 1980</strong>.</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-orange"><h4 style="color:var(--accent-orange);">Crítica</h4><p style="font-size:0.76em;">Para muchos la limitación del estado de bienestar es un <strong>retroceso</strong>: querríamos evitar la pobreza y garantizar una vida digna para todos.</p></div>
+                    <div class="card card-accent-blue"><h4 style="color:var(--accent-blue);">Realidad</h4><p style="font-size:0.76em;">Pero <strong>financiar eso no parece posible</strong>: el gran crecimiento de los costos obligó a detener el proceso.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🤖</span> Tecnología, globalización y sindicatos</h2>
+                <div class="card card-accent-purple fragment"><p style="font-size:0.8em;">Al mismo tiempo, el <strong>cambio tecnológico</strong> empezó a reducir el número de personas necesarias para la producción (como ya ocurría en el sector agropecuario desde el siglo XVIII). Desde <strong>1950</strong> la caída fue mayor en los países desarrollados porque surgió algo nuevo: las empresas podían <strong>establecerse en otros países, producir ahí y vender de regreso</strong> a su país de origen → <strong>globalización</strong>.</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-red"><h4 style="color:var(--accent-red);">Sindicatos</h4><p style="font-size:0.76em;">Perdieron mucha fuerza e incluso casi <strong>desaparecieron</strong> en algunos países → se perdió la fuerza de negociación de los trabajadores.</p></div>
+                    <div class="card card-accent-orange"><h4 style="color:var(--accent-orange);">Salarios</h4><p style="font-size:0.76em;">Dejaron de crecer en términos reales: en los países industrializados un trabajador <strong>gana prácticamente lo mismo que a mediados de los años ochenta</strong>, mientras las empresas venden más porque producen de forma global.</p></div>
+                </div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 4: CONSENSO DE WASHINGTON -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-consenso">
+                <span class="section-icon">📜</span>
+                <h2>El Consenso de Washington</h2>
+                <p style="color:rgba(255,255,255,0.5);">John Williamson, 1989</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📋</span> Origen</h2>
+                <div class="card card-accent-purple fragment"><p style="font-size:0.84em;">El proceso que empezó a vivirse en la década de 1980 fue resumido por <strong>John Williamson</strong>, del Institute for International Economics, en un decálogo conocido como el <span class="highlight">"Consenso de Washington"</span>. Quería presentar una lista de temas <strong>indispensables en América Latina</strong> para salir de la década perdida y tener éxito. Publicó su decálogo en <strong>1989</strong>.</p></div>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">💡 En tres acciones</div><p style="font-size:0.9em;">Muchas veces se resume en: <strong>apertura comercial · privatización · desregulación</strong></p></div>
+                <div class="card card-accent-blue fragment" style="margin-top:8px;"><p style="font-size:0.8em;">Esos mismos 10 puntos se habían utilizado en <strong>Reino Unido</strong> y, en menor medida, en <strong>Estados Unidos</strong>, durante los gobiernos de Thatcher y Reagan.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">1️⃣</span> Los 10 puntos (1-5)</h2>
+                <div class="step-card fragment"><div class="step-num">1</div><div class="step-content"><h4>Disciplina fiscal</h4><p>Evitando grandes déficits en relación con el Producto Interno Bruto (PIB).</p></div></div>
+                <div class="step-card fragment"><div class="step-num">2</div><div class="step-content"><h4>Priorización del gasto público</h4><p>De subsidios a provisión de servicios como educación primaria, salud básica e infraestructura.</p></div></div>
+                <div class="step-card fragment"><div class="step-num">3</div><div class="step-content"><h4>Reforma fiscal</h4><p>Ampliando la base y teniendo tasas moderadas.</p></div></div>
+                <div class="step-card fragment"><div class="step-num">4</div><div class="step-content"><h4>Tasa de interés de mercado</h4></div></div>
+                <div class="step-card fragment"><div class="step-num">5</div><div class="step-content"><h4>Tipo de cambio competitivo</h4></div></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">2️⃣</span> Los 10 puntos (6-10)</h2>
+                <div class="step-card fragment"><div class="step-num">6</div><div class="step-content"><h4>Liberalización comercial</h4><p>Eliminando restricciones cuantitativas y utilizando tarifas bajas.</p></div></div>
+                <div class="step-card fragment"><div class="step-num">7</div><div class="step-content"><h4>Liberalización de inversión extranjera directa</h4></div></div>
+                <div class="step-card fragment"><div class="step-num">8</div><div class="step-content"><h4>Privatización de empresas públicas</h4></div></div>
+                <div class="step-card fragment"><div class="step-num">9</div><div class="step-content"><h4>Desregulación</h4><p>Eliminación de regulación que impida la competencia, salvo lo relativo a seguridad, protección del consumidor y ambiente, y regulación prudencial de instituciones financieras.</p></div></div>
+                <div class="step-card fragment"><div class="step-num">10</div><div class="step-content"><h4>Seguridad legal de derechos de propiedad</h4></div></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧱</span> 1989: cae el Muro de Berlín</h2>
+                <div class="card card-accent-red fragment"><p style="font-size:0.84em;">En <strong>noviembre de 1989</strong> se derrumbó el <strong>Muro de Berlín</strong> y, con éste, el bloque organizado alrededor de la Unión Soviética (que desapareció un par de años después).</p></div>
+                <div class="card card-accent-orange fragment" style="margin-top:10px;"><p style="font-size:0.8em;">El otro gran país comunista, <strong>China</strong>, había iniciado un proceso de apertura desde 1979, que amplió a partir de 1989 (tras la represión de la plaza de <strong>Tiananmen</strong>).</p></div>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">💡 En pocas palabras</div><p style="font-size:0.9em;">Todas las opciones diferentes al <strong>capitalismo occidental desaparecieron</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗳️</span> El proceso democrático detrás del cambio</h2>
+                <div class="card card-accent-blue fragment"><p style="font-size:0.82em;">Reagan y Thatcher fueron elegidos precisamente para <strong>acabar con la inflación</strong> y <strong>reducir el tamaño de los gobiernos</strong>. Aunque muchos trabajadores británicos sufrieron con sus medidas, ella mantuvo suficiente apoyo popular por muchos años.</p></div>
+                <div class="quote-box fragment" style="margin-top:10px;"><p style="font-size:0.82em;">"Al reducir el tamaño del gobierno y la inflación, los <strong>consumidores</strong> podían vivir mejor. Y a veces se olvida que, aunque los obreros sean importantes, <strong>todos somos consumidores</strong>. Cuando los intereses de todos los consumidores resultaron más importantes que los de los obreros, la dirección del gobierno cambió."</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔚</span> ¿Se acabó el neoliberalismo?</h2>
+                <div class="card card-accent-purple fragment"><p style="font-size:0.8em;">A partir de la <strong>Gran Recesión de 2008</strong> (gran crisis en Europa en 2011), los votantes están pidiendo cosas diferentes:</p><ul style="font-size:0.78em;"><li>Algunos quieren que regrese el estado de bienestar</li><li>Más notorio: el <strong>miedo al futuro</strong> → actitudes en contra del libre mercado y de la <strong>migración</strong></li></ul></div>
+                <div class="card card-accent-red fragment" style="margin-top:10px;"><p style="font-size:0.8em;">Esto golpea duramente a muchos <strong>mexicanos en Estados Unidos</strong> y a personas de África y Oriente Medio en Europa.</p></div>
+                <div class="quote-box fragment" style="margin-top:8px;"><p style="font-size:0.84em;">"Todavía no sabemos cómo será el nuevo orden socioeconómico, pero es muy claro que el periodo que llamamos <span class="highlight">neoliberalismo prácticamente ha dejado de existir</span>."</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 5: PRIVATIZACIÓN -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-privat">
+                <span class="section-icon">🏭</span>
+                <h2>Privatización</h2>
+                <p style="color:rgba(255,255,255,0.5);">De Thatcher a México</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌍</span> Origen y expansión mundial</h2>
+                <div class="card card-accent-teal fragment"><p style="font-size:0.82em;">El proceso de privatización de empresas estatales <strong>empieza en el mundo</strong> con el gobierno de <strong>Margaret Thatcher en Reino Unido</strong>. Esta política se extiende a diversos países.</p></div>
+                <div class="card card-accent-orange fragment" style="margin-top:10px;"><p style="font-size:0.8em;">Entre los países en desarrollo de América Latina, <strong>Chile</strong> es el que inicia este proceso y lo lleva a cabo de la manera más rigurosa.</p></div>
+                <div class="card card-accent-blue fragment" style="margin-top:8px;"><p style="font-size:0.8em;">En el ámbito internacional se convierte en una receta de la sana política económica recomendada por <strong>FMI y Banco Mundial</strong>; el secretario del Tesoro de EE.UU. también hace suya la receta: se pregona como sinónimo de <span class="highlight">modernización, eficiencia y saneamiento de las finanzas públicas</span>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚡</span> ¿Por qué se extendió tan rápido?</h2>
+                <div class="quote-box fragment"><p style="font-size:0.84em;">"La rapidez con que se extiende por el mundo el movimiento privatizador se explica en parte porque coincide con la <strong>desilusión generalizada hacia el Estado promotor y sus excesos</strong>."</p></div>
+                <div class="card card-accent-purple fragment" style="margin-top:10px;"><p style="font-size:0.83em;">En México el cambio coincide con el inicio del gobierno de <strong>Miguel de la Madrid</strong> y el desprestigio de los excesos de los gobiernos anteriores: se abandona la política progresista y nacionalista y se adopta una <strong>política económica de carácter neoliberal</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">3️⃣</span> Las tres etapas en México</h2>
+                <div class="timeline">
+                    <div class="timeline-item fragment"><div class="year">1.ª etapa: 1984-1988</div><div class="event">Se realiza la privatización de <strong>empresas de diversa índole y actividad</strong>.</div></div>
+                    <div class="timeline-item fragment"><div class="year">2.ª etapa: 1989-1994</div><div class="event">Se realiza de manera <strong>generalizada</strong> en varios sectores: <strong>siderurgia, banca y teléfonos</strong>.</div></div>
+                    <div class="timeline-item fragment"><div class="year">3.ª etapa</div><div class="event">Se <strong>profundiza</strong> aún más el proceso y se realizan <strong>cambios constitucionales</strong> (como la apertura a la comunicación vía satélite).</div></div>
+                </div>
+            </section>
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 6: PROYECTO NEOLIBERAL EN MÉXICO -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-proyecto">
+                <span class="section-icon">🇲🇽</span>
+                <h2>Proyecto neoliberal del Estado mexicano</h2>
+                <p style="color:rgba(255,255,255,0.5);">1982 - 1995</p>
+            </section>
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💣</span> La crisis de 1982</h2>
+                <div class="card card-accent-red fragment"><p style="font-size:0.82em;">Sufrimos la gran crisis por los <strong>excesos de endeudamiento</strong> de la década de 1970: el desarrollo compartido de <strong>Echeverría</strong> y el desarrollo acelerado de <strong>López Portillo</strong>.</p><p style="font-size:0.82em;margin-top:6px;">La gran deuda, pensando que se pagaría con el petróleo, se convirtió en un <strong>gran lastre</strong> cuando Estados Unidos subió su tasa de interés.</p></div>
+                <div class="card card-accent-orange fragment" style="margin-top:10px;"><p style="font-size:0.82em;">Fue la peor crisis que ha sufrido México porque <strong>no se acabó rápidamente</strong>: se mantuvo por <strong>tres largos años</strong>. Cayó el ingreso, se perdieron empleos, hubo escasez (leche en polvo, azúcar, dentífrico), no se podían comprar dólares ni viajar.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗓️</span> 1985-1986: los golpes siguientes</h2>
+                <div class="timeline">
+                    <div class="timeline-item fragment"><div class="year">Septiembre de 1985</div><div class="event"><strong>Gran terremoto en la Ciudad de México</strong>, justo cuando parecía que estábamos por salir de la crisis.</div></div>
+                    <div class="timeline-item fragment"><div class="year">1985</div><div class="event">Lo único que México exportaba (casi) era <strong>petróleo</strong>.</div></div>
+                    <div class="timeline-item fragment"><div class="year">1986</div><div class="event"><strong>Caída de precios del petróleo</strong>: reducción muy importante de recursos justo cuando más se necesitaban.</div></div>
+                    <div class="timeline-item fragment"><div class="year">1986</div><div class="event">México decide <strong>cambiar de fondo la dirección económica</strong>: ingreso al <strong>GATT en junio</strong>.</div></div>
+                    <div class="timeline-item fragment"><div class="year">Diciembre de 1987</div><div class="event">Se aplica un <strong>programa antiinflacionario</strong>.</div></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💼</span> Salinas de Gortari (1988-1994)</h2>
+                <div class="step-card fragment"><div class="step-num">1</div><div class="step-content"><h4>Renegociación de la deuda externa</h4><p>Mediante el <strong>Plan Brady</strong>, que permitió un respiro en los pagos al exterior.</p></div></div>
+                <div class="step-card fragment"><div class="step-num">2</div><div class="step-content"><h4>Búsqueda de inversión extranjera</h4><p>Se exploró <strong>Europa</strong> (sin éxito: tras el Muro de Berlín, Alemania iniciaba su integración) y <strong>Japón</strong> (que invertía en China y no vio atractivo en México).</p></div></div>
+                <div class="step-card fragment"><div class="step-num">3</div><div class="step-content"><h4>Negociar un acuerdo comercial con EE.UU.</h4><p>Las negociaciones formales del <strong>TLCAN</strong> iniciaron en <strong>1991</strong>, con la idea de operar en 1993.</p></div></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🤝</span> El TLCAN y los bloques económicos</h2>
+                <div class="card card-accent-blue fragment"><p style="font-size:0.82em;">El presidente <strong>George H. W. Bush</strong> no pudo reelegirse y el nuevo presidente, <strong>William J. Clinton</strong>, pospuso un año la firma para incluir dos acuerdos paralelos sobre <strong>cuestiones laborales y ambientales</strong>.</p></div>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">💡 Tendencia global</div><p style="font-size:0.84em;">Existió una tendencia global a conformar <strong>bloques económicos</strong> para impulsar el desarrollo: EE.UU., México y Canadá en el TLCAN, la Unión Europea, entre otros.</p></div>
+                <div class="card card-accent-purple fragment" style="margin-top:8px;"><p style="font-size:0.8em;">La postergación del TLCAN complicó al gobierno de Salinas, que había generado <strong>crecimiento artificial</strong> en su sexenio.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔥</span> 1994: el año más difícil</h2>
+                <div class="timeline">
+                    <div class="timeline-item fragment"><div class="year">1 de enero</div><div class="event">Levantamiento del <strong>Ejército Zapatista de Liberación Nacional</strong> en Chiapas.</div></div>
+                    <div class="timeline-item fragment"><div class="year">23 de marzo</div><div class="event">Asesinato del candidato presidencial del PRI, <strong>Luis Donaldo Colosio</strong>.</div></div>
+                    <div class="timeline-item fragment"><div class="year">28 de septiembre</div><div class="event">Asesinato del secretario general del PRI, <strong>José Francisco Ruiz Massieu</strong>.</div></div>
+                    <div class="timeline-item fragment"><div class="year">20 de diciembre</div><div class="event">Llega <strong>Ernesto Zedillo</strong> a la presidencia; se anuncia un cambio en la forma en que se administraba el tipo de cambio → <strong>crisis económica profunda</strong> en 1995.</div></div>
+                </div>
+                <div class="card card-accent-orange fragment" style="margin-top:8px;"><p style="font-size:0.78em;">En contracción de la economía, 1995 no fue tan grave como 1982, pero sí en la <strong>duración de sus efectos</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧱</span> ¿Por qué funcionaron (parcialmente) los tres pilares?</h2>
+                <div class="card card-accent-green fragment"><p style="font-size:0.8em;">Apertura comercial, privatización y liberalización de mercados fueron los <strong>tres pilares del Consenso de Washington</strong> en las décadas de 1980 y 1990. Las políticas estaban diseñadas para responder a problemas <strong>muy reales</strong> de América Latina:</p><ul style="font-size:0.77em;"><li>Grandes <strong>déficits</strong> gubernamentales y pérdidas de ineficientes empresas públicas</li><li>Empresas privadas <strong>ineficientes</strong> por el aislamiento de la competencia (proteccionismo) → precios elevados para consumidores</li><li>Política monetaria laxa → <strong>inflación descontrolada</strong>: no hay crecimiento posible con hiperinflación</li></ul></div>
+                <div class="card card-accent-blue fragment" style="margin-top:10px;"><p style="font-size:0.8em;">Los gobiernos deberían concentrarse en las <strong>tareas esenciales</strong> antes que administrar empresas que funcionarían mal → por eso, <span class="highlight">la privatización a menudo es correcta</span>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📈</span> Recuperación y golpes externos</h2>
+                <div class="timeline">
+                    <div class="timeline-item fragment"><div class="year">1996-2000</div><div class="event">Recuperación <strong>consistente y rápida</strong>: la economía creció incluso más rápido que durante el desarrollo estabilizador.</div></div>
+                    <div class="timeline-item fragment"><div class="year">2001</div><div class="event">Recesión en EE.UU. (<strong>"recesión dot com"</strong>) frenó a México. Ese mismo año <strong>China ingresó a la OMC</strong> y atrajo la inversión extranjera; la recesión terminó en México en 2003, pero China ya era potencia exportadora.</div></div>
+                    <div class="timeline-item fragment"><div class="year">2008</div><div class="event"><strong>Gran Recesión</strong> en EE.UU.: crecimiento artificial con financiamiento barato → crisis financiera y rescate de instituciones. No causó demasiado daño en México; desde mediados de <strong>2009</strong> reinició un crecimiento de casi 10 años.</div></div>
+                </div>
+                <div class="real-life fragment" style="margin-top:8px;"><div class="rl-label">🌍 Contexto</div><p style="font-size:0.8em;">El atentado contra las Torres Gemelas de Nueva York (2001) dio pie a una época de <strong>guerra contra el terrorismo islámico</strong>, otro factor de inestabilidad global.</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 7: REFORMAS ESTRUCTURALES -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-reformas">
+                <span class="section-icon">🔧</span>
+                <h2>Reformas estructurales</h2>
+                <p style="color:rgba(255,255,255,0.5);">Tres olas de reformas: 1986, 1995 y 2012</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧭</span> Contexto general (1982-2018)</h2>
+                <div class="card card-accent-orange fragment"><p style="font-size:0.82em;">Desde <strong>1986 hasta 2018</strong> la economía mexicana tuvo una orientación distinta a la de antes de 1982. Muchos analistas sitúan el cambio en <strong>1982</strong>: con Miguel de la Madrid, México dejó de lado la sustitución de importaciones, el desarrollo compartido y el acelerado.</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-red"><h4 style="color:var(--accent-red);">1982-1985</h4><p style="font-size:0.76em;">Profunda crisis heredada del modelo anterior: el nuevo presidente no pudo aplicar una política diferente; solo trató de <strong>evitar la quiebra</strong>.</p></div>
+                    <div class="card card-accent-green"><h4 style="color:var(--accent-green);">1986</h4><p style="font-size:0.76em;"><strong>Viraje significativo</strong>: entrada al GATT e inicio del proceso de apertura económica y comercial.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌊</span> Primera ola de reformas (Salinas)</h2>
+                <div class="card card-accent-blue fragment"><p style="font-size:0.82em;">Para poder negociar un acuerdo comercial con Estados Unidos, México requirió <strong>grandes modificaciones a su marco legal</strong>, coincidentes con el decálogo de Williamson: <span class="highlight">apertura, desregulación y privatización</span>.</p></div>
+                <div class="step-card fragment"><div class="step-num">1</div><div class="step-content"><h4>Apertura unilateral</h4><p>Organizada desde el <strong>Banco de México a mediados de 1985</strong>; el efecto importante ocurrió con el ingreso al <strong>GATT en 1986</strong>.</p></div></div>
+                <div class="card card-accent-purple fragment" style="margin-top:8px;"><p style="font-size:0.78em;">México se había resistido al GATT por el argumento de <strong>Raúl Prebisch</strong>, pero la cerrazón económica de la posguerra <strong>no nos llevó a ser más ricos</strong> ni a industrializarnos. En 1986 la economía estaba en una situación muy difícil → finalmente entramos.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📉</span> Efectos de la apertura comercial</h2>
+                <div class="card card-accent-orange fragment"><ul style="font-size:0.8em;"><li>Al entrar al GATT hubo que <strong>bajar aranceles</strong> → desde <strong>1987</strong> llegaron muchos bienes antes inexistentes</li><li>Ese año: <strong>inflación acelerada</strong> y el dólar subió con rapidez</li><li>Entre <strong>1988 y 1993</strong>: exportaciones crecieron aceleradamente, pero las importaciones <strong>más rápido</strong> → deterioro que, con las tragedias políticas de 1994, se convirtió en crisis económica</li></ul></div>
+                <div class="card card-accent-red fragment" style="margin-top:10px;"><p style="font-size:0.79em;">Los sectores poco competitivos fueron <strong>barridos por las importaciones</strong>: madera, juguetes, muebles y textiles. El <strong>agricultura tradicional</strong> fue de los más afectados por el TLCAN (gran retraso por el abandono del campo). Con el tiempo, el sector agropecuario se volvió <strong>altamente competitivo</strong> por su modernización y tecnificación.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏷️</span> Privatización a partir de 1991</h2>
+                <div class="card card-accent-teal fragment"><p style="font-size:0.8em;">El Estado mexicano se había hecho dueño de todo tipo de negocios: <strong>cines, hoteles y restaurantes hasta industrias completas</strong> como el acero o las telecomunicaciones. En 1982 se nacionalizaron los bancos; en los años ochenta se liquidaron o fusionaron empresas; a partir de <strong>1991 se aceleró el proceso</strong>:</p></div>
+                <div class="grid-2 fragment" style="margin-top:10px;">
+                    <div class="card card-accent-blue" style="text-align:center;"><div style="font-size:1.4em;">📞</div><h4 style="font-size:0.78em;">Telmex</h4></div>
+                    <div class="card card-accent-green" style="text-align:center;"><div style="font-size:1.4em;">🏦</div><h4 style="font-size:0.78em;">Bancos</h4></div>
+                    <div class="card card-accent-red" style="text-align:center;"><div style="font-size:1.4em;">🏗️</div><h4 style="font-size:0.78em;">Acereras</h4></div>
+                    <div class="card card-accent-purple" style="text-align:center;"><div style="font-size:1.4em;">✈️ 🏨</div><h4 style="font-size:0.78em;">Líneas aéreas y hoteles</h4></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> El debate sobre la propiedad pública</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">A favor</h4><p style="font-size:0.76em;">Las empresas de gobierno <strong>no suelen funcionar bien</strong> porque los objetivos del gobierno no coinciden con los de las empresas. Ejemplo: en los años ochenta obtener una línea telefónica de Telmex implicaba <strong>esperar años</strong>.</p></div>
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">Con matices</h4><p style="font-size:0.76em;">La propiedad gubernamental <strong>no es necesariamente mala</strong>: hay empresas públicas que funcionan bien, aunque son minoría.</p></div>
+                </div>
+                <div class="card card-accent-red fragment" style="margin-top:10px;"><p style="font-size:0.79em;">El objetivo del Estado en la economía es <strong>garantizar necesidades sociales prioritarias</strong>, no obtener ganancias; pero en la práctica provocaba grandes pérdidas y muchos bienes/servicios de <strong>ínfima calidad</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏦</span> La privatización de los bancos: un gran problema</h2>
+                <div class="card card-accent-red fragment"><p style="font-size:0.81em;">Se vendieron a inversionistas privados (a partir de 1991) y con la crisis de 1995 entraron en quiebra y <strong>hubo que rescatarlos</strong>.</p></div>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">💡 Errores cometidos</div><ul style="font-size:0.8em;"><li>Vender a personas que <strong>no sabían del negocio</strong></li><li>Liberar <strong>excesivamente los créditos</strong></li><li>No <strong>vigilar</strong> a los nuevos dueños</li><li>Permitir <strong>créditos cruzados</strong></li></ul></div>
+                <div class="card card-accent-orange fragment" style="margin-top:8px;"><p style="font-size:0.79em;">Rescatar instituciones financieras es normal en una crisis, pero cuando se rescata a quienes <strong>habían comprado apenas tres años antes</strong>, el enojo del público es mucho mayor.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📐</span> Desregulación y el "capitalismo de compadrazgo"</h2>
+                <div class="card card-accent-purple fragment"><p style="font-size:0.79em;">Muy influenciada por las negociaciones del TLCAN: se modificaron muchas leyes e incluso la <strong>Constitución</strong>. Entre otras cosas: cambio en la propiedad de la tierra para permitir la <strong>venta de ejidos</strong>; nuevas leyes de inversión extranjera y comercio exterior; se creó la <strong>Comisión de Competencia Económica</strong> (y la CNDH).</p></div>
+                <div class="card card-accent-blue fragment" style="margin-top:8px;"><p style="font-size:0.79em;">La transformación encaja en el decálogo de Williamson <strong>de manera parcial</strong>: se mantuvieron monopolios del gobierno en energía y los mercados no se liberaron del todo (telecomunicaciones).</p></div>
+                <div class="card card-accent-red fragment" style="margin-top:8px;"><p style="font-size:0.79em;"><strong>Condición clave:</strong> las medidas solo funcionan si hay <strong>estado de derecho</strong>. Si las leyes se aplican a unos sí y a otros no, el mercado no puede funcionar bien. En el siglo XX se aplicaban de manera discrecional → enriquecimiento de políticos y empresarios aliados: el <span class="highlight">"capitalismo de compadrazgo"</span>. Se acusó a Salinas de Gortari de favorecer a sus socios.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> Segunda ola (Zedillo): estado de derecho</h2>
+                <div class="step-card fragment"><div class="step-num">1</div><div class="step-content"><h4>Reforma al Poder Judicial</h4><p>Creación de un tribunal más <strong>libre y efectivo</strong>: paso relevante para la construcción del Estado de derecho.</p></div></div>
+                <div class="step-card fragment"><div class="step-num">2</div><div class="step-content"><h4>Autonomía del Banco de México</h4><p>Acompañada de un <strong>tipo de cambio libre</strong> que seguimos usando hasta hoy (tras la crisis de 1995 se modificó el régimen cambiario).</p></div></div>
+                <div class="card card-accent-green fragment" style="margin-top:8px;"><p style="font-size:0.79em;">Estas fueron las transformaciones más relevantes del gobierno de Zedillo en cuestión <strong>estrictamente económica</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗳️</span> Zedillo: la transición política</h2>
+                <div class="timeline">
+                    <div class="timeline-item fragment"><div class="year">1990</div><div class="event">Creación del <strong>Instituto Federal Electoral (IFE)</strong>, pero sin mucha fuerza.</div></div>
+                    <div class="timeline-item fragment"><div class="year">1996</div><div class="event">Se le da al Consejo General del IFE <strong>todo el poder para controlar la elección</strong>.</div></div>
+                    <div class="timeline-item fragment"><div class="year">1997</div><div class="event">Primera elección bajo las nuevas reglas: por primera vez <strong>no favoreció del todo al PRI</strong> → perdió el control de la <strong>Cámara de Diputados</strong>. Ahí inició el tránsito a la democracia.</div></div>
+                    <div class="timeline-item fragment"><div class="year">2000</div><div class="event">Consolidación con el triunfo de <strong>Vicente Fox</strong>: derrota del PRI en una elección presidencial.</div></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏛️</span> El federalismo real y Fox/Calderón</h2>
+                <div class="card card-accent-blue fragment"><p style="font-size:0.8em;">Al perder el PRI el control legislativo, el régimen autoritario <strong>se desplomó</strong>: el presidente perdió el control absoluto. Líderes sindicales, empresarios, grupos de presión y <strong>gobernadores</strong> se alejaron.</p></div>
+                <div class="card card-accent-orange fragment" style="margin-top:8px;"><p style="font-size:0.8em;"><strong>Ley de Coordinación Fiscal (1998)</strong>: estableció la cantidad que deben recibir los gobernadores → terminó con la discrecionalidad. Desde entonces México vive un <strong>federalismo real</strong> (antes era solo una etiqueta). Consecuencia: recursos crecientes sin control → los mayores escándalos de corrupción recientes los protagonizaron <strong>gobernadores</strong>.</p></div>
+                <div class="card card-accent-red fragment" style="margin-top:8px;"><p style="font-size:0.8em;">Los gobiernos de <strong>Fox y Calderón</strong> no pudieron aumentar el número de reformas: nunca tuvieron control del Poder Legislativo. Solo reformas fiscales pequeñas y ajuste a pensiones. Aunque México tuvo transición política en 2000, Fox <strong>continuó el modelo neoliberal</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔄</span> Reformas del siglo XXI (Peña Nieto, 2012)</h2>
+                <div class="card card-accent-green fragment"><p style="font-size:0.8em;">El triunfo de <strong>Enrique Peña Nieto en 2012</strong> permitió una segunda ola: reformas discutidas desde Zedillo, pero sin capital político suficiente. En 2012 lo hubo porque la crisis interna del <strong>PAN</strong> y el <strong>PRD</strong> abrió el espacio para negociar con el PRI.</p></div>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">💡 Coalición: "Pacto por México"</div><p style="font-size:0.8em;">Impulsó una <strong>docena de reformas estructurales</strong>: laboral, educativa, financiera, fiscal, energética, lavado de dinero, amparo, competencia, telecomunicaciones, derechos humanos, transparencia, Código Nacional de Procedimientos Penales y <strong>Sistema Nacional Anticorrupción</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📻</span> Telecomunicaciones y fiscal</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">Telecomunicaciones</h4><p style="font-size:0.76em;">Promover la competencia para eliminar el <strong>duopolio televisivo</strong> de décadas → costos mucho menores para los consumidores. Su aplicación se fue haciendo más lenta conforme las empresas intentaban evitarla.</p></div>
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">Fiscal</h4><p style="font-size:0.76em;">No elevó impuestos, pero saneó para reducir la <strong>evasión</strong> → aumento importante de la recaudación.</p></div>
+                </div>
+                <div class="bar-chart fragment" style="margin-top:12px;">
+                    <div class="bar-row"><div class="bar-label">Antes</div><div class="bar-track"><div class="bar-fill" style="width:18%;background:linear-gradient(90deg,#ef4444,#f59e0b);">&lt;10%</div></div></div>
+                    <div class="bar-row"><div class="bar-label">2018</div><div class="bar-track"><div class="bar-fill" style="width:42%;background:linear-gradient(90deg,#10b981,#06b6d4);">14% del PIB</div></div></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🛢️</span> Financiera y energética</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">Financiera</h4><p style="font-size:0.75em;">Más competencia crediticia y control de fraudes (antes era frecuente pedir crédito y no pagar) → reduce costos para los que sí pagan → <strong>créditos hipotecarios más baratos</strong>.</p></div>
+                    <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);">Energética</h4><p style="font-size:0.75em;">Terminó con el <strong>monopolio gubernamental</strong>: cualquiera puede producir electricidad (incluso con paneles solares) y vender el sobrante a la CFE; en petróleo se abrió el acceso a empresas privadas nacionales y extranjeras.</p></div>
+                </div>
+                <div class="card card-accent-blue fragment" style="margin-top:10px;"><p style="font-size:0.79em;">Los contratos con privados permiten que éstos le paguen al gobierno <strong>más de lo que Pemex pagaba</strong> por extraer crudo y gas. La reforma fiscal permitió sobrevivir sin depender del petróleo.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🎓</span> Educativa y reformas polémicas</h2>
+                <div class="card card-accent-purple fragment"><p style="font-size:0.8em;">Consistió en <strong>recuperar el control de la educación de manos del sindicato</strong>, que se había independizado del gobierno en 1998 y cada vez tenía más poder.</p></div>
+                <div class="grid-2 fragment" style="margin-top:10px;">
+                    <div class="card card-accent-blue"><h4 style="font-size:0.78em;">1.ª etapa</h4><p style="font-size:0.74em;">Recuperación del control</p></div>
+                    <div class="card card-accent-orange"><h4 style="font-size:0.78em;">2.ª etapa</h4><p style="font-size:0.74em;">Modificar lo que se estudia en el aula (inició en agosto de 2018)</p></div>
+                </div>
+                <div class="card card-accent-red fragment" style="margin-top:10px;"><p style="font-size:0.79em;">Las reformas <strong>educativa y laboral</strong> fueron las más polémicas, por el peso de los sindicatos (a quienes les quitan poder). Se convirtieron en <strong>tema de campaña</strong> y su futuro no estaba claro.</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 8: NUEVAS FORMAS DE CONSUMO -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-consumo">
+                <span class="section-icon">🛍️</span>
+                <h2>Nuevas formas de consumo</h2>
+                <p style="color:rgba(255,255,255,0.5);">De la fayuca al consumo digital</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📱</span> La revolución del consumo</h2>
+                <div class="card card-accent-pink fragment"><p style="font-size:0.83em;">Transformaciones económicas y tecnológicas han provocado cambios en los <strong>patrones de consumo</strong>. En años recientes la transformación ha sido espectacular, con gran relevancia de la demanda de <strong>servicios de comunicación</strong>: Internet y telefonía celular.</p></div>
+                <div class="card card-accent-blue fragment" style="margin-top:10px;"><p style="font-size:0.81em;">La ubicuidad de los dispositivos de telecomunicaciones posibilita las <strong>plataformas digitales</strong>, que conectan a vendedores y consumidores → mercado inmenso: redes sociales, <strong>streaming</strong> y compras por Internet.</p></div>
+                <div class="fun-fact fragment" style="margin-top:8px;"><div class="ff-label">💡 Definición</div><p style="font-size:0.82em;"><strong>Patrón:</strong> objeto o elemento que sirve como modelo o punto de referencia para medir o valorar otros de la misma especie.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🛃</span> De la "fayuca" al producto importado</h2>
+                <div class="timeline">
+                    <div class="timeline-item fragment"><div class="year">Década de 1970</div><div class="event">En México <strong>no había forma de conseguir productos extranjeros</strong> → surgía la <strong>"fayuca"</strong> (contrabando), vendida a costo elevado en algunos barrios de ciudades grandes y medianas.</div></div>
+                    <div class="timeline-item fragment"><div class="year">Década de 1980</div><div class="event">Se complicó por la <strong>inflación</strong> y el <strong>elevado precio del dólar</strong>.</div></div>
+                    <div class="timeline-item fragment"><div class="year">Apertura comercial</div><div class="event">Nueva etapa: la fayuca ya no era tal; el precio bajó hasta volver <strong>totalmente normal</strong> comprar productos importados.</div></div>
+                    <div class="timeline-item fragment"><div class="year">Hoy</div><div class="event">Se consumen <strong>servicios</strong> y crece la tendencia por productos <strong>"orgánicos"</strong> (hasta hace poco, inexistente).</div></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">👤</span> ¿De qué depende el consumo?</h2>
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment" style="text-align:center;"><div style="font-size:1.3em;">📦</div><h4 style="font-size:0.76em;">Disponibilidad</h4><p style="font-size:0.7em;">De bienes y servicios</p></div>
+                    <div class="card card-accent-green fragment" style="text-align:center;"><div style="font-size:1.3em;">💰</div><h4 style="font-size:0.76em;">Capacidad de compra</h4><p style="font-size:0.7em;">Ingreso y riqueza</p></div>
+                    <div class="card card-accent-pink fragment" style="text-align:center;"><div style="font-size:1.3em;">❤️</div><h4 style="font-size:0.76em;">Preferencias</h4><p style="font-size:0.7em;">Nadie puede imaginarlas y cambian con rapidez</p></div>
+                </div>
+                <div class="card card-accent-orange fragment" style="margin-top:12px;"><p style="font-size:0.82em;">Por eso las <strong>economías centralizadas</strong>, en las que el gobierno quiere decidir lo que los consumidores deben comprar, <strong>fracasan con tanta frecuencia</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">👴</span> La estructura por edades</h2>
+                <div class="card card-accent-purple fragment"><p style="font-size:0.8em;">La reducción de la <strong>mortalidad infantil</strong> provocó gran crecimiento poblacional y mucha demanda de bienes para niños (alimento, pañales, guarderías, juguetes). Conforme se supo que la mortalidad era menor, el número de hijas por familia <strong>empezó a decaer</strong> y esa demanda dejó de crecer.</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-blue"><h4 style="color:var(--accent-blue);">México</h4><p style="font-size:0.76em;">El grupo más grande de población es ahora <strong>mayor de 25 años</strong>: la demanda de bienes y servicios es diferente.</p></div>
+                    <div class="card card-accent-green"><h4 style="color:var(--accent-green);">Otros países</h4><p style="font-size:0.76em;">Con natalidad baja desde antes: muchos <strong>mayores</strong> → demanda de lentes de redro, comida especial, pañales y atención de salud.</p></div>
+                </div>
+                <div class="card card-accent-pink fragment" style="margin-top:10px;"><p style="font-size:0.8em;">"El consumo no es algo permanente: cambia, dependiendo de las opciones disponibles, del ingreso y riqueza, y de las preferencias de cada uno, influidas entre otras cosas por su <strong>edad</strong>."</p></div>
+            </section>
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 9: PODER ADQUISITIVO, POBREZA Y DESIGUALDAD -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-social">
+                <span class="section-icon">⚖️</span>
+                <h2>Poder adquisitivo, pobreza y desigualdad</h2>
+                <p style="color:rgba(255,255,255,0.5);">Los costos sociales del modelo</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📊</span> ¿Cómo medir los ingresos?</h2>
+                <div class="card card-accent-blue fragment"><p style="font-size:0.8em;">En México no se han podido construir buenas mediciones del mercado laboral. Desde hace un par de décadas existen encuestas comparables:</p><ul style="font-size:0.78em;"><li><strong>ENIGH</strong>: Encuesta Nacional de Ingresos y Gastos de los Hogares (cada 2 años)</li><li><strong>ENOE</strong>: Encuesta Nacional de Ocupación y Empleo (trimestral)</li></ul><p style="font-size:0.78em;margin-top:4px;">Ambas las realiza el <strong>Inegi</strong>.</p></div>
+                <div class="card card-accent-red fragment" style="margin-top:10px;"><p style="font-size:0.8em;">La mitad de la población se desempeña en el <strong>mercado informal</strong>: sin registros de salud ni seguridad social, negocios que no cumplen todos los requisitos (muchos tampoco pagan impuestos), desconfianza de las encuestas y poca verdad en las respuestas.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📉</span> El poder adquisitivo del salario</h2>
+                <div class="definition-box"><div class="def-title">Poder adquisitivo</div><div class="def-text">Capacidad de compra que tiene una persona con un trabajo normal.</div></div>
+                <div class="card card-accent-orange fragment" style="margin-top:12px;"><p style="font-size:0.8em;">Muchos afirman que desde <strong>1982</strong> ha caído el poder adquisitivo.</p></div>
+                <div class="grid-2 fragment" style="margin-top:10px;">
+                    <div class="card card-accent-red"><h4 style="color:var(--accent-red);">Década de 1970</h4><p style="font-size:0.76em;">Un salario mínimo compraba <strong>3 a 5.5 veces</strong> más que en 2012 (año base).</p></div>
+                    <div class="card card-accent-blue"><h4 style="color:var(--accent-blue);">Desde 1982</h4><p style="font-size:0.76em;">El salario compraba menos cada año, hasta los 100 puntos en el año <strong>2000</strong>: ahí se ha quedado.</p></div>
+                </div>
+                <div class="fun-fact fragment" style="margin-top:8px;"><div class="ff-label">💡 Matiz importante</div><p style="font-size:0.79em;">Casi nadie ganaba un salario mínimo en los años setenta (ganaba <strong>mucho menos</strong>). Hoy, casi nadie gana el mínimo: prácticamente todos los asegurados al <strong>IMSS</strong> ganan más. Además, los ingresos no se reducen, pero la <strong>inflación</strong> mermá la capacidad de cubrir necesidades básicas.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">👷</span> La informalidad laboral</h2>
+                <div class="definition-box"><div class="def-title">Informalidad laboral</div><div class="def-text">Cuando una persona trabaja en una empresa o es asalariada, y <strong>no cuenta con acceso a la salud y seguridad social</strong>.</div></div>
+                <div class="bar-chart fragment" style="margin-top:12px;">
+                    <div class="bar-row"><div class="bar-label">1970</div><div class="bar-track"><div class="bar-fill" style="width:77%;background:linear-gradient(90deg,#ef4444,#f59e0b);">95% sin prestaciones</div></div></div>
+                    <div class="bar-row"><div class="bar-label">Años 70 (IMSS/ISSSTE)</div><div class="bar-track"><div class="bar-fill" style="width:75%;background:linear-gradient(90deg,#ef4444,#ec4899);">70-80% ganaba menos del mínimo</div></div></div>
+                    <div class="bar-row"><div class="bar-label">Hoy (IMSS/ISSSTE)</div><div class="bar-track"><div class="bar-fill" style="width:55%;background:linear-gradient(90deg,#f59e0b,#10b981);">~55%</div></div></div>
+                    <div class="bar-row"><div class="bar-label">Hoy (ENOE)</div><div class="bar-track"><div class="bar-fill" style="width:63%;background:linear-gradient(90deg,#ef4444,#ef4444);">63%</div></div></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚠️</span> Consecuencias de la informalidad</h2>
+                <div class="card card-accent-red fragment"><p style="font-size:0.81em;">La empresa u organización <strong>no cumple la ley por completo</strong> → no hay garantía de que el salario sea el mínimo. Por eso: <span class="highlight">subir el salario mínimo no garantiza que los trabajadores ganen más</span>. Los formales ya ganaban más del mínimo; para los informales, el mínimo <strong>no sirve de referencia</strong>.</p></div>
+                <div class="bar-chart fragment" style="margin-top:12px;">
+                    <div class="bar-row"><div class="bar-label">Informales</div><div class="bar-track"><div class="bar-fill" style="width:43%;background:linear-gradient(90deg,#ef4444,#f59e0b);">2 salarios mín. · $175/día · $5 300/mes</div></div></div>
+                    <div class="bar-row"><div class="bar-label">Formales</div><div class="bar-track"><div class="bar-fill" style="width:75%;background:linear-gradient(90deg,#10b981,#06b6d4);">3.5 salarios mín. · $300/día · $9 500/mes</div></div></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏦</span> Afores: ¿ganamos o perdemos?</h2>
+                <div class="quote-box fragment"><p style="font-size:0.84em;">"Cuando alguien le dice que las Afores harán que ganemos mucho dinero al retirarnos, debe pensarse si es verdad."</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-green"><h4 style="color:var(--accent-green);">Con PILARES</h4><p style="font-size:0.76em;">Pillar 1 (individual): se guardan <strong>40% del salario</strong> (el patrón y el trabajador ponen el 50/50). Con el Pilar 2 (público), el trabajador recibe una <strong>pensión mayor</strong>.</p></div>
+                    <div class="card card-accent-red"><h4 style="color:var(--accent-red);">Sin PILARES</h4><p style="font-size:0.76em;">Se dejó de cargar con PILARES, por lo que es posible que con las Afores <strong>se gane menos</strong> que con el modelo anterior (salvo en algunos casos excepcionales).</p></div>
+                </div>
+                <div class="card card-accent-blue fragment" style="margin-top:10px;"><p style="font-size:0.78em;">Sin embargo, cualquier persona puede hacer <strong>aportaciones voluntarias</strong> a la cuenta individual con el fin de buscar un <strong>retiro con ingresos más altos</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📉</span> Pobreza y brecha social</h2>
+                <div class="grid-3 fragment" style="margin-top:10px;">
+                    <div class="card card-accent-orange" style="text-align:center;"><div style="font-size:1.3em;">🔴</div><h4 style="font-size:0.76em;">Pobreza extrema</h4><p style="font-size:0.72em;">Solo alcanza para cubrir <strong>alimentos</strong></p></div>
+                    <div class="card card-accent-yellow" style="text-align:center;"><div style="font-size:1.3em;">🟡</div><h4 style="font-size:0.76em;">Pobreza moderada</h4><p style="font-size:0.72em;">Alcanza para <strong>alimentos</strong> y algo más</p></div>
+                    <div class="card card-accent-green" style="text-align:center;"><div style="font-size:1.3em;">🟢</div><h4 style="font-size:0.76em;">Pobreza patrimonial</h4><p style="font-size:0.72em;">Alcanza para la <strong>canasta completa</strong>, más algunas carencias patrimoniales</p></div>
+                </div>
+                <div class="card card-accent-blue fragment" style="margin-top:10px;"><p style="font-size:0.79em;">Las estimaciones de <strong>Coneval</strong> llegan a 53% de personas en situación de pobreza, aunque este método es criticado: en México <strong>solo se mide ingreso</strong>, no condiciones de vida.</p></div>
+            </section>
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏙️</span> Desigualdad y cambio en el uso de la tierra</h2>
+                <div class="card card-accent-orange fragment"><p style="font-size:0.79em;">Mucha desigualdad ha sido posible por el <strong>retraso en el uso de la tierra</strong>, heredado de la <strong>Gran Hacienda</strong>: grupos con poder económico y político controlaban grandes extensiones de territorio y fueron negando tierras a quienes poseían menos.</p></div>
+                <div class="grid-2 fragment" style="margin-top:10px;">
+                    <div class="card card-accent-blue"><h4 style="color:var(--accent-blue);">2007</h4><p style="font-size:0.74em;">4.1 millones de hectáreas con <strong>49% sin explotar</strong> (presentaban sembradas o zonas con producción).</p></div>
+                    <div class="card card-accent-green"><h4 style="color:var(--accent-green);">2017</h4><p style="font-size:0.74em;">6.75 millones de hectáreas con <strong>44% sin explotar</strong>.</p></div>
+                </div>
+                <div class="card card-accent-red fragment" style="margin-top:8px;"><p style="font-size:0.78em;">Solo se explotan tierras de temporal o de riego que se encuentran en las primeras regiones del país. Los grandes movimientos de la Tierra a lo largo del siglo XX fueron ejidos y latifundios → <strong>pueden provocar brechas sociales</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📈</span> Índice de Gini</h2>
+                <div class="definition-box"><div class="def-title">Índice de Gini</div><div class="def-text">Estadístico que nos da una idea de <strong>cuánto dinero se tiene en relación con otros</strong>. <strong>100</strong> → todos tienen lo mismo; <strong>1</strong> → desigualdad máxima (alguien tiene casi todo).</div></div>
+                <div class="card card-accent-red fragment" style="margin-top:8px;"><p style="font-size:0.8em;">Hay personas que viven en la <strong>indigencia</strong> y personas tan ricas que ya no saben <strong>cuánto dinero tienen</strong>.</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 10: MOVIMIENTOS SOCIALES -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-movimientos">
+                <span class="section-icon">✊</span>
+                <h2>Movimientos sociales y populismo</h2>
+                <p style="color:rgba(255,255,255,0.5);">La otra cara de la globalización</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌍</span> El populismo global</h2>
+                <div class="card card-accent-purple fragment"><p style="font-size:0.81em;">En diversas partes del mundo surgen <strong>movimientos sociales de carácter populista y nacionalista</strong> con raíz en las dificultades que ocasiona la globalización: nueva ola de movimientos que protestan y buscan <strong>otras alternativas</strong>.</p></div>
+                <div class="grid-2 fragment" style="margin-top:10px;">
+                    <div class="card card-accent-blue"><h4 style="font-size:0.77em;">Causas</h4><p style="font-size:0.73em;">La globalización <strong>dificulta la vida económica y social</strong> de muchas personas.</p></div>
+                    <div class="card card-accent-green"><h4 style="font-size:0.77em;">Consecuencias</h4><p style="font-size:0.73em;">Aparece el <strong>"populismo del bienestar"</strong>: demagogia y manejo discrecional de la economía para mantener estructuras de poder.</p></div>
+                </div>
+                <div class="card card-accent-orange fragment" style="margin-top:8px;"><p style="font-size:0.78em;">Los movimientos sociales sirven para <strong>manifestar inconformidad</strong> cuando los gobiernos no atienden a la población, que puede sentir que se ha dejado de lado su defensa.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏛️</span> Populismo y clientelismo en México</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);">Populismo</h4><p style="font-size:0.75em;">Manejo de la política con <strong>demagogia</strong> y recursos públicos para sostener estructuras de poder, a veces con discurso de igualdad social.</p></div>
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">Clientelismo</h4><p style="font-size:0.75em;">Los partidos establecen <strong>redes de clientelas</strong> (contratos, empleos, proyectos, despensas, apoyos) a cambio de lealtad política.</p></div>
+                </div>
+                <div class="card card-accent-blue fragment" style="margin-top:10px;"><p style="font-size:0.79em;">Movimientos recientes con el <strong>procup</strong>, movimientos ciudadanos, <strong>ecologistas</strong>, autonomistas y en defensa del territorio: casos como <strong>Chico Mendes</strong> (Brasil) y <strong>Ken Saro-Wiwa</strong> (Nigeria) se vuelven símbolos de defensa de derechos. Son manifestaciones de ciudadanos que buscan otros valores y prácticas.</p></div>
+                <div class="card card-accent-pink fragment" style="margin-top:8px;"><p style="font-size:0.77em;">El <strong>Zapatismo</strong> es un ejemplo de movilización que <strong>no busca el poder político</strong>, sino la defensa de derechos e identidades (reivindicaciones de grupos indígenas) y el fortalecimiento de su autonomía.</p></div>
+            </section>
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 11: MERCADO DE TRABAJO -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-trabajo">
+                <span class="section-icon">🏗️</span>
+                <h2>Mercado de trabajo</h2>
+                <p style="color:rgba(255,255,255,0.5);">Sectores, prestaciones y desigualdad</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏭</span> Siete sectores del mercado laboral</h2>
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment" style="text-align:center;"><div style="font-size:1.2em;">🌾</div><h4 style="font-size:0.74em;">Agropecuario</h4></div>
+                    <div class="card card-accent-orange fragment" style="text-align:center;"><div style="font-size:1.2em;">⚙️</div><h4 style="font-size:0.74em;">Industrial</h4></div>
+                    <div class="card card-accent-teal fragment" style="text-align:center;"><div style="font-size:1.2em;">🛒</div><h4 style="font-size:0.74em;">Comercio</h4></div>
+                    <div class="card card-accent-purple fragment" style="text-align:center;"><div style="font-size:1.2em;">🏨</div><h4 style="font-size:0.74em;">Servicios turísticos</h4></div>
+                    <div class="card card-accent-green fragment" style="text-align:center;"><div style="font-size:1.2em;">🎓</div><h4 style="font-size:0.74em;">Servicios educativos</h4></div>
+                    <div class="card card-accent-pink fragment" style="text-align:center;"><div style="font-size:1.2em;">💬</div><h4 style="font-size:0.74em;">Servicios de comunicación</h4></div>
+                    <div class="card card-accent-red fragment" style="text-align:center;"><div style="font-size:1.2em;">🔧</div><h4 style="font-size:0.74em;">Servicio técnico</h4></div>
+                </div>
+                <div class="card card-accent-orange fragment" style="margin-top:12px;"><p style="font-size:0.8em;">Sectores productivos con mayor índice de <strong>informalidad</strong>: los tres primeros son los más representativos.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧩</span> Composición de la fuerza laboral</h2>
+                <div class="bar-chart">
+                    <div class="bar-row"><div class="bar-label">Formales + informales</div><div class="bar-track"><div class="bar-fill fragment" style="width:100%;background:linear-gradient(90deg,#06b6d4,#10b981);">60% privados · 40% gubernamentales</div></div></div>
+                    <div class="bar-row"><div class="bar-label">Cuenta propia</div><div class="bar-track"><div class="bar-fill fragment" style="width:35%;background:linear-gradient(90deg,#f59e0b,#ef4444);">25%</div></div></div>
+                    <div class="bar-row"><div class="bar-label">Jubilados/pensionados</div><div class="bar-track"><div class="bar-fill fragment" style="width:22%;background:linear-gradient(90deg,#8b5cf6,#ec4899);">15%</div></div></div>
+                </div>
+                <div class="card card-accent-blue fragment" style="margin-top:12px;"><p style="font-size:0.8em;">Para el año 2020 se esperaba que el <strong>100%</strong> de la fuerza laboral se integrara a las actividades del sector <strong>formal</strong>. Además, la mano de obra que se incorpora a dicho sector es mayoritariamente <strong>migrante</strong> y con <strong>estudios mínimos</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🪪</span> Desempleo, subempleo e inactividad</h2>
+                <div class="grid-3">
+                    <div class="card card-accent-red fragment"><h4 style="font-size:0.75em;">Desempleo</h4><p style="font-size:0.7em;">Situación en la que una persona <strong>no tiene empleo</strong>, pero está en busca de uno; no recibe salario.</p></div>
+                    <div class="card card-accent-orange fragment"><h4 style="font-size:0.75em;">Subempleo</h4><p style="font-size:0.7em;">Persona con <strong>menos de 35 horas</strong> de trabajo a la semana y que <strong>desea</strong> tener empleo en horas completas; los salarios son bajos.</p></div>
+                    <div class="card card-accent-blue fragment"><h4 style="font-size:0.75em;">Inactividad</h4><p style="font-size:0.7em;">Hogares cuyo <strong>cabeza de familia no trabaja</strong> (no busca empleo); se dedican a las labores del hogar.</p></div>
+                </div>
+                <div class="real-life fragment" style="margin-top:12px;"><div class="rl-label">💡 Importante</div><p style="font-size:0.8em;">Estas tres situaciones no se reconocen de la misma manera en todo el país; no existen estadísticas por entidades federativas que las reflejen. El <strong>Inegi</strong> tiene la función de reconocer estas situaciones con apoyo de <strong>Coneval</strong>.</p></div>
+            </section>
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔍</span> Radiografía del mercado laboral</h2>
+                <div class="card card-accent-teal fragment"><ul style="font-size:0.79em;"><li><strong>Sector formal:</strong> salarios competitivos, prestaciones, seguros y ayudas (SGMM, guarderías)</li><li><strong>Alternativas:</strong> negocio propio (en auge: ferias, revendedores), trabajos temporales (extraordinarios o voluntarios)</li><li><strong>Trabajos por programas sociales</strong> gubernamentales</li></ul></div>
+                <div class="card card-accent-orange fragment" style="margin-top:10px;"><p style="font-size:0.79em;">Mercado de trabajo con <strong>altos índices de desigualdad</strong>: salarios insuficientes para cubrir necesidades básicas → desigualdad en la distribución del ingreso → la población con menos ingresos <strong>no puede costear necesidades básicas</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🚚</span> Outsourcing</h2>
+                <div class="definition-box"><div class="def-title">¿Qué es el outsourcing?</div><div class="def-text">Relación laboral en la que <strong>terceros (empresas intermediarias)</strong> desempeñan actividades bajo la subordinación del patrón. En México la tendencia fue <strong>extender</strong> estas relaciones.</div></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-green"><h4 style="color:var(--accent-green);">Ventajas (empresa)</h4><ul style="font-size:0.7em;"><li>Ahorrar costos administrativos</li><li>Enfocarse en sus labores</li></ul></div>
+                    <div class="card card-accent-red"><h4 style="color:var(--accent-red);">Desventajas (trabajador)</h4><ul style="font-size:0.7em;"><li>Falta de transparencia y seguridad jurídica</li><li>Trato en igualdad de condiciones laborales y salarios menores</li></ul></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📜</span> Reforma laboral 2021 y subcontratación</h2>
+                <div class="card card-accent-red fragment"><p style="font-size:0.79em;">La reforma (<strong>DOF 23-04-2021</strong>) introduce el concepto de <strong>subcontratación laboral</strong>: toda relación donde un patrón determinado preste servicios mediante personal propio, siendo <strong>distinta a la actividad principal</strong> de la empresa beneficiaria.</p></div>
+                <div class="card card-accent-green fragment" style="margin-top:8px;"><p style="font-size:0.79em;">Se prohíbe la subcontratación de personal: la entrega de personal para la realización de labores o el cumplimiento de metas propias de la empresa beneficiaria. Los servicios especializados o de obra <strong>no constituyen subcontratación</strong> si el contratista está <strong>registrado ante la STPS</strong>.</p></div>
+                <div class="card card-accent-blue fragment" style="margin-top:8px;"><p style="font-size:0.78em;">Condiciones: la empresa beneficiaria debe informar por escrito al trabajador que los servicios son de una empresa distinta; registro patronal ante el IMSS; <strong>prohibición absoluta a quienes no estén dados de alta</strong>. Los patrones que incumplan se harán acreedores a <strong>multas</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> Consecuencias de la reforma</h2>
+                <div class="card card-accent-orange fragment"><p style="font-size:0.79em;">Se <strong>reduce la competencia desleal</strong> y se fortalece el marco regulatorio: los patrones deben garantizar condiciones dignas para los trabajadores que prestan servicios mediante subcontratación, asegurando <strong>salarios y prestaciones</strong> dignas y contribuyendo a la <strong>formalización laboral</strong>.</p></div>
+                <div class="grid-2 fragment" style="margin-top:10px;">
+                    <div class="card card-accent-green"><h4 style="color:var(--accent-green);">Impacto positivo</h4><p style="font-size:0.72em;">Política con <strong>impacto social</strong>: regulación de la subcontratación, práctica que albergaba <strong>abuso laboral</strong> y condiciones precarias.</p></div>
+                    <div class="card card-accent-red"><h4 style="color:var(--accent-red);">Impacto negativo</h4><p style="font-size:0.72em;">Afecta a empresas que dependían de esta modalidad: <strong>aumento de costos</strong>, reducción de contrataciones y posible <strong>aumento de la informalidad</strong>.</p></div>
+                </div>
+                <div class="card card-accent-purple fragment" style="margin-top:8px;"><p style="font-size:0.76em;">El outsourcing representa <strong>una gran proporción</strong> del empleo en México: las políticas se han realizado para que <strong>no existan tantos abusos</strong> y haya mayor justicia social.</p></div>
+            </section>
+            <!-- ===== CIERRE ===== -->
+            <section class="title-slide">
+                <span class="unit-badge">Unidad 3 - Cierre</span>
+                <h1 style="margin-top:30px;">¡Gracias!</h1>
+                <p class="subtitle">Modelo neoliberal y tendencias del cambio socioeconómico en México</p>
+                <p style="color:rgba(255,255,255,0.4);font-size:0.7em;margin-top:40px;"><i class="fa-solid fa-graduation-cap"></i> Lic. Rosalba Sosa Gu&#237;zar<br><i class="fa-solid fa-building-columns"></i> Instituto Leonardo Bravo</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+    <script>
+        Reveal.initialize({hash:true,slideNumber:false,controls:true,controlsLayout:'edges',progress:true,center:false,transition:'slide',transitionSpeed:'default',backgroundTransition:'fade',plugins:[RevealNotes,RevealMarkdown,RevealHighlight]});
+        const slideNav=document.getElementById('slide-nav'),slideNavCurrent=document.getElementById('slide-nav-current'),slideNavTotal=document.getElementById('slide-nav-total'),slideNavInput=document.getElementById('slide-nav-input'),fragmentCounter=document.getElementById('fragment-counter'),fcCurrent=document.querySelector('.fc-current'),fcTotal=document.querySelector('.fc-total');
+        Reveal.on('slidechanged',e=>{slideNavCurrent.textContent=e.indexh+1;updateFragmentCounter()});
+        Reveal.on('fragmentshown',()=>updateFragmentCounter());Reveal.on('fragmenthidden',()=>updateFragmentCounter());
+        function updateFragmentCounter(){const s=Reveal.getCurrentSlide(),f=s.querySelectorAll('.fragment'),v=s.querySelectorAll('.fragment.visible');f.length>0?(fragmentCounter.classList.add('has-fragments'),fcCurrent.textContent=v.length,fcTotal.textContent=f.length):fragmentCounter.classList.remove('has-fragments')}
+        Reveal.on('ready',()=>{slideNavTotal.textContent=Reveal.getTotalSlides();updateFragmentCounter()});
+        slideNav.addEventListener('click',()=>{slideNav.classList.add('editing');slideNavInput.value=slideNavCurrent.textContent;slideNavInput.focus()});
+        slideNavInput.addEventListener('keydown',e=>{if(e.key==='Enter'){const n=parseInt(slideNavInput.value);n>=1&&n<=Reveal.getTotalSlides()&&Reveal.slide(n-1);slideNav.classList.remove('editing')}else e.key==='Escape'&&slideNav.classList.remove('editing')});
+        slideNavInput.addEventListener('blur',()=>slideNav.classList.remove('editing'));
+        document.getElementById('index-btn').addEventListener('click',()=>window.location.hash='#/indice');
+        document.getElementById('fullscreen-btn').addEventListener('click',()=>{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()});
+    </script>
+</body>
+</html>

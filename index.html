@@ -2,10 +2,246 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=Presentacion/unidad-01-introduccion-estructura-socioeconomica.html">
-    <title>Estructuras Socioeconómicas — Instituto Leonardo Bravo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Socioeconómica de México — ILB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a1a;
+            color: rgba(255,255,255,0.85);
+            min-height: 100vh;
+            padding: 50px 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.6em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #f59e0b, #ef4444, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+        .hero .subtitle {
+            font-size: 1.05em;
+            color: rgba(255,255,255,0.5);
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        .hero .meta {
+            display: inline-flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .hero .meta span {
+            font-size: 0.8em;
+            color: rgba(255,255,255,0.35);
+        }
+        .hero .meta span strong {
+            color: rgba(255,255,255,0.6);
+        }
+        .progress-bar {
+            background: rgba(255,255,255,0.08);
+            border-radius: 10px;
+            height: 6px;
+            margin: 30px auto 0;
+            max-width: 400px;
+            overflow: hidden;
+        }
+        .progress-bar .fill {
+            height: 100%;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #f59e0b, #ef4444);
+            width: 30%;
+            transition: width 1s ease;
+        }
+        .progress-label {
+            text-align: center;
+            font-size: 0.75em;
+            color: rgba(255,255,255,0.3);
+            margin-top: 8px;
+        }
+        .units {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+            margin-top: 40px;
+        }
+        .unit {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 14px;
+            padding: 22px;
+            text-decoration: none;
+            color: rgba(255,255,255,0.85);
+            transition: all 0.3s ease;
+            display: block;
+            position: relative;
+        }
+        .unit:hover {
+            border-color: #f59e0b;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(245,158,11,0.12);
+        }
+        .unit .num {
+            font-size: 0.65em;
+            font-weight: 700;
+            color: #f59e0b;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+        .unit h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: white;
+            line-height: 1.3;
+        }
+        .unit p {
+            font-size: 0.78em;
+            color: rgba(255,255,255,0.4);
+            line-height: 1.4;
+        }
+        .unit .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 16px;
+            font-size: 0.6em;
+            font-weight: 600;
+            margin-top: 12px;
+        }
+        .unit .badge.available {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+        }
+        .unit .badge.soon {
+            background: rgba(255,255,255,0.08);
+            color: rgba(255,255,255,0.3);
+        }
+        .unit.pending {
+            opacity: 0.35;
+            pointer-events: none;
+        }
+        .unit.pending:hover {
+            border-color: rgba(255,255,255,0.08);
+            transform: none;
+            box-shadow: none;
+        }
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            color: rgba(255,255,255,0.2);
+            font-size: 0.7em;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-    <p>Redirigiendo a la presentación...</p>
+    <div class="container">
+        <div class="hero">
+            <h1>Estructura Socioeconómica de México</h1>
+            <p class="subtitle">Instituto Leonardo Bravo — 5to Semestre</p>
+            <div class="meta">
+                <span><strong>Prof.:</strong> Lic. Rosalba Sosa Guízar</span>
+                <span><strong>Materias:</strong> 13 horas totales</span>
+                <span><strong>Periodo:</strong> Ago-Dic 2026</span>
+            </div>
+                <div class="progress-bar">
+                <div class="fill"></div>
+            </div>
+            <div class="progress-label">3 de 10 unidades disponibles</div>
+        </div>
+        
+        <div class="units">
+            <a class="unit" href="Presentacion/unidad-01-introduccion-estructura-socioeconomica.html">
+                <div class="num">Unidad 01</div>
+                <h3>Introducción a la Estructura Socioeconómica</h3>
+                <p>Conceptos básicos, modelo capitalista, indicadores macroeconómicos, sectores productivos, categorías de análisis y teorías del crecimiento.</p>
+                <span class="badge available">Disponible</span>
+            </a>
+            
+            <a class="unit" href="Presentacion/unidad-02-modelos-economicos-mexico.html">
+                <div class="num">Unidad 02</div>
+                <h3>Modelos Económicos en México (1940-1982)</h3>
+                <p>Sustitución de importaciones, desarrollo estabilizador, desarrollo compartido, Alianza para la Producción y crisis de 1982.</p>
+                <span class="badge available">Disponible</span>
+            </a>
+            
+            <a class="unit" href="Presentacion/unidad-03-modelo-neoliberal-cambio-socioeconomico.html">
+                <div class="num">Unidad 03</div>
+                <h3>Modelo neoliberal y tendencias del cambio socioeconómico</h3>
+                <p>Orden económico internacional, Consenso de Washington, privatización, reformas estructurales, pobreza, desigualdad y movimientos sociales en México.</p>
+                <span class="badge available">Disponible</span>
+            </a>
+            
+            <div class="unit pending">
+                <div class="num">Unidad 04</div>
+                <h3>Indicadores Macroeconómicos</h3>
+                <p>PIB nominal y real, inflación, tipo de cambio, desempleo, ingreso per cápita y deuda pública.</p>
+                <span class="badge soon">Próximamente</span>
+            </div>
+            
+            <div class="unit pending">
+                <div class="num">Unidad 05</div>
+                <h3>Política Económica</h3>
+                <p>Política fiscal, monetaria, comercial y su impacto en la estructura socioeconómica de México.</p>
+                <span class="badge soon">Próximamente</span>
+            </div>
+            
+            <div class="unit pending">
+                <div class="num">Unidad 06</div>
+                <h3>Desarrollo y Subdesarrollo</h3>
+                <p>Teorías del desarrollo, modelos de crecimiento, brecha Norte-Sur y experiencias de desarrollo.</p>
+                <span class="badge soon">Próximamente</span>
+            </div>
+            
+            <div class="unit pending">
+                <div class="num">Unidad 07</div>
+                <h3>Competitividad</h3>
+                <p>Factores de competitividad, índice global, ventajas competitivas y estrategias de desarrollo regional.</p>
+                <span class="badge soon">Próximamente</span>
+            </div>
+            
+            <div class="unit pending">
+                <div class="num">Unidad 08</div>
+                <h3>Cadenas Productivas</h3>
+                <p>Cadenas de valor, proveeduría, encadenamiento productivo y su impacto en el desarrollo económico.</p>
+                <span class="badge soon">Próximamente</span>
+            </div>
+            
+            <div class="unit pending">
+                <div class="num">Unidad 09</div>
+                <h3>Comercio Exterior</h3>
+                <p>Exportaciones, importaciones, tratados de libre comercio, balanza comercial y comercio exterior de México.</p>
+                <span class="badge soon">Próximamente</span>
+            </div>
+            
+            <div class="unit pending">
+                <div class="num">Unidad 10</div>
+                <h3>Proyecto Integrador</h3>
+                <p>Análisis integral de la estructura socioeconómica de una comunidad o región. Síntesis y apresentación de resultados.</p>
+                <span class="badge soon">Próximamente</span>
+            </div>
+        </div>
+        
+        <footer>
+            Lic. Rosalba Sosa Guízar<br>
+            Instituto Leonardo Bravo<br>
+            Estructura Socioeconómica de México — 2026
+        </footer>
+    </div>
 </body>
 </html>
